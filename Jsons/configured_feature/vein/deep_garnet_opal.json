@@ -14,11 +14,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_rhyolite_garnet_red_ore",
+            "block": "gtceu:tfc_rhyolite_red_garnet_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_rhyolite_garnet_yellow_ore",
+            "block": "gtceu:tfc_rhyolite_yellow_garnet_ore",
             "weight": 15
           },
           {
@@ -37,11 +37,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_basalt_garnet_red_ore",
+            "block": "gtceu:tfc_basalt_red_garnet_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_basalt_garnet_yellow_ore",
+            "block": "gtceu:tfc_basalt_yellow_garnet_ore",
             "weight": 15
           },
           {
@@ -60,11 +60,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_andesite_garnet_red_ore",
+            "block": "gtceu:tfc_andesite_red_garnet_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_andesite_garnet_yellow_ore",
+            "block": "gtceu:tfc_andesite_yellow_garnet_ore",
             "weight": 15
           },
           {
@@ -83,11 +83,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_dacite_garnet_red_ore",
+            "block": "gtceu:tfc_dacite_red_garnet_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_dacite_garnet_yellow_ore",
+            "block": "gtceu:tfc_dacite_yellow_garnet_ore",
             "weight": 15
           },
           {
@@ -106,11 +106,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_granite_garnet_red_ore",
+            "block": "gtceu:tfc_granite_red_garnet_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_granite_garnet_yellow_ore",
+            "block": "gtceu:tfc_granite_yellow_garnet_ore",
             "weight": 15
           },
           {
@@ -129,11 +129,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_diorite_garnet_red_ore",
+            "block": "gtceu:tfc_diorite_red_garnet_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_diorite_garnet_yellow_ore",
+            "block": "gtceu:tfc_diorite_yellow_garnet_ore",
             "weight": 15
           },
           {
@@ -152,11 +152,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_gabbro_garnet_red_ore",
+            "block": "gtceu:tfc_gabbro_red_garnet_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_gabbro_garnet_yellow_ore",
+            "block": "gtceu:tfc_gabbro_yellow_garnet_ore",
             "weight": 15
           },
           {

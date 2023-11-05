@@ -122,18 +122,6 @@
           }
         ]
       }
-    ],
-    "indicator": {
-      "rarity": 12,
-      "depth": 35,
-      "underground_rarity": 1,
-      "underground_count": 0,
-      "blocks": [
-        {
-          "block": "null",
-          "weight": 100
-        }
-      ]
-    }
+    ]
   }
 }

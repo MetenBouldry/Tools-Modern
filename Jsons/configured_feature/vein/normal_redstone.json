@@ -14,7 +14,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_granite_restone_ore",
+            "block": "gtceu:tfc_granite_redstone_ore",
             "weight": 45
           },
           {

@@ -14,11 +14,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_quartzite_garnet_red_ore",
+            "block": "gtceu:tfc_quartzite_red_garnet_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_quartzite_garnet_yellow_ore",
+            "block": "gtceu:tfc_quartzite_yellow_garnet_ore",
             "weight": 15
           },
           {
@@ -37,11 +37,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_slate_garnet_red_ore",
+            "block": "gtceu:tfc_slate_red_garnet_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_slate_garnet_yellow_ore",
+            "block": "gtceu:tfc_slate_yellow_garnet_ore",
             "weight": 15
           },
           {
@@ -60,11 +60,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_phyllite_garnet_red_ore",
+            "block": "gtceu:tfc_phyllite_red_garnet_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_phyllite_garnet_yellow_ore",
+            "block": "gtceu:tfc_phyllite_yellow_garnet_ore",
             "weight": 15
           },
           {
@@ -83,11 +83,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_schist_garnet_red_ore",
+            "block": "gtceu:tfc_schist_red_garnet_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_schist_garnet_yellow_ore",
+            "block": "gtceu:tfc_schist_yellow_garnet_ore",
             "weight": 15
           },
           {
@@ -106,11 +106,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_gneiss_garnet_red_ore",
+            "block": "gtceu:tfc_gneiss_red_garnet_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_gneiss_garnet_yellow_ore",
+            "block": "gtceu:tfc_gneiss_yellow_garnet_ore",
             "weight": 15
           },
           {
@@ -129,11 +129,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_marble_garnet_red_ore",
+            "block": "gtceu:tfc_marble_red_garnet_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_marble_garnet_yellow_ore",
+            "block": "gtceu:tfc_marble_yellow_garnet_ore",
             "weight": 15
           },
           {
@@ -152,11 +152,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_shale_garnet_red_ore",
+            "block": "gtceu:tfc_shale_red_garnet_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_shale_garnet_yellow_ore",
+            "block": "gtceu:tfc_shale_yellow_garnet_ore",
             "weight": 15
           },
           {
@@ -175,11 +175,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_claystone_garnet_red_ore",
+            "block": "gtceu:tfc_claystone_red_garnet_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_claystone_garnet_yellow_ore",
+            "block": "gtceu:tfc_claystone_yellow_garnet_ore",
             "weight": 15
           },
           {
@@ -198,11 +198,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_limestone_garnet_red_ore",
+            "block": "gtceu:tfc_limestone_red_garnet_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_limestone_garnet_yellow_ore",
+            "block": "gtceu:tfc_limestone_yellow_garnet_ore",
             "weight": 15
           },
           {
@@ -221,11 +221,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_conglomerate_garnet_red_ore",
+            "block": "gtceu:tfc_conglomerate_red_garnet_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_conglomerate_garnet_yellow_ore",
+            "block": "gtceu:tfc_conglomerate_yellow_garnet_ore",
             "weight": 15
           },
           {
@@ -244,11 +244,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_dolomite_garnet_red_ore",
+            "block": "gtceu:tfc_dolomite_red_garnet_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_dolomite_garnet_yellow_ore",
+            "block": "gtceu:tfc_dolomite_yellow_garnet_ore",
             "weight": 15
           },
           {
@@ -267,11 +267,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_chert_garnet_red_ore",
+            "block": "gtceu:tfc_chert_red_garnet_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_chert_garnet_yellow_ore",
+            "block": "gtceu:tfc_chert_yellow_garnet_ore",
             "weight": 15
           },
           {
@@ -290,11 +290,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_chalk_garnet_red_ore",
+            "block": "gtceu:tfc_chalk_red_garnet_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_chalk_garnet_yellow_ore",
+            "block": "gtceu:tfc_chalk_yellow_garnet_ore",
             "weight": 15
           },
           {

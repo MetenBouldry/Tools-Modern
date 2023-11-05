@@ -6,7 +6,7 @@
     "min_y": -64,
     "max_y": 10,
     "size": 26,
-    "random_name": "deep_molybdenium",
+    "random_name": "deep_molybdenum",
     "blocks": [
       {
         "replace": [
@@ -22,7 +22,7 @@
             "weight": 30
           },
           {
-            "block": "gtceu:tfc_rhyolite_molybdenium_ore",
+            "block": "gtceu:tfc_rhyolite_molybdenum_ore",
             "weight": 15
           },
           {
@@ -45,7 +45,7 @@
             "weight": 30
           },
           {
-            "block": "gtceu:tfc_basalt_molybdenium_ore",
+            "block": "gtceu:tfc_basalt_molybdenum_ore",
             "weight": 15
           },
           {
@@ -68,7 +68,7 @@
             "weight": 30
           },
           {
-            "block": "gtceu:tfc_andesite_molybdenium_ore",
+            "block": "gtceu:tfc_andesite_molybdenum_ore",
             "weight": 15
           },
           {
@@ -91,7 +91,7 @@
             "weight": 30
           },
           {
-            "block": "gtceu:tfc_dacite_molybdenium_ore",
+            "block": "gtceu:tfc_dacite_molybdenum_ore",
             "weight": 15
           },
           {
@@ -114,7 +114,7 @@
             "weight": 30
           },
           {
-            "block": "gtceu:tfc_granite_molybdenium_ore",
+            "block": "gtceu:tfc_granite_molybdenum_ore",
             "weight": 15
           },
           {
@@ -137,7 +137,7 @@
             "weight": 30
           },
           {
-            "block": "gtceu:tfc_diorite_molybdenium_ore",
+            "block": "gtceu:tfc_diorite_molybdenum_ore",
             "weight": 15
           },
           {
@@ -160,7 +160,7 @@
             "weight": 30
           },
           {
-            "block": "gtceu:tfc_gabbro_molybdenium_ore",
+            "block": "gtceu:tfc_gabbro_molybdenum_ore",
             "weight": 15
           },
           {

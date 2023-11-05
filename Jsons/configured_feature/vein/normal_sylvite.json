@@ -29,17 +29,6 @@
             "weight": 100
           }
         ]
-      },
-      {
-        "replace": [
-          "tfc:rock/raw/sylvite"
-        ],
-        "with": [
-          {
-            "block": "gtceu:tfc_sylvite_sylvite_ore",
-            "weight": 100
-          }
-        ]
       }
     ]
   }

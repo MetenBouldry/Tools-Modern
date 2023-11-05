@@ -26,7 +26,7 @@
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_granite_pentlandtite_ore",
+            "block": "gtceu:tfc_granite_pentlandite_ore",
             "weight": 15
           }
         ]
@@ -49,7 +49,7 @@
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_diorite_pentlandtite_ore",
+            "block": "gtceu:tfc_diorite_pentlandite_ore",
             "weight": 15
           }
         ]
@@ -72,7 +72,7 @@
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_gabbro_pentlandtite_ore",
+            "block": "gtceu:tfc_gabbro_pentlandite_ore",
             "weight": 15
           }
         ]

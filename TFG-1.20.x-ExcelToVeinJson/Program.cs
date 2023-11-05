@@ -10,6 +10,7 @@ namespace TFG_1._20.x_ExcelToVeinJson
         private const string PathToExcel = "../../../../file.xlsx";
         private const string PathToConfiguredFeature = "../../../../Jsons/configured_feature/vein/";
         private const string PathToPlacedFeature = "../../../../Jsons/placed_feature/vein/";
+        private const string PathToVeinList = "../../../../Jsons/";
         
         private const int VeinNameColumnId = 1;
         private const int FirstOreColumnId = 2;
@@ -94,6 +95,16 @@ namespace TFG_1._20.x_ExcelToVeinJson
             using var package = new ExcelPackage(pathToExcel);
             var sheet = package.Workbook.Worksheets["OreGenTable"];
 
+            var veinNameList = new List<string>()
+            {
+                "tfc:vein/gravel",
+                "tfc:vein/kaolin_disc",
+                "tfc:vein/granite_dike",
+                "tfc:vein/diorite_dike",
+                "tfc:vein/gabbro_dike",
+                "tfc:geode"
+            };
+            
             for (var row = 3; row < 999; row++)
             {
                 dynamic veinName = sheet.Cells[row, VeinNameColumnId].Value;
@@ -220,8 +231,8 @@ namespace TFG_1._20.x_ExcelToVeinJson
                             : null,
                     }
                 };
-                
-                
+
+                veinNameList.Add(veinName);
                 
                 
                 var configuredFeatureJson = JsonConvert.SerializeObject(veinObject, Formatting.Indented);
@@ -237,6 +248,16 @@ namespace TFG_1._20.x_ExcelToVeinJson
                 
                 Console.WriteLine($"Complete: {veinName}");
             }
+
+            var veinListObject = new VeinListModel
+            {
+                Values = veinNameList.Select(el => $"terrafirmagreg:vein/{el}").ToArray()
+            };
+
+            var veinListJson = JsonConvert.SerializeObject(veinListObject, Formatting.Indented);
+            File.WriteAllText($"{PathToVeinList}veins.json", veinListJson);
+            
+            Console.WriteLine("Complete!");
         }
 
         private static Tuple<string, int>? ConvertOreNameWeightToTuple(object? value)
