@@ -1,0 +1,174 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 145,
+    "density": 0.45,
+    "min_y": -64,
+    "max_y": 10,
+    "size": 26,
+    "random_name": "deep_molybdenium",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/rhyolite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_rhyolite_wulfenite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:tfc_rhyolite_molybdenite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:tfc_rhyolite_molybdenium_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_rhyolite_powellite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/basalt"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_basalt_wulfenite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:tfc_basalt_molybdenite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:tfc_basalt_molybdenium_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_basalt_powellite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/andesite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_andesite_wulfenite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:tfc_andesite_molybdenite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:tfc_andesite_molybdenium_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_andesite_powellite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dacite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_dacite_wulfenite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:tfc_dacite_molybdenite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:tfc_dacite_molybdenium_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_dacite_powellite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/granite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_granite_wulfenite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:tfc_granite_molybdenite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:tfc_granite_molybdenium_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_granite_powellite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/diorite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_diorite_wulfenite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:tfc_diorite_molybdenite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:tfc_diorite_molybdenium_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_diorite_powellite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_gabbro_wulfenite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:tfc_gabbro_molybdenite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:tfc_gabbro_molybdenium_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_gabbro_powellite_ore",
+            "weight": 15
+          }
+        ]
+      }
+    ]
+  }
+}

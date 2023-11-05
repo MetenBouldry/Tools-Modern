@@ -1,0 +1,32 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 75,
+    "density": 0.35,
+    "min_y": -64,
+    "max_y": 100,
+    "size": 60,
+    "random_name": "normal_graphite",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_gabbro_graphite_ore",
+            "weight": 45
+          },
+          {
+            "block": "gtceu:tfc_gabbro_diamond_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:tfc_gabbro_coal_ore",
+            "weight": 30
+          }
+        ]
+      }
+    ]
+  }
+}

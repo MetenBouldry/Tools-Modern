@@ -1,0 +1,312 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 130,
+    "density": 0.25,
+    "min_y": -64,
+    "max_y": 26,
+    "size": 28,
+    "random_name": "deep_garnet_amethyst",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_quartzite_garnet_red_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:tfc_quartzite_garnet_yellow_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_quartzite_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:tfc_quartzite_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/slate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_slate_garnet_red_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:tfc_slate_garnet_yellow_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_slate_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:tfc_slate_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/phyllite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_phyllite_garnet_red_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:tfc_phyllite_garnet_yellow_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_phyllite_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:tfc_phyllite_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/schist"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_schist_garnet_red_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:tfc_schist_garnet_yellow_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_schist_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:tfc_schist_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gneiss"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_gneiss_garnet_red_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:tfc_gneiss_garnet_yellow_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_gneiss_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:tfc_gneiss_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/marble"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_marble_garnet_red_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:tfc_marble_garnet_yellow_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_marble_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:tfc_marble_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/shale"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_shale_garnet_red_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:tfc_shale_garnet_yellow_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_shale_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:tfc_shale_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/claystone"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_claystone_garnet_red_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:tfc_claystone_garnet_yellow_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_claystone_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:tfc_claystone_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/limestone"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_limestone_garnet_red_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:tfc_limestone_garnet_yellow_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_limestone_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:tfc_limestone_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/conglomerate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_conglomerate_garnet_red_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:tfc_conglomerate_garnet_yellow_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_conglomerate_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:tfc_conglomerate_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dolomite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_dolomite_garnet_red_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:tfc_dolomite_garnet_yellow_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_dolomite_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:tfc_dolomite_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/chert"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_chert_garnet_red_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:tfc_chert_garnet_yellow_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_chert_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:tfc_chert_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/chalk"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_chalk_garnet_red_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:tfc_chalk_garnet_yellow_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_chalk_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:tfc_chalk_opal_ore",
+            "weight": 15
+          }
+        ]
+      }
+    ]
+  }
+}

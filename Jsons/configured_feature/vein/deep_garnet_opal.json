@@ -1,0 +1,174 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 120,
+    "density": 0.35,
+    "min_y": -64,
+    "max_y": 62,
+    "size": 26,
+    "random_name": "deep_garnet_opal",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/rhyolite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_rhyolite_garnet_red_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:tfc_rhyolite_garnet_yellow_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_rhyolite_amethyst_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:tfc_rhyolite_opal_ore",
+            "weight": 55
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/basalt"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_basalt_garnet_red_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:tfc_basalt_garnet_yellow_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_basalt_amethyst_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:tfc_basalt_opal_ore",
+            "weight": 55
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/andesite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_andesite_garnet_red_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:tfc_andesite_garnet_yellow_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_andesite_amethyst_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:tfc_andesite_opal_ore",
+            "weight": 55
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dacite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_dacite_garnet_red_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:tfc_dacite_garnet_yellow_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_dacite_amethyst_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:tfc_dacite_opal_ore",
+            "weight": 55
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/granite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_granite_garnet_red_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:tfc_granite_garnet_yellow_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_granite_amethyst_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:tfc_granite_opal_ore",
+            "weight": 55
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/diorite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_diorite_garnet_red_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:tfc_diorite_garnet_yellow_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_diorite_amethyst_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:tfc_diorite_opal_ore",
+            "weight": 55
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_gabbro_garnet_red_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:tfc_gabbro_garnet_yellow_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_gabbro_amethyst_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:tfc_gabbro_opal_ore",
+            "weight": 55
+          }
+        ]
+      }
+    ]
+  }
+}
