@@ -1,12 +1,12 @@
 {
   "replace": true,
   "values": [
-    "terrafirmagreg:vein/tfc:vein/gravel",
-    "terrafirmagreg:vein/tfc:vein/kaolin_disc",
-    "terrafirmagreg:vein/tfc:vein/granite_dike",
-    "terrafirmagreg:vein/tfc:vein/diorite_dike",
-    "terrafirmagreg:vein/tfc:vein/gabbro_dike",
-    "terrafirmagreg:vein/tfc:geode",
+    "tfc:vein/gravel",
+    "tfc:vein/kaolin_disc",
+    "tfc:vein/granite_dike",
+    "tfc:vein/diorite_dike",
+    "tfc:vein/gabbro_dike",
+    "tfc:geode",
     "terrafirmagreg:vein/surface_bismuthinite",
     "terrafirmagreg:vein/surface_cassiterite",
     "terrafirmagreg:vein/surface_copper",

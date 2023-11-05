@@ -232,7 +232,7 @@ namespace TFG_1._20.x_ExcelToVeinJson
                     }
                 };
 
-                veinNameList.Add(veinName);
+                veinNameList.Add($"terrafirmagreg:vein/{veinName}");
                 
                 
                 var configuredFeatureJson = JsonConvert.SerializeObject(veinObject, Formatting.Indented);
@@ -251,7 +251,7 @@ namespace TFG_1._20.x_ExcelToVeinJson
 
             var veinListObject = new VeinListModel
             {
-                Values = veinNameList.Select(el => $"terrafirmagreg:vein/{el}").ToArray()
+                Values = veinNameList.ToArray()
             };
 
             var veinListJson = JsonConvert.SerializeObject(veinListObject, Formatting.Indented);
