@@ -7,6 +7,10 @@ namespace TFG_1._20.x_ExcelToVeinJson
 {
     internal class Program
     {
+        private const string PathToExcel = "../../../../file.xlsx";
+        private const string PathToConfiguredFeature = "../../../../Jsons/configured_feature/vein/";
+        private const string PathToPlacedFeature = "../../../../Jsons/placed_feature/vein/";
+        
         private const int VeinNameColumnId = 1;
         private const int FirstOreColumnId = 2;
         private const int SecondOreColumnId = 3;
@@ -78,7 +82,13 @@ namespace TFG_1._20.x_ExcelToVeinJson
         
         private static void Main(string[] args)
         {
-            const string pathToExcel = "../../../../file.xlsx";
+            var configuredFeatureDirectory = new DirectoryInfo(PathToConfiguredFeature);
+            foreach (var file in configuredFeatureDirectory.GetFiles()) file.Delete();
+
+            var placedFeatureDirectory = new DirectoryInfo(PathToPlacedFeature);
+            foreach (var file in placedFeatureDirectory.GetFiles()) file.Delete();
+            
+            const string pathToExcel = PathToExcel;
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
             using var package = new ExcelPackage(pathToExcel);
@@ -101,7 +111,7 @@ namespace TFG_1._20.x_ExcelToVeinJson
                 var density = float.Parse(sheet.Cells[row, DensityColumnId].Value.ToString()!, CultureInfo.InvariantCulture);
                 var size = int.Parse(sheet.Cells[row, SizeColumnId].Value.ToString()!);
                 var rarity = int.Parse(sheet.Cells[row, RarityColumnId].Value.ToString()!);
-                var indicator = sheet.Cells[row, IndicatorMaterialColumnId].Value != null ? sheet.Cells[row, 12].Value.ToString() : null;
+                string? indicator = null; /*sheet.Cells[row, IndicatorMaterialColumnId].Value != null ? sheet.Cells[row, 12].Value.ToString() : null;*/
                 
                 int? indicatorRarity = null;
                 int? indicatorDepth = null;
@@ -210,9 +220,12 @@ namespace TFG_1._20.x_ExcelToVeinJson
                             : null,
                     }
                 };
-                        
+                
+                
+                
+                
                 var configuredFeatureJson = JsonConvert.SerializeObject(veinObject, Formatting.Indented);
-                File.WriteAllText($"../../../../Jsons/configured_feature/vein/{veinName}.json", configuredFeatureJson);
+                File.WriteAllText($"{PathToConfiguredFeature}{veinName}.json", configuredFeatureJson);
 
                 var placedObject = new PlacedFeatureModel
                 {
@@ -220,7 +233,7 @@ namespace TFG_1._20.x_ExcelToVeinJson
                 };
                 
                 var placedFeatureJson = JsonConvert.SerializeObject(placedObject, Formatting.Indented);
-                File.WriteAllText($"../../../../Jsons/placed_feature/vein/{veinName}.json", placedFeatureJson);
+                File.WriteAllText($"{PathToPlacedFeature}{veinName}.json", placedFeatureJson);
                 
                 Console.WriteLine($"Complete: {veinName}");
             }
