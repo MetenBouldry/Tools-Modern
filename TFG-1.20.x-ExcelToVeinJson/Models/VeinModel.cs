@@ -27,7 +27,7 @@ public sealed class Config
     public int MaxY { get; set; }
     
     [JsonProperty("size")]
-    public int Size { get; set; }
+    public int? Size { get; set; }
     
     [JsonProperty("random_name")]
     public string RandomName { get; set; }

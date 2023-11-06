@@ -120,9 +120,9 @@ namespace TFG_1._20.x_ExcelToVeinJson
                 var minHeight = int.Parse(sheet.Cells[row, MinYColumnId].Value.ToString()!);
                 var maxHeight = int.Parse(sheet.Cells[row, MaxYColumnId].Value.ToString()!);
                 var density = float.Parse(sheet.Cells[row, DensityColumnId].Value.ToString()!, CultureInfo.InvariantCulture);
-                var size = int.Parse(sheet.Cells[row, SizeColumnId].Value.ToString()!);
+                int? size = sheet.Cells[row, SizeColumnId].Value != null ? int.Parse(sheet.Cells[row, SizeColumnId].Value.ToString()!) : null;
                 var rarity = int.Parse(sheet.Cells[row, RarityColumnId].Value.ToString()!);
-                string? indicator = null; /*sheet.Cells[row, IndicatorMaterialColumnId].Value != null ? sheet.Cells[row, 12].Value.ToString() : null;*/
+                var indicator = sheet.Cells[row, IndicatorMaterialColumnId].Value != null ? sheet.Cells[row, 12].Value.ToString() : null;
                 
                 int? indicatorRarity = null;
                 int? indicatorDepth = null;
@@ -196,7 +196,7 @@ namespace TFG_1._20.x_ExcelToVeinJson
                     Type = veinType,
                     Config = new Config
                     {
-                        Rarity = rarity,
+                        Rarity = rarity + 100,
                         Density = density,
                         MinY = minHeight,
                         MaxY = maxHeight,
@@ -223,7 +223,7 @@ namespace TFG_1._20.x_ExcelToVeinJson
                                 {
                                     new BlockEntry
                                     {
-                                        Block = "null",
+                                        Block = $"tfc:ore/small_{indicator}",
                                         Weight = 100
                                     }
                                 }

@@ -1,12 +1,13 @@
 {
-  "type": "tfc:cluster_vein",
+  "type": "tfc:disc_vein",
   "config": {
-    "rarity": 130,
+    "rarity": 230,
     "density": 0.25,
     "min_y": -64,
     "max_y": 26,
     "size": 28,
     "random_name": "deep_garnet_amethyst",
+    "height": 8,
     "blocks": [
       {
         "replace": [

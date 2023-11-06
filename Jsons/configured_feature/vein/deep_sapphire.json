@@ -1,12 +1,13 @@
 {
-  "type": "tfc:cluster_vein",
+  "type": "tfc:disc_vein",
   "config": {
-    "rarity": 180,
+    "rarity": 280,
     "density": 0.35,
     "min_y": -64,
     "max_y": 26,
     "size": 28,
     "random_name": "deep_sapphire",
+    "height": 8,
     "blocks": [
       {
         "replace": [
