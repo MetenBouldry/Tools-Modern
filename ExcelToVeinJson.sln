@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFG-1.20.x-ExcelToVeinJson", "TFG-1.20.x-ExcelToVeinJson\TFG-1.20.x-ExcelToVeinJson.csproj", "{BDB79879-914B-4BAD-88B2-BFAE0F578E48}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelToVeinJson", "ExcelToVeinJson\ExcelToVeinJson.csproj", "{BDB79879-914B-4BAD-88B2-BFAE0F578E48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
