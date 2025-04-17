@@ -8,7 +8,7 @@ namespace LanguageMerger
 {
     internal struct ProgramArguments
     {
-        public DirectoryInfo minecraftDirectory;
+        public DirectoryInfo modpackDirectory;
 
         public DirectoryInfo languageFilesFolder;
 
@@ -25,7 +25,7 @@ namespace LanguageMerger
         {
             StringBuilder stringBuilder = new StringBuilder();
 
-            stringBuilder.AppendLine($".minecraft Folder Path: \"{minecraftDirectory.FullName}\"");
+            stringBuilder.AppendLine($"Modpack-Modern Folder Path: \"{modpackDirectory.FullName}\"");
             stringBuilder.AppendLine($"LanguageFiles Folder Path: \"{languageFilesFolder.FullName}\"");
             stringBuilder.AppendLine($"KJSAssets Folder Path: \"{kjsAssetsFolder.FullName}\"");
             stringBuilder.AppendLine($"shouldPrettyPrint: \"{shouldPrettyPrint}\"");

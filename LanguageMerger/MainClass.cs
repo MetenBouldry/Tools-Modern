@@ -62,9 +62,9 @@ public class MainClass
         programArguments = new ProgramArguments();
         try
         {
-            programArguments.minecraftDirectory = CommonUtil.GetMinecraftDirectory(Directory.GetCurrentDirectory());
-            programArguments.kjsAssetsFolder = CommonUtil.GetKJSAssetsFolder(programArguments.minecraftDirectory);
-            programArguments.languageFilesFolder = GetLanguageFilesFolder(programArguments.minecraftDirectory);
+            programArguments.modpackDirectory = CommonUtil.GetModpackDirectory(Directory.GetCurrentDirectory());
+            programArguments.kjsAssetsFolder = CommonUtil.GetKJSAssetsFolder(programArguments.modpackDirectory);
+            programArguments.languageFilesFolder = GetLanguageFilesFolder();
             programArguments.shouldOverwriteFiles = GetShouldOverwriteFiles();
             programArguments.shouldPrettyPrint = GetShouldPrettyPrint();
         }
@@ -76,9 +76,13 @@ public class MainClass
         return true;
     }
 
-    private static DirectoryInfo GetLanguageFilesFolder(DirectoryInfo dotMinecraftFolder)
+    private static DirectoryInfo GetLanguageFilesFolder()
     {
-        string languageFilesFolder = Path.Combine(dotMinecraftFolder.FullName, TOOLS, PROJECT_NAME, LANGUAGE_FILES);
+        var cwd = Directory.GetCurrentDirectory();
+
+        var projectFolder = cwd.Substring(0, cwd.IndexOf(PROJECT_NAME) + PROJECT_NAME.Length);
+
+		string languageFilesFolder = Path.Combine(projectFolder, LANGUAGE_FILES);
         if(!Directory.Exists(languageFilesFolder))
         {
             throw new DirectoryNotFoundException($"The \"{LANGUAGE_FILES}\" folder was not found in {languageFilesFolder}");
