@@ -25,12 +25,6 @@
     "quests.low_voltage.lv_steam_turbine.subtitle": "You must construct more turbines",
     "quests.low_voltage.lv_steam_turbine.desc.1": "The &3Steam Turbine&r is one of the only generators you can realistically use in &7LV&r. &2Later, you'll unlock more interesting Power options&r, such as natural gases or petrols.\n\nWhen provided Steam, the turbine will output EU at a ratio of &d2 Steam = 1 EU&r.\n\n&6This quest unlocks two new tutorials on Electricity and Cables in the &lTips and Tricks&r&6 tab - check them out to learn more!&r",
     "quests.low_voltage.lv_steam_turbine.desc.2": "If you're using a single &3Steam Turbine&r, you only need &a1x Tin Cables&r. On the other hand, if you upgrade to &32 Steam Turbines&r, you should use &a2x Tin Cables&r - else they may end up &cburning&r.\n\nThis is because of the &9Amperage&r mechanic... but that will be explained later so you can enjoy playing. Don't worry!",
-  
-	"quests.low_voltage.alternator.title": "Alternators",
-	"quests.low_voltage.alternator.subtitle": "Turning stress into power",
-	"quests.low_voltage.alternator.desc.1": "If you've got a big steam age set up, you probably don't want to immediately scrap it all just to go back to some boilers and LV Steam Turbines. Instead, the &3Alternator&r will convert the SU from your steam engines into electricity. Each steam engine + alternator should give you 1A of LV! Unfortunately, alternators convert stress into a different electricity system than the one GregTech uses, so you'll need an Energy Converter to turn it into usable LV energy.",
-	"quests.low_voltage.alternator.desc.2": "An example of a steam engine producing 8 amps of LV!\n",
-    "quests.low_voltage.alternator.task": "Any LV Converter",
 
     "quests.low_voltage.lbb.title": "Large Bronze Boiler",
     "quests.low_voltage.lbb.subtitle": "Boom, boom, boom, boom",
