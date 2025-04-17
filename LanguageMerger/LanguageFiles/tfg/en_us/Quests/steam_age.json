@@ -224,33 +224,33 @@
 	"quests.steam_age.resistors.desc": "Resistors are components that will be used to make your first Circuit.\n\nIt wouldn't be unwise to prioritise the recipes that use &aFine Wires&r, as they'll save you more materials in the long run.\n\nWires may be expensive right now, but they'll get a lot cheaper if you make the &3Coiling Machine&r down below or the &3Wiremill&r in &7LV&r.",
 
 	"quests.steam_age.coiling_machine.title": "Coiling Machine",
-	"quests.steam_age.coiling_machine.subtitle": "ULV Wiremill",
+	"quests.steam_age.coiling_machine.subtitle": "An LV Wiremill strapped to half of the LV Bender!",
 	"quests.steam_age.coiling_machine.desc": "The &3Coiling Machine&r is similar to a LV Wiremill, though it lacks the option to directly output different wire sizes. Still, this is a very worthwhile invesment to make your wires significantly cheaper.\n\nThis machine can also make cheaper springs, too!",
 
 	"quests.steam_age.curving_press.title": "Curving Press",
-	"quests.steam_age.curving_press.subtitle": "ULV Extruder",
+	"quests.steam_age.curving_press.subtitle": "Just as niche as the LV Extruder",
 	"quests.steam_age.curving_press.desc": "The &3Curving Press&r can do all the same recipes as an LV Extruder. Unfortunately, neither can do very much, as the extruder is only useful once you get to MV. Still, if you find yourself wanting to craft a lot of tool heads in bulk, this machine can do it for you.",
 
 	"quests.steam_age.vibrating_table.title": "Vibrating Table",
-	"quests.steam_age.vibrating_table.subtitle": "ULV Sifter",
+	"quests.steam_age.vibrating_table.subtitle": "Identical to the LV Sifter",
 	"quests.steam_age.vibrating_table.desc": "The &3Vibrating Table&r can process gem ores (including coal) in a different way, yielding much more output than anything else you have access to right now. As a bonus, it can also process any gravel ore deposits you may still have. No more sluicing!",
 
 	"quests.steam_age.lathe.title": "Lathe",
-	"quests.steam_age.lathe.subtitle": "ULV... Lathe",
+	"quests.steam_age.lathe.subtitle": "You're not gonna believe which LV machine this is the same as",
 	"quests.steam_age.lathe.desc": "The &3Lathe&r can automatically turn a single ingot into two rods, and single bolts into screws. If you're making a lot of those, and you will be, this machine will be a good investment.",
 
 	"quests.steam_age.steel_saw.title": "Steel Mechanical Saw",
-	"quests.steam_age.steel_saw.subtitle": "ULV Cutter",
-	"quests.steam_age.steel_saw.desc": "It's an upgrade to your Basic Mechanical Saw that can also process some metal recipes, like turning rods into four bolts, and cutting blocks into plates. These recipes will all require a fluid to work, but you only have access to water at the moment.",
+	"quests.steam_age.steel_saw.subtitle": "A stonecutter and LV Cutter in one!",
+	"quests.steam_age.steel_saw.desc": "It's an upgrade to your Basic Mechanical Saw that can also process some metal recipes, like turning rods into four bolts, and cutting blocks into plates. These recipes will all require a fluid to work, but you can just use water for now.",
 
 	"quests.steam_age.rolling_mill.title": "Rolling Mill",
-	"quests.steam_age.rolling_mill.subtitle": "ULV Bender",
-	"quests.steam_age.rolling_mill.desc.1": "Of all the ULV machines you could make, the &3Rolling Mill&r is one of the best, for the simple reason that it makes single plates out of single ingots. It can also make thin sheets cheaper than by hand, as a bonus!",
+	"quests.steam_age.rolling_mill.subtitle": "The other half of the LV Bender",
+	"quests.steam_age.rolling_mill.desc.1": "Of all the steam age machines you could make, the &3Rolling Mill&r is one of the best, for the simple reason that it makes single plates out of single ingots. It can also make thin sheets cheaper than by hand, as a bonus!",
 	"quests.steam_age.rolling_mill.desc.2": "&l&3Lore:&r &oThis machine existed in older versions of TFG, but it made rods instead of plates, and your best plate-making option before the LV bender had a 20% chance of failure!&r",
 
 	"quests.steam_age.steel_mixer.title": "Steel Mechanical Mixer",
-	"quests.steam_age.steel_mixer.subtitle": "ULV Mixer",
-	"quests.steam_age.steel_mixer.desc": "The &3Steel Mechanical Mixer&r is the other best ULV machine you can make -- it can mix together your colored steel dusts at a much more efficient rate than the Crucible! It can do a large number of other recipes too, including some that involve gases... don't think about it too much.\n\nYou can use either a Charcoal Forge or a Blaze Burner for the recipes that require heating, and a Mechanical Arm can automatically refuel either.",
+	"quests.steam_age.steel_mixer.subtitle": "An earlier LV Mixer",
+	"quests.steam_age.steel_mixer.desc": "The &3Steel Mechanical Mixer&r is the other best steam age machine you can make -- it can mix together your colored steel dusts at a much more efficient rate than the Crucible! It can do a large number of other recipes too, including some that involve gases... don't think about it too much.\n\nYou can use either a Charcoal Forge or a Blaze Burner for the recipes that require heating, and a Mechanical Arm can automatically refuel either.",
 
 	"quests.steam_age.potin.title": "Potin Seller...",
 	"quests.steam_age.potin.subtitle": "...I'm going into battle, and I need only your finest Potin.",
@@ -272,7 +272,7 @@
 
 	"quests.steam_age.what_next.title": "What Next?",
 	"quests.steam_age.what_next.subtitle": "Y'know, besides \"more GregTech\"",
-	"quests.steam_age.what_next.desc": "If you rushed straight here, we suggest machines like the LV Bender, Wiremill, or Mixer first.\nOtherwise, if you made the ULV machines below, we suggest the Assembler, Arc Furnace, Chemical Reactor, or Polarizer.",
+	"quests.steam_age.what_next.desc": "If you rushed straight here, we suggest machines like the LV Bender, Wiremill, or Mixer first.\nOtherwise, if you made the kinetic machines below, we suggest the Assembler, Arc Furnace, Chemical Reactor, or Polarizer.",
 
 	"quests.steam_age.alternator.title": "Alternators",
 	"quests.steam_age.alternator.subtitle": "Turning stress into power",
