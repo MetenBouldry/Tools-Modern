@@ -151,6 +151,9 @@ namespace PakkuLockChecker
                 finalizer.AppendLine(index.ToString(deserializedPakkuLock));
             }
             ConsoleLogHelper.WriteLine(finalizer.ToString(), LogLevel.Message);
+
+            ConsoleLogHelper.WriteLine("Checking complete! Press any key to exit...", LogLevel.Info);
+            Console.ReadKey();
         }
 
         [Serializable]
@@ -227,7 +230,8 @@ namespace PakkuLockChecker
             private StringBuilder GetBuilderForToString()
             {
                 StringBuilder builder = new StringBuilder();
-                builder.AppendLine($"Mod Name: {modName}({uniqueIndex}); Issue Type: {problemType}.");
+                builder.AppendLine($"# Mod Name: {modName}({uniqueIndex});");
+                builder.AppendLine($"* Issue Type: {problemType}.");
                 return builder;
             }
         }
