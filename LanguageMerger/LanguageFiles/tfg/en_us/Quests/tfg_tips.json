@@ -376,7 +376,7 @@
 
     "quests.tfg_tips.treetap.title": "Treetap",
     "quests.tfg_tips.treetap.subtitle": "Now with less jank!",
-    "quests.tfg_tips.treetap.desc": "To begin tapping trees, you'll need to craft a Tree Tap, you'll need to at least know how to work Copper Ingots into these taps.\n\nFor returning players, you may recall the existence of the old \"Tap\" item from the \"Treetap\" mod, this item has been disabled and no longer does anything, however, you can convert it &lfor free&r into an ArborFirmaCraft Tree Tap!\n\nThe process of tapping requires finding a tree, there's a dedicated &oTapping Index&r in the Field Guide's section on ArborFirmaCraft that'll tell you how to find the trees. There's also the \"Tapping Trees\" entry, which can be used to learn how to actually tap the trees.",
+    "quests.tfg_tips.treetap.desc": "To begin tapping trees, you'll need to craft a Tree Tap, you'll need to at least know how to work Copper Ingots into these taps.\n\nThe process of tapping requires finding a tree, there's a dedicated &oTapping Index&r in the Field Guide's section on ArborFirmaCraft that'll tell you how to find the trees. There's also the \"Tapping Trees\" entry, which can be used to learn how to actually tap the trees.",
 
     "quests.tfg_tips.find_rosin_tree.title": "Rosin Trees",
     "quests.tfg_tips.find_rosin_tree.subtitle": "It's going to be chilly...",
@@ -388,7 +388,7 @@
 
     "quests.tfg_tips.find_syrup_tree.title": "Syrup Trees",
     "quests.tfg_tips.find_syrup_tree.subtitle": "Diabetes is Skyrocketing",
-    "quests.tfg_tips.find_syrup_tree.desc": "Syrup Trees can be found in moderate climates of the world that receive moderate amounts of rainfall. It can be tapped to obtain Syrup. Syrup can be used to create Tree Sugars, which works for sweetning food among other uses.To complete this quest, you need to look at a block that has the tag \"#tfg:latex_logs\", you can use JEI to learn which blocks have this tag.",
+    "quests.tfg_tips.find_syrup_tree.desc": "Syrup Trees can be found in moderate climates of the world that receive moderate amounts of rainfall. It can be tapped to obtain Syrup. Syrup can be used to create Tree Sugars, which works for sweetning food among other uses.To complete this quest, you need to look at a block that has the tag \"#tfg:syrup_logs\", you can use JEI to learn which blocks have this tag.",
 
     "quests.tfg_tips.create_conifer_rosin.title": "Conifer Rosin",
     "quests.tfg_tips.create_conifer_rosin.subtitle": "No, it's not Resin",
