@@ -48,7 +48,7 @@
   "tfc.recipe.barrel.simplylight.barrel.dyeing.illuminant_red_block": "Dyeing",
   "tfc.recipe.barrel.simplylight.barrel.dyeing.illuminant_brown_block": "Dyeing",
 
-  "tfg.grapplemod.repair": "Repair recipe, keeps your upgrades. §lNEVER combine two grapples or you'll loose ALL your upgrades!§r",
+  "tfg.grapplemod.repair": "Repair recipe, keeps your upgrades. §lNEVER combine two grapples or you'll lose ALL your upgrades!§r",
   "tfg.grapplemod.upgrades.maxlen": "Increases §lMax Length§r by 20, up to 200.",
   "tfg.grapplemod.downgrades.maxlen": "Decreases §lMax Length§r by 20, down to 20. (Jute Rope is Returned).",
   "tfg.grapplemod.upgrades.motor.lv": "Enables the §lMotor§r Upgrade, automatically reeling you in.\n§lMotorMaxSpeed§r set to 1\n§lMotorAcceleration§r set to 0.125",
