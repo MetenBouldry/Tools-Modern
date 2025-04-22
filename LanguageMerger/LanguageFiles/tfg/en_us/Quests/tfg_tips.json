@@ -729,7 +729,7 @@
 
     "quests.tfg_tips.beneath_temp_management.title": "Temperature Management: Active",
     "quests.tfg_tips.beneath_temp_management.subtitle": "Things to cool off quickly",
-    "quests.tfg_tips.beneath_temp_management.desc": "In the beneath, while the temperature is relatively high, its not high enough to immediatly evaporate nearby sources of Water. As such, you should bring some Water to cool off on demand, or some Ice.\n\nYou can harvest Ice using a regular Saw.",
+    "quests.tfg_tips.beneath_temp_management.desc": "In the beneath, while the temperature is relatively high, its not high enough to immediatly evaporate nearby sources of Water. As such, you should bring some Water to cool off on demand, or some Packed Ice.\n\nYou can harvest Packed Ice using a Saw, or obtain it by cooling water down in a barrel.",
 
     "quests.tfg_tips.beneath_clothes.title": "Temperature Management: Passive",
     "quests.tfg_tips.beneath_clothes.subtitle": "Things to passively cool off",
