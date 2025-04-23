@@ -1,9 +1,7 @@
 {
-    //#region Starting
-
-    "quests.medium_voltage.mv_machine_hull.title": "Welcome to MV",
-    "quests.medium_voltage.mv_machine_hull.subtitle": "A new age of solutions and problems",
-    "quests.medium_voltage.mv_machine_hull.desc": "Congrats to reaching MV\n\nThere is going to be lots of new machines to acquire and chemicals to create. As you can tell you three main objectives before being able to HV\n\nFirst you will need to upgrade your EBF with two new MV Energy Hatches so it can overcloak and runs HV recipes. That will help you getting stainless steal, the main material for HV and Kanthal that you will use to upgrade your EBF coils.",
+    "quests.medium_voltage.mv_machine_hull.title": "Welcome to MV!",
+    "quests.medium_voltage.mv_machine_hull.subtitle": "More technology, more problems",
+    "quests.medium_voltage.mv_machine_hull.desc": "Congrats on reaching MV!\n\nThis is when you'll start getting into more of GregTech's chemistry. Your main goals for MV are making your first plastic, automating a denser and more efficient fuel source, and upgrading your circuits and EBF.",
     "quests.medium_voltage.mv_machine_hull.task": "",
 
     "quests.medium_voltage.mv_.title": "",
