@@ -1,4 +1,6 @@
 {
-    "metaitem.dust.tooltip.purify": "Drop in Water to get Clean Dust",
-	"metaitem.crushed.tooltip.purify": "Drop in Water to get Purified Ore"
+	"metaitem.dust.tooltip.purify": "Drop in Water to get Clean Dust",
+	"metaitem.crushed.tooltip.purify": "Drop in Water to get Purified Ore",
+
+	"item.gtceu.tool.behavior.silk_ice": "Silk Harvests Packed Ice"
 }
