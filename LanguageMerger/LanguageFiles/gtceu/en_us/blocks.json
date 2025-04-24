@@ -2,12 +2,19 @@
     "block.bud_indicator": "%s Surface Bud",
 
     "block.gtceu.nether_dome": "Netherarium",
-    "block.gtceu.ender_dome": "Enderarium",
+    "block.gtceu.end_dome": "Enderarium",
     "block.gtceu.greenhouse": "Greenhouse",
     "block.gtceu.steam_bloomery": "Steam Bloomery",
 
+    "block.gtceu.copper_crate": "Copper Crate",
+    "block.gtceu.copper_drum": "Copper Drum",
+    "block.gtceu.black_bronze_crate": "Black Bronze Crate",
+    "block.gtceu.black_bronze_drum": "Black Bronze Drum",
+    "block.gtceu.bismuth_bronze_crate": "Bismuth Bronze Crate",
+    "block.gtceu.bismuth_bronze_drum": "Bismuth Bronze Drum",
+
     "gtceu.nether_dome": "Netherarium",
-    "gtceu.ender_dome": "Enderarium",
+    "gtceu.end_dome": "Enderarium",
     "gtceu.greenhouse": "Electric Greenhouse",
     "gtceu.steam_bloomery": "Steam Bloomery"
 }

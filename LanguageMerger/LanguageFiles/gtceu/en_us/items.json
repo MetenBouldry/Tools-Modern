@@ -39,5 +39,7 @@
 	"item.gtceu.iron_double_cable": "2x Cast Iron Cable",
 	"item.gtceu.iron_quadruple_cable": "4x Cast Iron Cable",
 	"item.gtceu.iron_octal_cable": "8x Cast Iron Cable",
-	"item.gtceu.iron_hex_cable": "16x Cast Iron Cable"
+	"item.gtceu.iron_hex_cable": "16x Cast Iron Cable",
+
+	"item.gtceu.ice_bucket": "Ice Water Bucket"
 }

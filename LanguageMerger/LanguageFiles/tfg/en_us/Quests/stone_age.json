@@ -31,8 +31,8 @@
 
     "quests.stone_age.find_potable_water.title": "Thirsty?",
     "quests.stone_age.find_potable_water.subtitle": "Remember to drink water!",
-    "quests.stone_age.find_potable_water.desc": "Thirst is represented by the blue bar above your hunger. You can and will die of dehydration if you dont keep your thirst meter filled! The easiest way to have a drink is by drinking from natural ponds in the wild, by right-clicking on them with an empty hand.\n\nYou don't have to worry about purifying water here, though Salt Water will just make you more thirsty.",
-    "quests.stone_age.find_potable_water.task": "A source of fresh Water",
+    "quests.stone_age.find_potable_water.desc": "Thirst is represented by the blue bar above your hunger. You can and will die of dehydration if you dont keep your thirst meter filled! The easiest way to have a drink is by drinking from natural ponds in the wild, by right-clicking on them with an empty hand.\nTo complete this quest, you need to drink a Potable source of water, can be regular or river water. You may need to drink multiple times so the quest completes properly\n\nYou don't have to worry about purifying water here, though Salt Water will just make you more thirsty.",
+    "quests.stone_age.find_potable_water.task": "Drink from a Water Source with your Hand. (Not Salty or Hot)",
 
     "quests.stone_age.hydration.title": "Mechanic: Hydration",
     "quests.stone_age.hydration.subtitle": "Yet another bar to keep full...",
@@ -163,7 +163,7 @@
 
     "quests.stone_age.first_saw.title": "Metallic Saw",
     "quests.stone_age.first_saw.subtitle": "Time for your first metal tool",
-    "quests.stone_age.first_saw.desc.1": "To begin making your Saw, add at least 144mb of ore of your desired metal to a Vessel. Afterwards, place the Vessel in a Pit Kiln and light it on fire.\n\nOnce the Pit Kiln burns out, quickly pick up your vessel while it's still hot, and interact with it to open the Pouring interface. Simply place the Saw Mold in the Pouring Interface's slot and watch it fill with your very first Saw Head. Afterwards, combine your Saw Head with a Stick and you'll create your Saw!",
+    "quests.stone_age.first_saw.desc.1": "To begin making your Saw, add at least 144mb of ore of your desired metal to a Vessel. Afterwards, place the Vessel in a Pit Kiln and light it on fire.\n\nOnce the Pit Kiln burns out, quickly pick up your vessel while it's still hot, while holding some Wooden Tongs in your offhand, and interact with it to open the Pouring interface. Simply place the Saw Mold in the Pouring Interface's slot and watch it fill with your very first Saw Head. Afterwards, combine your Saw Head with a Stick and you'll create your Saw!",
     "quests.stone_age.first_saw.desc.2": "While the easiest metal to work with is Copper, you can try your hand at the process of alloying. This quest's tasks will accept either an item made out of Copper, or a Bronze Alloy.\n\n&lBismuth Bronze&r: Copper, Bismuth and Zinc. The weakest of the bronzes, but can be the easiest to make.\n\n&lBronze&r: Copper and Tin. It's the most average of the bronzes.\n\n&lBlack Bronze&r: Copper, Gold, and Silver: The best bronze in the early game, but it's considerably more expensive.",
     "quests.stone_age.first_saw.tasks.1": "A Copper or Bronze Saw Head.",
     "quests.stone_age.first_saw.tasks.2": "A Copper or Bronze Saw.",
@@ -231,8 +231,8 @@
     "quests.stone_age.crush_ore.desc": "The Quern is only the first step into processing your ores! Proper ore processing is a large, complex beast that you'll learn more about as you progress, and can be used to extract much more usable metal and other byproducts per each ore you mine. To start with though, we'll turn those raw ores you mined into Crushed Ore by putting it through the Quern. Just this first step is enough to increase the amount of mB your ore will melt into.",
 
     "quests.stone_age.crush_crushed_ore.title": "Early Ore Processing - Part 2",
-    "quests.stone_age.crush_crushed_ore.subtitle": "Quern it, again",
-    "quests.stone_age.crush_crushed_ore.desc": "Crushing a Crushed Ore again yields Impure Dust, further increasing it's mB yield.\n\nThis may be slow and tedious for now, but you'll soon unlock ways to do this faster and automatically!",
+    "quests.stone_age.crush_crushed_ore.subtitle": "Smash it with a hammer",
+    "quests.stone_age.crush_crushed_ore.desc": "Combine the Crushed Ore with a hammer in a crafting grid to turn it into Impure Dust, further increasing it's mB yield.\n\nThis may all be slow and tedious for now, but you'll soon unlock ways to do this faster and automatically!",
 
     "quests.stone_age.clean_dust.title": "Early Ore Processing - Part 3",
     "quests.stone_age.clean_dust.subtitle": "Wash that dirty dust",
