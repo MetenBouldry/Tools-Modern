@@ -1,0 +1,37 @@
+{
+	"dimensions": {
+		"earth": "Earth (Surface)",
+		"nether": "Earth (Beneath)",
+		"moon": "The Moon",
+		"mars": "Mars",
+		"venus": "Venus"
+	},
+
+	"keywords": {
+		"Rarity": "Rarity",
+		"Density": "Density",
+		"Type": "Type",
+		"Y": "Y",
+		"Size": "Size",
+		"Height": "Height",
+		"Radius": "Radius",
+		"Stone types": "Stone types",
+		"Indicator": "Indicator",
+		"Percentage": "Percentage",
+		"Formula": "formula",
+		"Hazardous": "hazardous",
+		"Yes": "Yes",
+		"&": "&",
+		"Vein Index": "Vein Index",
+		"Ore Index": "Ore Index",
+		"normal": "Normal",
+		"deep": "Deep",
+		"surface": "Surface",
+		"cluster": "Cluster Vein",
+		"pipe": "Pipe Vein",
+		"disc": "Disc Vein"
+	},
+
+	"ore_index_format": "This is a $(thing)list$() of every $(item)Ore$() on $(thing){0}$(), sorted alphabetically and then by richest to poorest vein type.",
+	"vein_index_format": "This is the $(thing)Vein Index$() for $(thing){0}$(). Each Vein has details regarding its rarity, density, vein type, height found, sizes, what stones it spawns on, and more."
+}

@@ -1,6 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
-namespace OresToFieldGuide.JSONObjects.Patchouli
+namespace OresToFieldGuide
 {
     /// <summary>
     /// A .NET represnetation of a Patchouli Entry
@@ -10,39 +10,31 @@ namespace OresToFieldGuide.JSONObjects.Patchouli
     [Serializable]
     public class PatchouliEntry
     {
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public required string Name { get; set; }
 
         [JsonIgnore]
-        public string FileNameWithoutExtension { get; set; }
+        public required string FileNameWithoutExtension { get; set; }
 
-        [JsonProperty("icon")]
+        [JsonPropertyName("icon")]
         public required string Icon { get; set; }
 
-        [JsonProperty("category")]
-        public string Category { get; }
+        [JsonPropertyName("category")]
+        public string Category { get; } = "tfc:tfg_ores";
 
-        [JsonProperty("read_by_default")]
+        [JsonPropertyName("read_by_default")]
         public bool ReadByDefault { get; set; }
 
-        [JsonProperty("priority")]
+        [JsonPropertyName("priority")]
         public bool Priority { get; set; } = false;
 
-        [JsonProperty("advancement")]
-        public string RequiredAdvancement { get; set; }
+        [JsonPropertyName("advancement")]
+        public string? RequiredAdvancement { get; set; }
 
-        [JsonProperty("secret")]
+        [JsonPropertyName("secret")]
         public bool IsSecret { get; set; } = false;
 
-        [JsonProperty("pages")]
-        public PatchouliPage[] Pages { get; set; }
-
-        /// <summary>
-        /// Constructor
-        /// </summary>
-        public PatchouliEntry()
-        {
-            Category = "tfc:tfg_ores";
-        }
+        [JsonPropertyName("pages")]
+        public required PatchouliPage[] Pages { get; set; }
     }
 }

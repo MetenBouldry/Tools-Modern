@@ -1,32 +1,26 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text.Json.Serialization;
 
-namespace OresToFieldGuide.JSONObjects.Patchouli.PageTypes
+namespace OresToFieldGuide
 {
     /// <summary>
     /// A .NET Representation of a Patchouli Page for Spotlights
     /// <para></para>
     /// <a href="https://vazkiimods.github.io/Patchouli/docs/patchouli-basics/page-types/#spotlight-pages-patchoulispotlight">Patchouli Docs</a>
     /// </summary>
-    [Serializable, JsonObject]
     public class SpotlightPage : PatchouliPage
     {
         public override string Type => "patchouli:spotlight";
 
-        [JsonProperty("item")]
+        [JsonPropertyName("item")]
         public required string Item { get; set; }
 
-        [JsonProperty("title")]
+        [JsonPropertyName("title")]
         public string? Title { get; set; }
 
-        [JsonProperty("link_recipe")]
+        [JsonPropertyName("link_recipe")]
         public bool LinkRecipe { get; set; } = false;
 
-        [JsonProperty("text")]
+        [JsonPropertyName("text")]
         public string? Text { get; set; }
     }
 }

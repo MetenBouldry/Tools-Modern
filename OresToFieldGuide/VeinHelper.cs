@@ -1,11 +1,4 @@
-﻿using OresToFieldGuide.JSONObjects;
-using OresToFieldGuide.JSONObjects.Patchouli.PageTypes;
-using OresToFieldGuide.JSONObjects.Veins;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
 namespace OresToFieldGuide
 {
@@ -18,7 +11,7 @@ namespace OresToFieldGuide
             if (vein.VeinConfig == null)
                 return false;
 
-            Vein.Config config = vein.VeinConfig;
+            Vein.VeinConfig config = vein.VeinConfig;
 
             if (config.Blocks == null)
                 return false;

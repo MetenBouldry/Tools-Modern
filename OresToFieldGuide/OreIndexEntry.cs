@@ -1,12 +1,4 @@
-﻿using OresToFieldGuide.JSONObjects.Patchouli;
-using OresToFieldGuide.JSONObjects.Veins;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OresToFieldGuide
+﻿namespace OresToFieldGuide
 {
     public struct OreIndexEntry
     {

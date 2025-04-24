@@ -238,7 +238,7 @@ namespace OresToFieldGuide
                 string veinName = kvp.Key;
                 Vein vein = kvp.Value;
 
-                Vein.Config config = vein.VeinConfig;
+                Vein.VeinConfig config = vein.VeinConfig;
                 //Build the main page
                 TextPage mainPage = new TextPage()
                 {
@@ -287,11 +287,11 @@ namespace OresToFieldGuide
                 pageBuilder.LineBreak();
 
                 //Y
-                if(config.Min_Y.HasValue && config.Max_Y.HasValue)
+                if(config.MinY.HasValue && config.MaxY.HasValue)
                 {
                     pageBuilder.ThingMacro(tokens.KeywordDictionary["Y"]);
                     pageBuilder.Append(": ");
-                    pageBuilder.Append($"{config.Min_Y} -> {config.Max_Y}");
+                    pageBuilder.Append($"{config.MinY} -> {config.MaxY}");
                     pageBuilder.LineBreak();
                 }
 

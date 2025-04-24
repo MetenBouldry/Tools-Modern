@@ -1,13 +1,14 @@
 {
+	"id": "normal_garnierite",
 	"type": "tfc:cluster_vein",
-	"rarity": 160,
-	"density": 0.4,
-	"min_y": -32,
-	"max_y": 60,
-	"size": 40,
-	"NOTE_TO_NEBBY": "This can probably be omitted, it's the same as the filename everywhere",
-	"random_name": "normal_garnierite",
 	"dimension": "minecraft:overworld",
+	"config": {
+		"rarity": 160,
+		"density": 0.4,
+		"min_y": -32,
+		"max_y": 60,
+		"size": 40
+	},
 	"ores": [
 		{
 			"ore": "garnierite",
@@ -32,7 +33,7 @@
 			"weight": 15
 		}
 	],
-	"stones": [
+	"rocks": [
 		"gabbro",
 		"diorite"
 	],
@@ -41,7 +42,6 @@
 		"depth": 70,
 		"underground_rarity": 40,
 		"underground_count": 200,
-		"NOTE_TO_NEBBY": "I'm not sure if we want to auto generate the indicators, because sometimes the %'s might not match what we have above. But on the other hand, do we want them to be inconsistent...?",
 		"blocks": [
 			{
 				"block": "tfc:ore/small_garnierite",
