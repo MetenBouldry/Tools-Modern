@@ -35,6 +35,6 @@ namespace OresToFieldGuide
         public bool IsSecret { get; set; } = false;
 
         [JsonPropertyName("pages")]
-        public required PatchouliPage[] Pages { get; set; }
+        public required List<PatchouliPage> Pages { get; set; }
     }
 }

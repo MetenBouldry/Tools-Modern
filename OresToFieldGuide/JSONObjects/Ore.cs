@@ -7,18 +7,33 @@ namespace OresToFieldGuide
         [JsonPropertyName("id")]
         public required string ID { get; set; }
 
+        /// <summary>
+        /// Optional chemical formula of this ore.
+        /// </summary>
         [JsonPropertyName("formula")]
-        public required string Formula { get; set; }
+        public string? Formula { get; set; }
 
-        [JsonPropertyName("hazardous")]
-        public bool Hazardous { get; set; } = false;
+        /// <summary>
+        /// The name of the hazard associated with this ore, if any.
+        /// </summary>
+        [JsonPropertyName("hazard")]
+        public string? Hazard { get; set; }
 
+        /// <summary>
+        /// Optional full block of ore to use in rich veins.
+        /// </summary>
         [JsonPropertyName("ore_block")]
-        public string? OreBlock { get; set; }
+        public string? FullOreBlock { get; set; }
 
+        /// <summary>
+        /// The default indicator to use for this ore.
+        /// </summary>
         [JsonPropertyName("indicator")]
-        public string? Indicator { get; set; }
+        public string? DefaultIndicator { get; set; }
 
+        /// <summary>
+        /// Localized names and information for the ore.
+        /// </summary>
         [JsonPropertyName("translations")]
         public required OreTranslation[] Translations { get; set; }
     }

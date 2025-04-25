@@ -1,7 +1,6 @@
 ﻿{
 	"id": "garnierite",
 	"formula": "NiO",
-	"hazardous": false,
 	"ore_block": "gtceu:raw_garnierite_block",
 	"indicator": "tfc:ore/small_garnierite",
 	"translations": [

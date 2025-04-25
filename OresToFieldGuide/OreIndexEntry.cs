@@ -1,47 +1,44 @@
 ﻿namespace OresToFieldGuide
 {
-    public struct OreIndexEntry
+    public class OreIndexEntry(string ore)
     {
-        public string ore;
-        public Dictionary<string, float> veinToWeight;
-        public Dictionary<string, int> veinToCount;
+        public required string Ore { get; set; } = ore;
+
+        public Dictionary<string, float> VeinToWeight { get; private set; } = [];
+
+        public Dictionary<string, int> VeinToCount { get; private set; } = [];
 
         public void SortVeinsByRichestWeight()
         {
-            if (veinToCount == null)
+            if (VeinToCount == null)
                 return;
 
-            if (veinToWeight == null)
+            if (VeinToWeight == null)
                 return;
 
-            veinToWeight = veinToWeight.OrderByDescending(kvp => kvp.Value).ToDictionary();
+            VeinToWeight = VeinToWeight.OrderByDescending(kvp => kvp.Value).ToDictionary();
             Dictionary<string, int> orderedVeinToCount = new Dictionary<string, int>();
 
-            foreach(var veinName in veinToWeight.Keys)
+            foreach(var veinName in VeinToWeight.Keys)
             {
-                orderedVeinToCount[veinName] = veinToCount[veinName];
+                orderedVeinToCount[veinName] = VeinToCount[veinName];
             }
-            veinToCount = orderedVeinToCount;
+            VeinToCount = orderedVeinToCount;
         }
 
         internal Multiblock BuildMultiblockDisplay()
         {
-            Multiblock result = new Multiblock();
-
-            if(!Util.TryRemoveLastSubstring(ore, "ore", out var oreless))
+            return new Multiblock()
             {
-                return result;
-            }
-            var tag = $"#forge:ores/{oreless}";
-
-            result.Mapping = new Dictionary<string, string>
-            {
-                ["0"] = tag
+                Mapping = new Dictionary<string, string>
+                {
+                    ["0"] = $"#forge:ores/{Ore}"
+                },
+                Pattern = [
+                    ["0"],
+                    [" "]
+                ]
             };
-            result.Pattern = new string[2][];
-            result.Pattern[0] = new string[] { "0" };
-            result.Pattern[1] = new string[] { " " };
-            return result;
         }
 
         internal bool TryGetNormalizedWeightInVein(Vein vein, out int normalizedWeight)
@@ -52,11 +49,11 @@
         internal bool TryGetNormalizedWeightInVein(string vein, out int normalizedWeight)
         {
             normalizedWeight = 0;
-            if (!veinToCount.TryGetValue(vein, out var count))
+            if (!VeinToCount.TryGetValue(vein, out var count))
             {
                 return false;
             }
-            if (!veinToWeight.TryGetValue(vein, out var weight))
+            if (!VeinToWeight.TryGetValue(vein, out var weight))
             {
                 return false;
             }

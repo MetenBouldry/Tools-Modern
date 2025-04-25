@@ -1,7 +1,6 @@
 ﻿{
 	"id": "nickel",
 	"formula": "Ni",
-	"hazardous": false,
 	"ore_block": "gtceu:raw_nickel_block",
 	"indicator": "tfc:ore/small_garnierite",
 	"translations": [

@@ -1,7 +1,6 @@
 ﻿{
 	"id": "cobalt",
 	"formula": "Co",
-	"hazardous": false,
 	"ore_block": "gtceu:raw_cobalt_block",
 	"indicator": "gtceu:cobalt_indicator",
 	"translations": [

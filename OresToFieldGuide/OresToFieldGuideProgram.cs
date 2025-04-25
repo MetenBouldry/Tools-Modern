@@ -1,136 +1,120 @@
-﻿
+﻿using System.Text;
 using Common;
-using Newtonsoft.Json;
-using OresToFieldGuide.JSONObjects;
-using OresToFieldGuide.JSONObjects.Patchouli;
-using OresToFieldGuide.JSONObjects.Patchouli.PageTypes;
-using OresToFieldGuide.JSONObjects.Veins;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OresToFieldGuide
 {
     internal class OresToFieldGuideProgram
     {
-        public static string fallbackLocale => locales[0];
-        public static readonly string[] locales = new string[]
-        {
+        public static string s_fallbackLocale => s_locales[0];
+        public static readonly string[] s_locales = 
+        [
             "en_us", //US English
             "it_it", //Italian
             "ru_ru", //Russian
             "uk_ua" //Ukranian
-        };
+        ];
 
-        private ProgramArguments _arguments;
-        private Dictionary<string, MineralData> _localeToMineralData = new Dictionary<string, MineralData>();
-        private Dictionary<string, LocalizationTokens> _localeToTokens = new Dictionary<string, LocalizationTokens>();
-        private Dictionary<string, Output> _localeToOutputs = new Dictionary<string, Output>();
-        private Dictionary<string, Vein[]> _planetToVeins = new Dictionary<string, Vein[]>();
-        public async Task<bool> Run()
+        private ProgramArguments m_arguments;
+        private Dictionary<string, MineralData> m_localeToMineralData = new Dictionary<string, MineralData>();
+        private Dictionary<string, LocalizationTokens> m_localeToTokens = new Dictionary<string, LocalizationTokens>();
+        private Dictionary<string, Output> m_localeToOutputs = new Dictionary<string, Output>();
+        private Dictionary<string, Vein[]> m_dimensionsToVeins = new Dictionary<string, Vein[]>();
+
+        public bool Run()
         {
-            Console.WriteLine("Ores to Field Guide Program has Started!");
-            await DeserializeLanguageTokens();
-            await DeserializeMineralDatas();
-            await DeserializeVeins();
-            await CreateOutputDirectories();
+            DeserializeLanguageTokens();
+            DeserializeMineralDatas();
+            DeserializeVeins();
+            CreateOutputDirectories();
 
-            if(_arguments.shouldVerifyVeinWeights)
+            foreach(string locale in s_locales)
             {
-                var weightChecker = new VeinWeightChecker(_planetToVeins, _localeToTokens[fallbackLocale].RockDictionary.Keys.ToArray());
-                await weightChecker.Run();
-            }
-
-            foreach(string locale in locales)
-            {
-                if(!_localeToOutputs.TryGetValue(locale, out Output output))
+                if(!m_localeToOutputs.TryGetValue(locale, out Output output))
                 {
                     ConsoleLogHelper.WriteLine($"Not running the program against locale {locale}. There is no valid Output struct for it.", LogLevel.Error);
                     continue;
                 }
                 
-                if(!_localeToMineralData.TryGetValue(locale, out MineralData mineralData))
+                if(!m_localeToMineralData.TryGetValue(locale, out MineralData mineralData))
                 {
                     ConsoleLogHelper.WriteLine($"Not running the program against locale {locale}. There is no valid MineralData for it.", LogLevel.Error);
                     continue;
                 }
 
-                if(!_localeToTokens.TryGetValue(locale, out LocalizationTokens localizationTokens))
+                if(!m_localeToTokens.TryGetValue(locale, out LocalizationTokens localizationTokens))
                 {
                     ConsoleLogHelper.WriteLine($"Not running the program against locale {locale}. There is no valid LocalizationTokens for it.", LogLevel.Error);
                     continue;
                 }
-                var tokens = _localeToTokens[locale];
+                var tokens = m_localeToTokens[locale];
 
-                await CreateEntriesForLocale(tokens, mineralData, output);
+                CreateEntriesForLocale(tokens, mineralData, output);
             }
 
-            await WriteFiles();
+            WriteFiles();
 
-            if(_arguments.shouldOverwriteFiles)
-                await MoveFilesToInGameFieldGuide();
+            if(m_arguments.shouldOverwriteFiles)
+                MoveFilesToInGameFieldGuide();
 
             return true;
         }
 
-        private async Task DeserializeLanguageTokens()
+        private void DeserializeLanguageTokens()
         {
-            var en_usTokenPath = Path.Combine(_arguments.languageTokenFolder, $"{fallbackLocale}.json");
-            LocalizationTokens en_usTokens = await LocalizationTokens.FromJSON(en_usTokenPath);
+            var en_usTokenPath = Path.Combine(m_arguments.languageTokenFolder, $"{s_fallbackLocale}.json");
+            LocalizationTokens en_usTokens = LocalizationTokens.FromJSON(en_usTokenPath);
 
-            _localeToTokens.Add(fallbackLocale, en_usTokens);
+            m_localeToTokens.Add(s_fallbackLocale, en_usTokens);
 
-            foreach (var locale in locales)
+            foreach (var locale in s_locales)
             {
-                if (_localeToTokens.ContainsKey(locale))
+                if (m_localeToTokens.ContainsKey(locale))
                     continue;
 
-                var localeTokenPath = Path.Combine(_arguments.languageTokenFolder, $"{locale}.json");
+                var localeTokenPath = Path.Combine(m_arguments.languageTokenFolder, $"{locale}.json");
                 if (!File.Exists(localeTokenPath))
                 {
-                    ConsoleLogHelper.WriteLine($"Could not file localization tokens for locale {locale}! Assigning {fallbackLocale}'s Localization Tokens.", LogLevel.Warning);
-                    _localeToTokens.Add(locale, en_usTokens);
+                    ConsoleLogHelper.WriteLine($"Could not file localization tokens for locale {locale}! Assigning {s_fallbackLocale}'s Localization Tokens.", LogLevel.Warning);
+                    m_localeToTokens.Add(locale, en_usTokens);
                     continue;
                 }
 
-                LocalizationTokens localeTokens = await LocalizationTokens.FromJSON(localeTokenPath);
+                LocalizationTokens localeTokens = LocalizationTokens.FromJSON(localeTokenPath);
 
-                _localeToTokens.Add(locale, localeTokens);
+                m_localeToTokens.Add(locale, localeTokens);
             }
         }
 
-        private async Task DeserializeMineralDatas()
+        private void DeserializeMineralDatas()
         {
-            var mineralDatas = Directory.EnumerateFiles(_arguments.mineralDataFolder);
+            var mineralDatas = Directory.EnumerateFiles(m_arguments.mineralDataFolder);
 
             foreach(var mineralDataJSON in mineralDatas)
             {
                 var languageName = Path.GetFileNameWithoutExtension(mineralDataJSON);
-                var mineralData = await MineralData.FromJSON(mineralDataJSON);
-                _localeToMineralData.Add(languageName, mineralData);
+                var mineralData = MineralData.FromJSON(mineralDataJSON);
+                m_localeToMineralData.Add(languageName, mineralData);
             }
         }
 
         /// <summary>
         /// Deserializes all the veins and stores them in a dictionary of planet to veins
         /// </summary>
-        private async Task DeserializeVeins()
+        private void DeserializeVeins()
         {
-            foreach(var planet in _arguments.planetToVeinsPath.Keys)
+            foreach(var planet in m_arguments.planetToVeinsPath.Keys)
             {
-                var serializedVeins = _arguments.planetToVeinsPath[planet];
+                var serializedVeins = m_arguments.planetToVeinsPath[planet];
                 Vein[] deserializedVeins = new Vein[serializedVeins.Length];
 
                 for (int i = 0; i < serializedVeins.Length; i++)
                 {
                     string veinJSON = serializedVeins[i];
-                    Vein vein = await Vein.FromJSON(veinJSON);
+                    Vein vein = Vein.FromJSON(veinJSON);
                     deserializedVeins[i] = vein;
                 }
 
-                _planetToVeins.Add(planet, deserializedVeins);
+                m_dimensionsToVeins.Add(planet, deserializedVeins);
             }
         }
 
@@ -144,7 +128,7 @@ namespace OresToFieldGuide
 
             Directory.CreateDirectory(outputDirectory);
 
-            foreach(var local in locales)
+            foreach(var local in s_locales)
             {
                 string fieldGuideOutput = Path.Combine(outputDirectory, MainClass.KUBEJS, MainClass.ASSETS, MainClass.TFC, MainClass.PATCHOULI_BOOKS, MainClass.FIELD_GUIDE, local);
                 Directory.CreateDirectory(fieldGuideOutput);
@@ -152,7 +136,7 @@ namespace OresToFieldGuide
                 string pagesOutput = Path.Combine(fieldGuideOutput, MainClass.ENTRIES, MainClass.TFG_ORES);
                 Directory.CreateDirectory(pagesOutput);
 
-                _localeToOutputs.Add(local, new Output
+                m_localeToOutputs.Add(local, new Output
                 {
                     rootOutputFolder = outputDirectory,
                     fieldGuideOutput = fieldGuideOutput,
@@ -164,44 +148,43 @@ namespace OresToFieldGuide
         }
 
         /// <summary>
-        /// Creates the actual patchouli entries, 2 entries will be generated per planet found in <see cref="_planetToVeins"/>.
+        /// Creates the actual patchouli entries, 2 entries will be generated per planet found in <see cref="m_dimensionsToVeins"/>.
         /// <list type="bullet">
         /// <item>planet_vein_index.json</item>
         /// <item>planet_ore_index.json</item>
         /// </list>
         /// </summary>
         /// <returns>A Dictionary of Planet Name to Patchouli Entry</returns>
-        private async Task CreateEntriesForLocale(LocalizationTokens tokens, MineralData mineralData, Output localizationOutput)
+        private void CreateEntriesForLocale(LocalizationTokens tokens, MineralData mineralData, Output localizationOutput)
         {
-            foreach(var planet in _planetToVeins.Keys)
+            foreach(var planet in m_dimensionsToVeins.Keys)
             {
                 localizationOutput.pages ??= new List<PatchouliEntry>();
                 Dictionary<string, OreIndexEntry> oreToOreIndexEntry = new Dictionary<string, OreIndexEntry>();
 
-                localizationOutput.pages.Add(await GenerateOreIndexForPlanet(planet, tokens, mineralData, _planetToVeins[planet], oreToOreIndexEntry));
-                localizationOutput.pages.Add(await GenerateVeinIndexForPlanet(planet, tokens, mineralData, _planetToVeins[planet], oreToOreIndexEntry));
+                localizationOutput.pages.Add(GenerateOreIndexForPlanet(planet, tokens, mineralData, m_dimensionsToVeins[planet], oreToOreIndexEntry));
+                localizationOutput.pages.Add(GenerateVeinIndexForPlanet(planet, tokens, mineralData, m_dimensionsToVeins[planet], oreToOreIndexEntry));
             }
         }
 
-        private Task<PatchouliEntry> GenerateVeinIndexForPlanet(string planet, LocalizationTokens tokens, MineralData mineralData, Vein[] veins, Dictionary<string, OreIndexEntry> oreToEntry)
+        private PatchouliEntry GenerateVeinIndexForPlanet(string planet, LocalizationTokens tokens, MineralData mineralData, Vein[] veins, Dictionary<string, OreIndexEntry> oreToEntry)
         {
-            var patchouliEntry = new PatchouliEntry()
+            var entry = new PatchouliEntry()
             {
                 FileNameWithoutExtension = $"{planet}_vein_index",
                 Icon = "minecraft:stone",
-                Name = $"{tokens.PlanetDictionary[planet]} {tokens.KeywordDictionary["Vein Index"]}",
-                ReadByDefault = true
+                Name = $"{tokens.Dimensions[planet]} {tokens.Keywords["Vein Index"]}",
+                ReadByDefault = true,
+                Pages = []
             };
-
-            List<PatchouliPage> patchouliPages = new List<PatchouliPage>();
 
             PatchouliStringBuilder pageBuilder = new PatchouliStringBuilder(new StringBuilder());
 
-            pageBuilder.Append(string.Format(tokens.VeinIndex, tokens.PlanetDictionary[planet]));
+            pageBuilder.Append(string.Format(tokens.VeinIndex, tokens.Dimensions[planet]));
 
-            patchouliPages.Add(new TextPage()
+            entry.Pages.Add(new TextPage()
             {
-                Title = $"{tokens.PlanetDictionary[planet]} {tokens.KeywordDictionary["Vein Index"]}",
+                Title = $"{tokens.Dimensions[planet]} {tokens.Keywords["Vein Index"]}",
                 Text = pageBuilder.Dump(),
             });
 
@@ -224,12 +207,12 @@ namespace OresToFieldGuide
                 if (i != 0 && i % 14 == 0)
                 {
                     veinIndexPage.Text = pageBuilder.Dump();
-                    patchouliPages.Add(veinIndexPage);
+                    entry.Pages.Add(veinIndexPage);
 
                     veinIndexPage = new TextPage() { Text = "" };
                 }
 
-                pageBuilder.List($"$(l:tfg_ores/{patchouliEntry.FileNameWithoutExtension}#{vein.FileName}){veinName}$()");
+                pageBuilder.List($"$(l:tfg_ores/{entry.FileNameWithoutExtension}#{vein.FileName}){veinName}$()");
             }
 
             pageBuilder.Clear();
@@ -251,7 +234,7 @@ namespace OresToFieldGuide
                 //Rarity
                 if(config.Rarity.HasValue)
                 {
-                    pageBuilder.ThingMacro(tokens.KeywordDictionary["Rarity"]);
+                    pageBuilder.ThingMacro(tokens.Keywords["Rarity"]);
                     pageBuilder.Append(": ");
                     pageBuilder.Append($"{config.Rarity}");
                     pageBuilder.LineBreak();
@@ -260,14 +243,14 @@ namespace OresToFieldGuide
                 //Density
                 if(config.Density.HasValue)
                 {
-                    pageBuilder.ThingMacro(tokens.KeywordDictionary["Density"]);
+                    pageBuilder.ThingMacro(tokens.Keywords["Density"]);
                     pageBuilder.Append(": ");
                     pageBuilder.Append($"{config.Density}");
                     pageBuilder.LineBreak();
                 }
 
                 //Type
-                pageBuilder.ThingMacro(tokens.KeywordDictionary["Type"]);
+                pageBuilder.ThingMacro(tokens.Keywords["Type"]);
                 pageBuilder.Append(": ");
                 if (Util.TryRemoveStartingSubstring(vein.Type, "tfc", out string withoutModID))
                 {
@@ -289,7 +272,7 @@ namespace OresToFieldGuide
                 //Y
                 if(config.MinY.HasValue && config.MaxY.HasValue)
                 {
-                    pageBuilder.ThingMacro(tokens.KeywordDictionary["Y"]);
+                    pageBuilder.ThingMacro(tokens.Keywords["Y"]);
                     pageBuilder.Append(": ");
                     pageBuilder.Append($"{config.MinY} -> {config.MaxY}");
                     pageBuilder.LineBreak();
@@ -298,7 +281,7 @@ namespace OresToFieldGuide
                 //Size
                 if(config.Size.HasValue)
                 {
-                    pageBuilder.ThingMacro(tokens.KeywordDictionary["Size"]);
+                    pageBuilder.ThingMacro(tokens.Keywords["Size"]);
                     pageBuilder.Append(": ");
                     pageBuilder.Append($"{config.Size}");
                     pageBuilder.LineBreak();
@@ -307,7 +290,7 @@ namespace OresToFieldGuide
                 //Height
                 if (config.Height.HasValue)
                 {
-                    pageBuilder.ThingMacro(tokens.KeywordDictionary["Height"]);
+                    pageBuilder.ThingMacro(tokens.Keywords["Height"]);
                     pageBuilder.Append(": ");
                     pageBuilder.Append($"{config.Height}");
                     pageBuilder.LineBreak();
@@ -315,7 +298,7 @@ namespace OresToFieldGuide
 
                 if(config.Radius.HasValue)
                 {
-                    pageBuilder.ThingMacro(tokens.KeywordDictionary["Radius"]);
+                    pageBuilder.ThingMacro(tokens.Keywords["Radius"]);
                     pageBuilder.Append(": ");
                     pageBuilder.Append($"{config.Radius}");
                     pageBuilder.LineBreak();
@@ -324,7 +307,7 @@ namespace OresToFieldGuide
                 pageBuilder.LineBreak();
 
                 //Stone Types
-                pageBuilder.ThingMacro(tokens.KeywordDictionary["Stone types"]);
+                pageBuilder.ThingMacro(tokens.Keywords["Stone types"]);
                 pageBuilder.Append(": ");
                 string[] rocksInVein = vein.GetRocksInVein(tokens.RockDictionary.Keys.ToArray());
                 for(int i = 0; i < rocksInVein.Length; i++)
@@ -343,7 +326,7 @@ namespace OresToFieldGuide
                 pageBuilder.LineBreak2();
                 mainPage.Text = pageBuilder.Dump();
 
-                patchouliPages.Add(mainPage);
+                entry.Pages.Add(mainPage);
 
                 //Build the ore pages
                 int orePageCount = 0;
@@ -375,7 +358,7 @@ namespace OresToFieldGuide
                     };
 
                     //Percentage
-                    pageBuilder.ThingMacro($"{tokens.KeywordDictionary["Percentage"]}");
+                    pageBuilder.ThingMacro($"{tokens.Keywords["Percentage"]}");
                     pageBuilder.Append(": ");
                     pageBuilder.Append($"{normalizedWeight}%");
                     pageBuilder.LineBreak();
@@ -404,7 +387,7 @@ namespace OresToFieldGuide
                     //Formula
                     if(mineralDataEntry.Formula != null)
                     {
-                        pageBuilder.ThingMacro($"{tokens.KeywordDictionary["Formula"]}");
+                        pageBuilder.ThingMacro($"{tokens.Keywords["Formula"]}");
                         pageBuilder.Append(": ");
                         pageBuilder.Append($"{mineralDataEntry.Formula}");
                         pageBuilder.LineBreak();
@@ -413,22 +396,20 @@ namespace OresToFieldGuide
                     //Is Hazardous
                     if(mineralDataEntry.Hazardous)
                     {
-                        pageBuilder.Color($"[{tokens.KeywordDictionary["Hazardous"].ToUpperInvariant()}]", MinecraftColorCode.Red);
+                        pageBuilder.Color($"[{tokens.Keywords["Hazardous"].ToUpperInvariant()}]", MinecraftColorCode.Red);
                     }
 
                     multiblockPage.Text = pageBuilder.Dump();
-                    patchouliPages.Add(multiblockPage);
+                    entry.Pages.Add(multiblockPage);
                     orePageCount++;
                 }
                 if(orePageCount % 2 == 0)
                 {
-                    patchouliPages.Add(new EmptyPage());
+                    entry.Pages.Add(new EmptyPage());
                 }
             }
 
-            patchouliEntry.Pages = patchouliPages.ToArray();
-
-            return Task.FromResult(patchouliEntry);
+            return entry;
         }
 
         private Task<PatchouliEntry> GenerateOreIndexForPlanet(string planet, LocalizationTokens tokens, MineralData mineralData, Vein[] veins, Dictionary<string, OreIndexEntry> oreToEntry)
@@ -437,7 +418,7 @@ namespace OresToFieldGuide
             {
                 FileNameWithoutExtension = $"{planet}_ore_index",
                 Icon = "minecraft:stone",
-                Name = $"{tokens.PlanetDictionary[planet]} {tokens.KeywordDictionary["Ore Index"]}",
+                Name = $"{tokens.Dimensions[planet]} {tokens.Keywords["Ore Index"]}",
                 ReadByDefault = true
             };
 
@@ -445,11 +426,11 @@ namespace OresToFieldGuide
 
             PatchouliStringBuilder pageBuilder = new PatchouliStringBuilder(new StringBuilder());
 
-            pageBuilder.Append(string.Format(tokens.OreIndex, tokens.PlanetDictionary[planet]));
+            pageBuilder.Append(string.Format(tokens.OreIndex, tokens.Dimensions[planet]));
 
             patchouliPages.Add(new TextPage()
             {
-                Title = $"{tokens.PlanetDictionary[planet]} {tokens.KeywordDictionary["Ore Index"]}",
+                Title = $"{tokens.Dimensions[planet]} {tokens.Keywords["Ore Index"]}",
                 Text = pageBuilder.Dump()
             });
 
@@ -482,25 +463,23 @@ namespace OresToFieldGuide
                     {
                         oreIndexEntry = new OreIndexEntry
                         {
-                            ore = rockless,
-                            veinToWeight = new Dictionary<string, float>(),
-                            veinToCount = new Dictionary<string, int>()
+                            Ore = rockless
                         };
                     }
 
                     //Increment the total weight of the ore within its vein
-                    if (!oreIndexEntry.veinToWeight.TryGetValue(vein.FileName, out _))
+                    if (!oreIndexEntry.VeinToWeight.TryGetValue(vein.FileName, out _))
                     {
-                        oreIndexEntry.veinToWeight[vein.FileName] = 0;
+                        oreIndexEntry.VeinToWeight[vein.FileName] = 0;
                     }
-                    oreIndexEntry.veinToWeight[vein.FileName] += weightedOre.weight;
+                    oreIndexEntry.VeinToWeight[vein.FileName] += weightedOre.weight;
 
                     //Increment the total amount of times we've seen this ore in the vein.
-                    if (!oreIndexEntry.veinToCount.TryGetValue(vein.FileName, out _))
+                    if (!oreIndexEntry.VeinToCount.TryGetValue(vein.FileName, out _))
                     {
-                        oreIndexEntry.veinToCount[vein.FileName] = 0;
+                        oreIndexEntry.VeinToCount[vein.FileName] = 0;
                     }
-                    oreIndexEntry.veinToCount[vein.FileName]++;
+                    oreIndexEntry.VeinToCount[vein.FileName]++;
 
                     oreIndexEntry.SortVeinsByRichestWeight();
                     //Update the ore index entry
@@ -535,7 +514,7 @@ namespace OresToFieldGuide
 
                 pageBuilder.ThingMacro($"{mineralDataEntry.Name}");
                 pageBuilder.Append(": ");
-                foreach (var veinName in oreIndexEntry.veinToWeight.Keys)
+                foreach (var veinName in oreIndexEntry.VeinToWeight.Keys)
                 {
                     if(!oreIndexEntry.TryGetNormalizedWeightInVein(veinName, out var normalizedWeight))
                     {
@@ -557,9 +536,9 @@ namespace OresToFieldGuide
         private async Task WriteFiles()
         {
             //Iterate thru the locales
-            foreach(var locale in _localeToOutputs.Keys)
+            foreach(var locale in m_localeToOutputs.Keys)
             {
-                Output output = _localeToOutputs[locale];
+                Output output = m_localeToOutputs[locale];
 
                 //Delete the previous outputs
                 foreach(var filePath in Directory.EnumerateFiles(output.pagesOutput))
@@ -574,7 +553,7 @@ namespace OresToFieldGuide
 
                     using (StreamWriter writer = File.CreateText(filePath))
                     {
-                        var json = JsonConvert.SerializeObject(page, _arguments.shouldPrettyPrint ? Formatting.Indented : Formatting.None, new JsonSerializerSettings
+                        var json = JsonConvert.SerializeObject(page, m_arguments.shouldPrettyPrint ? Formatting.Indented : Formatting.None, new JsonSerializerSettings
                         {
                             NullValueHandling = NullValueHandling.Ignore,
                         });
@@ -588,13 +567,13 @@ namespace OresToFieldGuide
         private Task MoveFilesToInGameFieldGuide()
         {
             //Iterate thru the locales
-            foreach(var locale in _localeToOutputs.Keys)
+            foreach(var locale in m_localeToOutputs.Keys)
             {
-                Output output = _localeToOutputs[locale];
+                Output output = m_localeToOutputs[locale];
 
                 //Get the path from the KubeJS folder down to this locale's tfg_ores path, something along the lines of "\kubejs\assets\tfc\patchouli_books\field_guide\en_us\entries\tfg_ores" for english
                 string kubeJSFolderToTFGOresFolderPath = output.pagesOutput.Substring(output.rootOutputFolder.Length + 1); //+2 because this will capute the starting "\" in the variable, there has to be a cleaner way but idgaf
-                string destinationFolder = Path.Combine(_arguments.minecraftFolder, kubeJSFolderToTFGOresFolderPath);
+                string destinationFolder = Path.Combine(m_arguments.minecraftFolder, kubeJSFolderToTFGOresFolderPath);
 
                 var filePathsInDestinationFolder = Directory.EnumerateFiles(destinationFolder);
                 foreach(var existingFilePath in filePathsInDestinationFolder)
@@ -602,7 +581,7 @@ namespace OresToFieldGuide
                     var fileNameWithoutExtension = Path.GetFileNameWithoutExtension(existingFilePath);
 
                     //If the file name points to one of the manually written patchouli entries, do not delete it.
-                    if(_arguments.whitelistedPatchouliEntryFilenames.Contains(fileNameWithoutExtension))
+                    if(m_arguments.whitelistedPatchouliEntryFilenames.Contains(fileNameWithoutExtension))
                     {
                         continue;
                     }
@@ -621,7 +600,7 @@ namespace OresToFieldGuide
 
         public OresToFieldGuideProgram(ProgramArguments arguments)
         {
-            _arguments = arguments;
+            m_arguments = arguments;
         }
 
         internal struct Output

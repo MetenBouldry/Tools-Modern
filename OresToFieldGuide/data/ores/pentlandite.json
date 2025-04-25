@@ -1,7 +1,6 @@
 ﻿{
 	"id": "pentlandite",
 	"formula": "Ni₉S₈",
-	"hazardous": false,
 	"ore_block": "gtceu:raw_pentlandite_block",
 	"indicator": "gtceu:pentlandite_indicator",
 	"translations": [

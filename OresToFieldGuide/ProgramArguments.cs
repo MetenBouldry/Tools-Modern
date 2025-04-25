@@ -23,11 +23,6 @@ namespace OresToFieldGuide
         public Dictionary<string, string[]> planetToVeinsPath;
 
         /// <summary>
-        /// If true, the program will verify that all of an ore's weights in a vein are equal.
-        /// </summary>
-        public bool shouldVerifyVeinWeights;
-
-        /// <summary>
         /// If true, the program will print out JSON in an indented format
         /// </summary>
         public bool shouldPrettyPrint;

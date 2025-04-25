@@ -95,10 +95,10 @@ namespace OresToFieldGuide
         public required float Weight { get; set; }
 
         /// <summary>
-        /// If this is non-null, add another entry to the vein with this weight and this ore's <see cref="Ore.OreBlock"/>
+        /// If this is non-null, add another entry to the vein with this weight and this ore's <see cref="Ore.FullOreBlock"/>
         /// </summary>
         [JsonPropertyName("block_weight")]
-        public float? BlockWeight { get; set; }
+        public float? FullBlockWeight { get; set; }
     }
 
     public class IndicatorConfig
@@ -129,10 +129,11 @@ namespace OresToFieldGuide
         public required int UndergroundCount { get; set; }
 
         /// <summary>
-        /// The indicator blocks and their weights to use for this vein
+        /// The indicator blocks and their weights to use for this vein.
+        /// Omit to generate defaults using <see cref="Ore.DefaultIndicator"/> and <see cref="WeightedBlock.Weight"/>
         /// </summary>
         [JsonPropertyName("blocks")]
-        public required WeightedIndicator[] Blocks { get; set; }
+        public WeightedIndicator[]? Blocks { get; set; }
     }
 
     public class WeightedIndicator
