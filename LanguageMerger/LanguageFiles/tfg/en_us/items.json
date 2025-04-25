@@ -55,6 +55,17 @@
     "item.tfg.redblu_steel_hull_reinforcement": "Red & Blue Steel Hull Reinforcement",
     "item.tfg.aluminium_hull_reinforcement": "Aluminium Hull Reinforcement",
     "item.tfg.stainless_steel_hull_reinforcement": "Stainless Steel Hull Reinforcement",
-    "item.tfg.titanium_hull_reinforcement": "Titanium Hull Reinforcement"
+    "item.tfg.titanium_hull_reinforcement": "Titanium Hull Reinforcement",
+
+    "item.ulv_universal_circuit": "ULV Universal Circuit",
+    "item.lv_universal_circuit": "LV Universal Circuit",
+    "item.mv_universal_circuit": "MV Universal Circuit",
+    "item.hv_universal_circuit": "HV Universal Circuit",
+    "item.ev_universal_circuit": "EV Universal Circuit",
+    "item.iv_universal_circuit": "IV Universal Circuit",
+    "item.luv_universal_circuit": "LuV Universal Circuit",
+    "item.zpm_universal_circuit": "ZPM Universal Circuit",
+    "item.uv_universal_circuit": "UV Universal Circuit",
+    "item.uhv_universal_circuit": "UHV Universal Circuit"
 
 }
