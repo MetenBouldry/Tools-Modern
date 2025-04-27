@@ -1,0 +1,26 @@
+{
+    // Welcome to MV
+
+    "quests.development": "Gregtech Progression",
+    "quests.development.subtitle": "An easy way to understand your progression on Gregtech",
+
+    "quests.development.TEST.title": "",
+    "quests.development.TEST.subtitle": "",
+    "quests.development.TEST.desc.1": "",
+    "quests.development.TEST.desc.2": "",
+    "quests.development.TEST.desc.3": "",
+    "quests.development.TEST.desc.4": "",
+
+    "quests.gregtech_energy.TEST.title": "",
+    "quests.gregtech_energy.TEST.subtitle": "",
+    "quests.gregtech_energy.TEST.desc.1": "",
+    "quests.gregtech_energy.TEST.desc.2": "",
+    "quests.gregtech_energy.TEST.desc.3": "",
+    "quests.gregtech_energy.TEST.task": "",
+
+    "quests.gregtech_energy.TEST.title": "",
+    "quests.gregtech_energy.TEST.subtitle": "",
+    "quests.gregtech_energy.TEST.desc": ""
+
+
+}
