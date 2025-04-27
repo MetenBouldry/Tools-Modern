@@ -1,4 +1,9 @@
 {
+    // Dark Oak
+    "block.create.dark_oak_window": "Hickory Window",
+    "block.create.dark_oak_window_pane": "Hickory Window Pane",
+
+    // Andesite
     "block.create.andesite_bars": "Metal Bars",
     "block.create.andesite_belt_funnel": "Metal Belt Funnel",
     "block.create.andesite_casing": "Metal Casing",
@@ -11,7 +16,7 @@
     "block.create.andesite_pillar": "Metal Pillar",
     "block.create.andesite_scaffolding": "Metal Scaffolding",
     "block.create.andesite_tunnel": "Metal Tunnel",
-    
+
     // Deepslate
     "block.create.cut_deepslate": "Cut Migmatite",
     "block.create.cut_deepslate_stairs": "Cut Migmatite Stairs",
