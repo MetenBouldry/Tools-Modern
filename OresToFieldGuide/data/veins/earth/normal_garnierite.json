@@ -40,6 +40,14 @@
 		{
 			"lang": "en_us",
 			"text": "Garnierite & Cobaltite"
+		},
+		{
+			"lang": "ru_ru",
+			"text": "Гарниерит и Кобальтит"
+		},
+		{
+			"lang": "uk_ua",
+			"text": "Гарнієрит і Кобальтит"
 		}
 	],
 	"indicator": {

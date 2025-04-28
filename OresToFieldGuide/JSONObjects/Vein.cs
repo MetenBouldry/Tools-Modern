@@ -187,7 +187,7 @@ namespace OresToFieldGuide
 				Rarity = 15,
 				Depth = 20,
 				UndergroundRarity = 40,
-				UndergroundCount = 40,
+				UndergroundCount = 200,
 				Blocks = GenerateDefaultIndicatorBlocks(ores, oreDict)
 			};
 		}
