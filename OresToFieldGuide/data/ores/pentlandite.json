@@ -6,18 +6,18 @@
 	"translations": [
 		{
 			"lang": "en_us",
-			"name": "Pentlandite",
-			"info": "Melts into: Nickel"
+			"text": "Pentlandite",
+			"info": "$(thing)Melts into$(): Nickel"
 		},
 		{
 			"lang": "ru_ru",
-			"name": "Пентландит",
-			"info": "Плавится в: Никель"
+			"text": "Пентландит",
+			"info": "$(thing)Плавится в$(): Никель"
 		},
 		{
 			"lang": "uk_ua",
-			"name": "Пентландит",
-			"info": "Розплавляється в: Нікель"
+			"text": "Пентландит",
+			"info": "$(thing)Розплавляється в$(): Нікель"
 		}
 	]
 }

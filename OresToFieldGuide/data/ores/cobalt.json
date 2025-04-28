@@ -6,18 +6,18 @@
 	"translations": [
 		{
 			"lang": "en_us",
-			"name": "Cobalt",
-			"info": "Smelts into: Cobalt"
+			"text": "Cobalt",
+			"info": "$(thing)Smelts into$(): Cobalt"
 		},
 		{
 			"lang": "ru_ru",
-			"name": "Кобальт",
-			"info": "Плавится в: Кобальт"
+			"text": "Кобальт",
+			"info": "$(thing)Плавится в$(): Кобальт"
 		},
 		{
 			"lang": "uk_ua",
-			"name": "Кобальт",
-			"info": "Розплавляється в: Кобальт"
+			"text": "Кобальт",
+			"info": "$(thing)Розплавляється в$(): Кобальт"
 		}
 	]
 }

@@ -33,7 +33,13 @@ namespace OresToFieldGuide
         /// </summary>
         [JsonPropertyName("rocks")]
         public required string[] Rocks { get; set; }
-    }
+
+        [JsonPropertyName("indicator")]
+        public IndicatorConfig? Indicator { get; set; }
+
+		[JsonPropertyName("translations")]
+		public required Dictionary<string, string> Translations { get; set; }
+	}
 
     public class VeinConfig
     {
@@ -41,43 +47,43 @@ namespace OresToFieldGuide
         /// The Rarity of the vein
         /// </summary>
         [JsonPropertyName("rarity")]
-        public required float Rarity { get; set; }
+        public required int Rarity { get; set; }
 
         /// <summary>
         /// The Density of the vein
         /// </summary>
-        [JsonPropertyName("Density")]
-        public required float Density { get; set; }
+        [JsonPropertyName("density")]
+        public required double Density { get; set; }
 
         /// <summary>
         /// The min Y value at which this vein can spawn
         /// </summary>
         [JsonPropertyName("min_y")]
-        public required float MinY { get; set; }
+        public required int MinY { get; set; }
 
         /// <summary>
         /// The max Y value at which this vein can spawn
         /// </summary>
         [JsonPropertyName("max_y")]
-        public required float MaxY { get; set; }
+        public required int MaxY { get; set; }
 
         /// <summary>
         /// The Size of the Vein
         /// </summary>
         [JsonPropertyName("size")]
-        public float? Size { get; set; }
+        public int? Size { get; set; }
 
         /// <summary>
         /// The Height of the Vein
         /// </summary>
         [JsonPropertyName("height")]
-        public float? Height { get; set; }
+        public int? Height { get; set; }
 
         /// <summary>
         /// The Radius of the Vein
         /// </summary>
         [JsonPropertyName("radius")]
-        public float? Radius { get; set; }
+        public int? Radius { get; set; }
     }
 
     public class WeightedBlock
@@ -86,19 +92,26 @@ namespace OresToFieldGuide
         /// The <see cref="Ore.ID"/> of the ore to use
         /// </summary>
         [JsonPropertyName("ore")]
-        public required string Block { get; set; }
+        public required string OreID { get; set; }
 
         /// <summary>
         /// The weight for this block, ranges between 0 and 100
         /// </summary>
         [JsonPropertyName("weight")]
-        public required float Weight { get; set; }
+        public required int Weight { get; set; }
 
         /// <summary>
         /// If this is non-null, add another entry to the vein with this weight and this ore's <see cref="Ore.FullOreBlock"/>
         /// </summary>
         [JsonPropertyName("block_weight")]
-        public float? FullBlockWeight { get; set; }
+        public int? FullBlockWeight { get; set; }
+
+        /// <summary>
+        /// The weight of this ore, calculated into a percentage via
+        /// <see cref="OresToFieldGuideProgram.WeightsIntoPercents"/>
+        /// </summary>
+        [JsonIgnore]
+        public double? WeightPercent { get; set; }
     }
 
     public class IndicatorConfig
@@ -134,6 +147,27 @@ namespace OresToFieldGuide
         /// </summary>
         [JsonPropertyName("blocks")]
         public WeightedIndicator[]? Blocks { get; set; }
+
+        public static IndicatorConfig GenerateDefault(WeightedBlock[] ores, Dictionary<string, Ore> oreDict)
+        {
+            return new IndicatorConfig
+            {
+                Rarity = 15,
+                Depth = 20,
+                UndergroundRarity = 40,
+                UndergroundCount = 40,
+                Blocks = GenerateDefaultIndicatorBlocks(ores, oreDict)
+            };
+        }
+
+        public static WeightedIndicator[] GenerateDefaultIndicatorBlocks(WeightedBlock[] ores, Dictionary<string, Ore> oreDict)
+        {
+            return ores.Select(wb => new WeightedIndicator
+            {
+                Block = oreDict[wb.OreID].DefaultIndicator,
+                Weight = wb.Weight
+            }).ToArray();
+        }
     }
 
     public class WeightedIndicator
@@ -145,9 +179,9 @@ namespace OresToFieldGuide
         public required string Block { get; set; }
 
         /// <summary>
-        /// The weight for this block, ranges between 0 and 100
+        /// The weight for this block, does not correlate to percentage
         /// </summary>
         [JsonPropertyName("weight")]
-        public required float Weight { get; set; }
+        public required int Weight { get; set; }
     }
 }

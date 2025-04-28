@@ -1,7 +1,7 @@
 {
 	"id": "normal_garnierite",
 	"type": "tfc:cluster_vein",
-	"dimension": "minecraft:overworld",
+	"dimension": "earth",
 	"config": {
 		"rarity": 160,
 		"density": 0.4,
@@ -37,6 +37,9 @@
 		"gabbro",
 		"diorite"
 	],
+	"translations": {
+		"en_us": "Garnierite & Cobaltite"
+	},
 	"indicator": {
 		"rarity": 12,
 		"depth": 70,

@@ -1,37 +1,25 @@
 {
-	"dimensions": {
-		"earth": "земля (Surface)",
-		"nether": "земля (Beneath)",
-		"moon": "Місяць",
-		"mars": "Марс",
-		"venus": "Венера"
-	},
+	"rarity": "Рідкість",
+	"density": "Щільність",
+	"type": "Тип",
+	"y": "Y",
+	"size": "Розмір",
+	"height": "Висота",
+	"radius": "Радіус",
+	"stone_types": "Типи каменю",
+	"indicator_depth": "Індикатор Max Depth",
+	"percentage": "Відсоток",
+	"formula": "Формула",
 
-	"keywords": {
-		"Rarity": "Рідкість",
-		"Density": "Щільність",
-		"Type": "Тип",
-		"Y": "Y",
-		"Size": "Розмір",
-		"Height": "Висота",
-		"Radius": "Радіус",
-		"Stone types": "Типи каменю",
-		"Indicator": "Індикатор",
-		"Percentage": "Відсоток",
-		"Formula": "Формула",
-		"Hazardous": "Небезпечний",
-		"Yes": "Так",
-		"&": "&",
-		"Vein Index": "Vein Index",
-		"Ore Index": "Ore Index",
-		"normal": "Normal",
-		"deep": "Deep",
-		"surface": "Surface",
-		"cluster": "Кластерна вена",
-		"pipe": "Трубна вена",
-		"disc": "Дискова вена"
-	},
+	"hazard": "Небезпечний",
+	"arsenicosis": "Arsenicosis (Inhalation)",
 
+	"tfc:cluster_vein": "Кластерна вена",
+	"tfc:pipe_vein": "Трубна вена",
+	"tfc:disc_vein": "Дискова вена",
+
+	"vein_index": "Vein Index",
+	"ore_index": "Ore Index",
 	"ore_index_format": "This is a $(thing)list$() of every $(item)Ore$() on $(thing){0}$(), sorted alphabetically and then by richest to poorest vein type.",
 	"vein_index_format": "This is the $(thing)Vein Index$() for $(thing){0}$(). Each Vein has details regarding its rarity, density, vein type, height found, sizes, what stones it spawns on, and more."
 }

@@ -2,8 +2,8 @@
 
 namespace OresToFieldGuide
 {
-    public class Rock
-    {
+    public class Rock : IDataJsonObject
+	{
         [JsonPropertyName("id")]
         public required string ID { get; set; }
 
@@ -13,16 +13,7 @@ namespace OresToFieldGuide
         [JsonPropertyName("replaceable_blocks")]
         public required string[] ReplaceableBlocks { get; set; }
 
-        [JsonPropertyName("translations")]
-        public required RockTranslation[] Translations { get; set; }
-    }
-
-    public class RockTranslation
-    {
-        [JsonPropertyName("lang")]
-        public required string Lang { get; set; }
-
-        [JsonPropertyName("text")]
-        public required string Text { get; set; }
-    }
+		[JsonPropertyName("translations")]
+		public required Dictionary<string, string> Translations { get; set; }
+	}
 }

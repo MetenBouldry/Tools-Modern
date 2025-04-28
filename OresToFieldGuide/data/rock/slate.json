@@ -1,20 +1,11 @@
 ﻿{
 	"id": "slate",
 	"pattern": "gtceu:slate_{0}_ore",
-	"translations": [
-		{
-			"lang": "en_us",
-			"text": "Slate"
-		},
-		{
-			"lang": "ru_ru",
-			"text": "Шиферный сланец"
-		},
-		{
-			"lang": "uk_ua",
-			"text": "Шиферний сланець"
-		}
-	],
+	"translations": {
+		"en_us": "Slate",
+		"ru_ru": "Шиферный сланец",
+		"uk_ua": "Шиферний сланець"
+	},
 	"replaceable_blocks": [
 		"tfc:rock/raw/slate"
 	]

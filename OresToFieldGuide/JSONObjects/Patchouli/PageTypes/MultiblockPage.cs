@@ -17,7 +17,7 @@ namespace OresToFieldGuide
         public required string Name { get; set; }
 
         [JsonPropertyName("multiblock")]
-        public Multiblock Multiblock { get; set; }
+        public required Multiblock Multiblock { get; set; }
 
         [JsonPropertyName("enable_visualize")]
         public bool EnableVisualize { get; set; } = true;

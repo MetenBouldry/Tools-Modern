@@ -1,0 +1,10 @@
+{
+	"id": "nether",
+	"dimension_id": "minecraft:the_nether",
+	"ore_index_icon": "minecraft:quartz",
+	"vein_index_icon": "gtceu:pyroxenite_nether_quartz_ore",
+	"translations": {
+		"en_us": "Beneath",
+		"uk_ua": "__"
+	}
+}

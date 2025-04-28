@@ -1,37 +1,25 @@
 {
-	"dimensions": {
-		"earth": "Earth (Surface)",
-		"nether": "Earth (Beneath)",
-		"moon": "The Moon",
-		"mars": "Mars",
-		"venus": "Venus"
-	},
+	"rarity": "Редкость",
+	"density": "Плотность",
+	"type": "Вид",
+	"y": "Y-уровень",
+	"size": "Размер",
+	"height": "Высота",
+	"radius": "Радиус",
+	"stone_types": "Виды камней",
+	"indicator_depth": "Индикатор Max Depth",
+	"percentage": "Процент руды",
+	"formula": "Формула",
 
-	"keywords": {
-		"Rarity": "Редкость",
-		"Density": "Плотность",
-		"Type": "Вид",
-		"Y": "Y-уровень",
-		"Size": "Размер",
-		"Height": "Высота",
-		"Radius": "Радиус",
-		"Stone types": "Виды камней",
-		"Indicator": "Индикатор",
-		"Percentage": "Процент руды",
-		"Formula": "Формула",
-		"Hazardous": "Ядовит",
-		"Yes": "Да",
-		"&": "&",
-		"Vein Index": "Vein Index",
-		"Ore Index": "Ore Index",
-		"normal": "Normal",
-		"deep": "Deep",
-		"surface": "Surface",
-		"cluster": "кластерная жила",
-		"pipe": "трубчатая жила",
-		"disc": "дискообразная жила"
-	},
+	"hazard": "Ядовит",
+	"arsenicosis": "Arsenicosis (Inhalation)",
 
+	"tfc:cluster_vein": "кластерная жила",
+	"tfc:pipe_vein": "трубчатая жила",
+	"tfc:disc_vein": "дискообразная жила",
+
+	"vein_index": "Vein Index",
+	"ore_index": "Ore Index",
 	"ore_index_format": "This is a $(thing)list$() of every $(item)Ore$() on $(thing){0}$(), sorted alphabetically and then by richest to poorest vein type.",
 	"vein_index_format": "This is the $(thing)Vein Index$() for $(thing){0}$(). Each Vein has details regarding its rarity, density, vein type, height found, sizes, what stones it spawns on, and more."
 }

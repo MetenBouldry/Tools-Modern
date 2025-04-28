@@ -1,20 +1,11 @@
 ﻿{
 	"id": "dolomite",
 	"pattern": "gtceu:dolomite_{0}_ore",
-	"translations": [
-		{
-			"lang": "en_us",
-			"text": "Dolomite"
-		},
-		{
-			"lang": "ru_ru",
-			"text": "Доломит"
-		},
-		{
-			"lang": "uk_ua",
-			"text": "Доломіт"
-		}
-	],
+	"translations": {
+		"en_us": "Dolomite",
+		"ru_ru": "Доломит",
+		"uk_ua": "Доломіт"
+	},
 	"replaceable_blocks": [
 		"tfc:rock/raw/dolomite"
 	]

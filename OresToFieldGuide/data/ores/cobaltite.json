@@ -7,18 +7,18 @@
 	"translations": [
 		{
 			"lang": "en_us",
-			"name": "Nickel",
-			"info": "Source of: Cobalt, Arsenic"
+			"text": "Cobaltite",
+			"info": "$(thing)Source of$(): Cobalt, Arsenic"
 		},
 		{
 			"lang": "ru_ru",
-			"name": "Кобальтит",
-			"info": "Содержит: Кобальт, Мышьяк"
+			"text": "Кобальтит",
+			"info": "$(thing)Содержит$(): Кобальт, Мышьяк"
 		},
 		{
 			"lang": "uk_ua",
-			"name": "Кобальтит",
-			"info": "Джерело: Кобальту, Миш'яку"
+			"text": "Кобальтит",
+			"info": "$(thing)Джерело$(): Кобальту, Миш'яку"
 		}
 	]
 }

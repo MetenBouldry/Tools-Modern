@@ -2,8 +2,8 @@
 
 namespace OresToFieldGuide
 {
-    public class Ore
-    {
+    public class Ore : IDataJsonObject
+	{
         [JsonPropertyName("id")]
         public required string ID { get; set; }
 
@@ -29,24 +29,33 @@ namespace OresToFieldGuide
         /// The default indicator to use for this ore.
         /// </summary>
         [JsonPropertyName("indicator")]
-        public string? DefaultIndicator { get; set; }
+        public required string DefaultIndicator { get; set; }
 
         /// <summary>
         /// Localized names and information for the ore.
         /// </summary>
         [JsonPropertyName("translations")]
-        public required OreTranslation[] Translations { get; set; }
-    }
+        public required Translation[] RawTranslations { get; set; }
 
-    public class OreTranslation
-    {
-        [JsonPropertyName("lang")]
-        public required string Language { get; set; }
+        [JsonIgnore]
+        public Dictionary<string, string> TranslatedNames { get; } = [];
 
-        [JsonPropertyName("name")]
-        public required string Name { get; set; }
+        [JsonIgnore]
+        public Dictionary<string, string?> TranslatedInfo { get; } = [];
 
-        [JsonPropertyName("info")]
-        public required string Info { get; set; }
-    }
+		public Multiblock BuildMultiblockDisplay()
+		{
+			return new Multiblock()
+			{
+				Mapping = new Dictionary<string, string>
+				{
+					["0"] = $"#forge:ores/{ID}"
+				},
+				Pattern = [
+					["0"],
+					[" "]
+				]
+			};
+		}
+	}
 }

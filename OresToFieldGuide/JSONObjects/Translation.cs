@@ -1,11 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using System.Text.Json.Serialization;
 
 namespace OresToFieldGuide
 {
+	public class Translation
+	{
+		[JsonPropertyName("lang")]
+		public required string Language { get; set; }
 
+		[JsonPropertyName("text")]
+		public required string Text { get; set; }
+
+		[JsonPropertyName("info")]
+		public string? Info { get; set; }
+	}
 }

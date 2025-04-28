@@ -1,20 +1,11 @@
 ﻿{
 	"id": "andesite",
 	"pattern": "gtceu:andesite_{0}_ore",
-	"translations": [
-		{
-			"lang": "en_us",
-			"text": "Andesite"
-		},
-		{
-			"lang": "ru_ru",
-			"text": "Андезит"
-		},
-		{
-			"lang": "uk_ua",
-			"text": "Андезит"
-		}
-	],
+	"translations": {
+		"en_us": "Andesite",
+		"ru_ru": "Андезит",
+		"uk_ua": "Андезит"
+	},
 	"replaceable_blocks": [
 		"tfc:rock/raw/andesite"
 	]
