@@ -12,7 +12,8 @@
 	"ores": [
 		{
 			"ore": "garnierite",
-			"weight": 30
+			"weight": 30,
+			"block_weight": 1
 		},
 		{
 			"ore": "nickel",
@@ -24,9 +25,7 @@
 		},
 		{
 			"ore": "pentlandite",
-			"weight": 25,
-			"NOTE_TO_NEBBY": "If 'block_weight' is present, add another entry to the vein with this weight and this ore's 'ore_block'",
-			"block_weight": 1
+			"weight": 25
 		},
 		{
 			"ore": "cobalt",
@@ -37,9 +36,12 @@
 		"gabbro",
 		"diorite"
 	],
-	"translations": {
-		"en_us": "Garnierite & Cobaltite"
-	},
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Garnierite & Cobaltite"
+		}
+	],
 	"indicator": {
 		"rarity": 12,
 		"depth": 70,

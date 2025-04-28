@@ -16,6 +16,12 @@ namespace OresToFieldGuide
             //"it_it", // Italian
         ];
 
+		private readonly JsonSerializerOptions m_jsonOptions = new()
+		{
+			WriteIndented = true,
+			DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
+		};
+
 		private readonly ProgramArguments m_arguments = arguments;
 
 		private readonly Dictionary<string, Dimension> m_dimensionDict = [];
@@ -41,43 +47,12 @@ namespace OresToFieldGuide
 
 			// 3) Write out veins
 
+			ExportConfiguredVeins();
+			ExportPlacedVeins();
 
 			// 4) Write out patchouli
 
-			var jsonOptions = new JsonSerializerOptions
-			{
-				WriteIndented = true,
-				DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
-			};
-
-			foreach (string locale in s_locales)
-			{
-				// Clear out existing files
-				var outputDir = GetFieldGuideOutputDirectory(locale);
-				//foreach (var existingPath in Directory.EnumerateFiles(outputDir))
-				//{
-				//	if (!m_arguments.WhitelistedPatchouliEntryFilenames.Contains(Path.GetFileNameWithoutExtension(existingPath)))
-				//	{
-				//		File.Delete(existingPath);
-				//	}
-				//}
-
-				// Then write new ones
-				foreach (var dimension in m_dimensionDict.Values)
-				{
-					var veinIndex = GenerateVeinIndexForDimension(locale, dimension, m_localeToTokens[locale]);
-
-					string veinJson = JsonSerializer.Serialize(veinIndex, jsonOptions);
-					File.WriteAllText(Path.Combine(outputDir, veinIndex.FileNameWithoutExtension + ".json"), veinJson);
-					ConsoleLogHelper.WriteLine($"Wrote out {locale} {veinIndex.FileNameWithoutExtension}", LogLevel.Info);
-
-					var oreIndex = GenerateOreIndexForDimension(locale, dimension, m_localeToTokens[locale]);
-
-					string oreJson = JsonSerializer.Serialize(oreIndex, jsonOptions);
-					File.WriteAllText(Path.Combine(outputDir, oreIndex.FileNameWithoutExtension + ".json"), oreJson);
-					ConsoleLogHelper.WriteLine($"Wrote out {locale} {oreIndex.FileNameWithoutExtension}", LogLevel.Info);
-				}
-			}
+			ExportPatchouliEntries();
 		}
 
 		private void DeserializeData<T>(string subDir, Dictionary<string, T> dict) where T : IDataJsonObject
@@ -170,10 +145,20 @@ namespace OresToFieldGuide
 
 			foreach (var ore in m_oreDict.Values)
 			{
-				foreach (var translation in ore.RawTranslations)
+				var dict = ore.RawTranslations.ToDictionary(t => t.Language);
+
+				foreach (var locale in s_locales)
 				{
-					ore.TranslatedNames[translation.Language] = translation.Text;
-					ore.TranslatedInfo[translation.Language] = translation.Info;
+					if (dict.TryGetValue(locale, out var translation))
+					{
+						ore.TranslatedNames[locale] = translation.Text;
+						ore.TranslatedInfo[locale] = translation.Info;
+					}
+					else
+					{
+						ore.TranslatedNames[locale] = ore.TranslatedNames[s_fallbackLocale];
+						ore.TranslatedInfo[locale] = ore.TranslatedInfo[s_fallbackLocale];
+					}
 				}
 			}
 
@@ -190,11 +175,19 @@ namespace OresToFieldGuide
 
 			foreach (var vein in m_veinDict.Values.SelectMany(v => v))
 			{
+				var dict = vein.RawTranslations.ToDictionary(t => t.Language);
+
 				foreach (var locale in s_locales)
 				{
-					if (!vein.Translations.ContainsKey(locale))
+					if (dict.TryGetValue(locale, out var translation))
 					{
-						vein.Translations[locale] = vein.Translations[s_fallbackLocale];
+						vein.TranslatedNames[locale] = translation.Text;
+						vein.TranslatedInfo[locale] = translation.Info;
+					}
+					else
+					{
+						vein.TranslatedNames[locale] = vein.TranslatedNames[s_fallbackLocale];
+						vein.TranslatedInfo[locale] = vein.TranslatedInfo[s_fallbackLocale];
 					}
 				}
 			}
@@ -315,12 +308,12 @@ namespace OresToFieldGuide
 
 			// Index pages
 
-			foreach (var chunk in m_veinDict[dim].OrderBy(v => v.Translations[locale]).Chunk(14))
+			foreach (var chunk in m_veinDict[dim].OrderBy(v => v.TranslatedNames[locale]).Chunk(14))
 			{
 				foreach (var vein in chunk)
 				{
 					pageBuilder.Append("$(li)");
-					pageBuilder.InternalLink(vein.Translations[locale], $"tfg_ores/{dim.ID}_vein_index", vein.ID);
+					pageBuilder.InternalLink(vein.TranslatedNames[locale], $"tfg_ores/{dim.ID}_vein_index", vein.ID);
 					pageBuilder.Append(PatchouliStringBuilder.EMPTY);
 				}
 
@@ -340,7 +333,7 @@ namespace OresToFieldGuide
 
 			// Vein pages
 
-			foreach (var vein in m_veinDict[dim].OrderBy(v => v.Translations[locale]))
+			foreach (var vein in m_veinDict[dim].OrderBy(v => v.TranslatedNames[locale]))
 			{
 				numPages = 0;
 
@@ -370,13 +363,13 @@ namespace OresToFieldGuide
 
 					pageBuilder.ThingMacro(tokens["height"]);
 					pageBuilder.Append($": {vein.Config.Height}");
-					pageBuilder.LineBreak2();
+					pageBuilder.LineBreak();
 				}
 				else if (vein.Type == "tfc:cluster_vein")
 				{
 					pageBuilder.ThingMacro(tokens["size"]);
 					pageBuilder.Append($": {vein.Config.Size}");
-					pageBuilder.LineBreak2();
+					pageBuilder.LineBreak();
 				}
 				else // pipe vein
 				{
@@ -386,21 +379,26 @@ namespace OresToFieldGuide
 
 					pageBuilder.ThingMacro(tokens["radius"]);
 					pageBuilder.Append($": {vein.Config.Radius}");
-					pageBuilder.LineBreak2();
+					pageBuilder.LineBreak();
 				}
+
+				var indicator = vein.Indicator ?? IndicatorConfig.GenerateDefault(vein.Ores, m_oreDict);
+				pageBuilder.ThingMacro(tokens["indicator_depth"]);
+				pageBuilder.Append($": {indicator.Depth}");
+				pageBuilder.LineBreak2();
 
 				pageBuilder.ThingMacro(tokens["stone_types"]);
 				pageBuilder.Append($": {string.Join(", ", vein.Rocks.Select(r => m_rockDict[r].Translations[locale]))}");
-				pageBuilder.LineBreak2();
 
-				var indicator = vein.Indicator ?? IndicatorConfig.GenerateDefault(vein.Ores, m_oreDict);
-
-				pageBuilder.ThingMacro(tokens["indicator_depth"]);
-				pageBuilder.Append($": {indicator.Depth}");
+				if (vein.TranslatedInfo[locale] != null)
+				{
+					pageBuilder.LineBreak2();
+					pageBuilder.Append(vein.TranslatedInfo[locale]!);
+				}
 
 				entry.Pages.Add(new TextPage
 				{
-					Title = vein.Translations[locale],
+					Title = vein.TranslatedNames[locale],
 					Text = pageBuilder.Dump(),
 					Anchor = vein.ID
 				});
@@ -455,6 +453,83 @@ namespace OresToFieldGuide
 			}
 
 			return entry;
+		}
+
+		private void ExportConfiguredVeins()
+		{
+			string configuredFeatureDir = Path.Combine(m_arguments.ModpackFolder, "kubejs/data/tfg/worldgen/configured_feature");
+
+			foreach ((var dimension, var veins) in m_veinDict)
+			{
+				string configuredVeinDir = Path.Combine(configuredFeatureDir, dimension.ID, "vein");
+
+				// TODO: Clear directory
+
+				foreach (var vein in veins)
+				{
+					var feature = new VeinConfiguredFeature(vein, m_rockDict, m_oreDict);
+					string json = JsonSerializer.Serialize(feature, m_jsonOptions);
+					File.WriteAllText(Path.Combine(configuredVeinDir, vein.ID + ".json"), json);
+					ConsoleLogHelper.WriteLine($"Wrote out configured feature {vein.ID}", LogLevel.Info);
+				}
+			}
+		}
+
+		private void ExportPlacedVeins()
+		{
+			string placedFeatureDir = Path.Combine(m_arguments.ModpackFolder, "kubejs/data/tfg/worldgen/placed_feature");
+
+			foreach ((var dimension, var veins) in m_veinDict)
+			{
+				string placedVeinDir = Path.Combine(placedFeatureDir, dimension.ID, "vein");
+
+				// TODO: Clear directory
+
+				foreach (var vein in veins)
+				{
+					// These are pretty bare-bones because tfc handles all the placement for you already
+					var feature = new VeinPlacedFeature()
+					{
+						Feature = $"tfg:{dimension.ID}/vein/{vein.ID}",
+					};
+
+					string json = JsonSerializer.Serialize(feature, m_jsonOptions);
+					File.WriteAllText(Path.Combine(placedVeinDir, vein.ID + ".json"), json);
+					ConsoleLogHelper.WriteLine($"Wrote out placed feature {vein.ID}", LogLevel.Info);
+				}
+			}
+		}
+
+		private void ExportPatchouliEntries()
+		{
+			foreach (string locale in s_locales)
+			{
+				// Clear out existing files
+				var outputDir = GetFieldGuideOutputDirectory(locale);
+				//foreach (var existingPath in Directory.EnumerateFiles(outputDir))
+				//{
+				//	if (!m_arguments.WhitelistedPatchouliEntryFilenames.Contains(Path.GetFileNameWithoutExtension(existingPath)))
+				//	{
+				//		File.Delete(existingPath);
+				//	}
+				//}
+
+				// Then write new ones
+				foreach (var dimension in m_dimensionDict.Values)
+				{
+					var veinIndex = GenerateVeinIndexForDimension(locale, dimension, m_localeToTokens[locale]);
+
+					string veinJson = JsonSerializer.Serialize(veinIndex, m_jsonOptions);
+					File.WriteAllText(Path.Combine(outputDir, veinIndex.FileNameWithoutExtension + ".json"), veinJson);
+					ConsoleLogHelper.WriteLine($"Wrote out {locale} {veinIndex.FileNameWithoutExtension}", LogLevel.Info);
+
+					var oreIndex = GenerateOreIndexForDimension(locale, dimension, m_localeToTokens[locale]);
+
+					string oreJson = JsonSerializer.Serialize(oreIndex, m_jsonOptions);
+					File.WriteAllText(Path.Combine(outputDir, oreIndex.FileNameWithoutExtension + ".json"), oreJson);
+					ConsoleLogHelper.WriteLine($"Wrote out {locale} {oreIndex.FileNameWithoutExtension}", LogLevel.Info);
+				}
+			}
 		}
 	}
 }

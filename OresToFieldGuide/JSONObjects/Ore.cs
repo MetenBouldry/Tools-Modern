@@ -23,7 +23,7 @@ namespace OresToFieldGuide
         /// Optional full block of ore to use in rich veins.
         /// </summary>
         [JsonPropertyName("ore_block")]
-        public string? FullOreBlock { get; set; }
+        public required string FullOreBlock { get; set; }
 
         /// <summary>
         /// The default indicator to use for this ore.
