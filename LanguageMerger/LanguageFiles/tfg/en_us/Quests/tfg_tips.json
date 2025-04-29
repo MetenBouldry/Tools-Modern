@@ -272,7 +272,7 @@
     "quests.tfg_tips.grapple_gravity_0.subtitle": "Kinda Expensive",
     "quests.tfg_tips.grapple_gravity_0.desc": "The ZERO Gravity upgrade, as the name implies, causes your hook to have NO gravity.\n\nInstead of using another Gravitation Engine Module to remove the upgrade, utilize a Tungsten Block instead.",
 
-    "quests.tfg_tips.grapple_tweals.title": "Grappling Hook Upgrade: Tweaks",
+    "quests.tfg_tips.grapple_tweaks.title": "Grappling Hook Upgrade: Tweaks",
     "quests.tfg_tips.grapple_tweaks.subtitle": "Tweaking your Angles",
     "quests.tfg_tips.grapple_tweaks.desc": "Utilizing a Wrench you can tweak the Upwards Angle when you throw the hook, while the Screwdriver is used to tweak the Horizontal Angle when you throw your hook using a Double Hook Upgrade.",
 
@@ -430,9 +430,9 @@
     "quests.tfg_tips.aircraft_upgrades.desc": "Immersive Aircraft comes with Aircraft Upgrades, which you can install in your Aircrafts to improve their stats, such as velocity, takeoff speed, fuel consumption, etc. There are two types of Upgrades, regular and Tiered.\n\nThese are the regular upgrades, think you can get them all?",
 
     "quests.tfg_tips.steam_upgrades.title": "Aircraft Upgrades: Steam",
-    "quests.tfg_tips.steam_upgrade.subtitle": "Immersive Aircraft meets GregTech Tiering!",
-    "quests.tfg_tips.steam_upgrade.desc": "The second kind of Aircraft Upgrades are the Tiered Upgrades, these are made to match Gregtech's tiering system, going from Steam up to Extreme Voltage.\n\nSteam upgrades are the easiest to craft, and the earliest option, requiring at the very least knowledge of Black Steel.\n\nSteam-powered Aircraft Engines are used in the creation of some more sophisticated Aircrafts such as the Biplane and the Warship",
-    "quests.tfg_tips.steam_upgrade.task": "Any Steam Tier Aircraft Upgrade",
+    "quests.tfg_tips.steam_upgrades.subtitle": "Immersive Aircraft meets GregTech Tiering!",
+    "quests.tfg_tips.steam_upgrades.desc": "The second kind of Aircraft Upgrades are the Tiered Upgrades, these are made to match Gregtech's tiering system, going from Steam up to Extreme Voltage.\n\nSteam upgrades are the easiest to craft, and the earliest option, requiring at the very least knowledge of Black Steel.\n\nSteam-powered Aircraft Engines are used in the creation of some more sophisticated Aircrafts such as the Biplane and the Warship",
+    "quests.tfg_tips.steam_upgrades.task": "Any Steam Tier Aircraft Upgrade",
 
     "quests.tfg_tips.lv_upgrades.title": "Aircraft Upgrades: LV",
     "quests.tfg_tips.lv_upgrades.subtitle": "Red and Blue, certainly not clashing.",
@@ -664,7 +664,7 @@
 
     "quests.tfg_tips.smoke_meat.title": "Meat Preservation: Smoking",
     "quests.tfg_tips.smoke_meat.subtitle": "Smokey",
-    "quests.tfg_tips.smoke_meat.desc": "You can hang a slice of raw meat in a string that's over a lit Campfire to smoke it. Keep in mind that the meat MUST be salted first.",
+    "quests.tfg_tips.smoke_meat.desc": "You can hang a slice of raw meat in a string that's over a lit Campfire to smoke it. Keep in mind that the meat MUST be brined first.",
     "quests.tfg_tips.smoke_meat.task": "A hunk of Smoked Meat",
 
     "quests.tfg_tips.cook_meat.title": "Meat Preservation: Cooking",
@@ -752,6 +752,7 @@
     "quests.tfg_tips.reach_the_beneath.title": "Welcome, to The Depths",
     "quests.tfg_tips.reach_the_beneath.subtitle": "Otherwise known as The Beneath",
     "quests.tfg_tips.reach_the_beneath.desc": "As soon as you reach The Beneath, you should mark your Point of Entry. Traveling in the Beneath is no faster than traveling in the Overworld. So marking your entry position can be used to quickly go back where you came from.",
+    "quests.tfg_tips.reach_the_beneath.task": "Reach the Beneath",
 
     "quests.tfg_tips.fuck_go_back.title": "How to escape The Beneath",
     "quests.tfg_tips.fuck_go_back.subtitle": "Mom come pick me up, I'm scared.",
