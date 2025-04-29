@@ -1,0 +1,49 @@
+{
+	"id": "moon_apatite",
+	"dimension": "moon",
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 250,
+		"density": 0.25,
+		"min_y": -32,
+		"max_y": 60,
+		"size": 25
+	},
+	"ores": [
+		{
+			"ore": "apatite",
+			"weight": 25
+		},
+		{
+			"ore": "tricalcium_phosphate",
+			"weight": 35
+		},
+		{
+			"ore": "pyrochlore",
+			"weight": 40,
+			"block_weight": 1
+		}
+	],
+	"rocks": [
+		"diorite",
+		"anorthosite",
+		"basanite"
+	],
+	"indicator": {
+		"depth": 50
+	},
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Apatite & Pyrochlore"
+		},
+		{
+			"lang": "ru_ru",
+			"text": "Апатит и Пирохлор"
+		},
+		{
+			"lang": "uk_ua",
+			"text": "Апатит і Пірохлор"
+		}
+	]
+}

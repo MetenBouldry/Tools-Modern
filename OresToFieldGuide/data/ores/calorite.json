@@ -8,16 +8,6 @@
       "lang": "en_us",
       "text": "Calorite",
       "info": "$(thing)Source of$(): "
-    },
-    {
-      "lang": "ru_ru",
-      "text": "Calorite",
-      "info": "$(thing)Хромит$(): "
-    },
-    {
-      "lang": "uk_ua",
-      "text": "Calorite",
-      "info": "$(thing)Джерело$(): "
     }
   ]
 }

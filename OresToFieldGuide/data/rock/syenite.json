@@ -1,0 +1,12 @@
+﻿{
+	"id": "syenite",
+	"pattern": "gtceu:syenite_{0}_ore",
+	"translations": {
+		"en_us": "Syenite",
+		"ru_ru": "Сиенит",
+		"uk_ua": "Сієніт"
+	},
+	"replaceable_blocks": [
+		"tfg:rock/raw_syenite"
+	]
+}
