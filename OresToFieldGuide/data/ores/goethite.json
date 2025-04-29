@@ -1,0 +1,23 @@
+{
+  "id": "goethite",
+  "formula": "FeHO₂",
+  "ore_block": "gtceu:raw_goethite_block",
+  "indicator": "gtceu:goethite_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Goethite",
+      "info": "$(thing)Melts into$(): Cast Iron"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Гётит",
+      "info": "$(thing)Плавится в$(): Железо"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Гетит",
+      "info": "$(thing)Розплавляється в$(): Залізо"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+﻿{
+	"id": "phyllite",
+	"pattern": "gtceu:phyllite_{0}_ore",
+	"translations": {
+		"en_us": "Phyllite",
+		"ru_ru": "Филлит",
+		"uk_ua": "Філіт"
+	},
+	"replaceable_blocks": [
+		"tfc:rock/raw/phyllite"
+	]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "olivine",
+  "formula": "Mg₂Fe(SiO₂)₂",
+  "ore_block": "gtceu:raw_olivine_block",
+  "indicator": "gtceu:olivine_bud_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Olivine",
+      "info": "$(thing)Source of$(): Magnesium, Iron"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Оливин",
+      "info": "$(thing)Хромит$(): Магний, Железо"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Оливін",
+      "info": "$(thing)Джерело$(): Магнію, Залізо"
+    }
+  ]
+}

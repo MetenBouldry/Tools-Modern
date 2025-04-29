@@ -1,0 +1,23 @@
+{
+  "id": "opal",
+  "formula": "(SiO₂)",
+  "ore_block": "gtceu:raw_opal_block",
+  "indicator": "gtceu:opal_bud_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Opal",
+      "info": "$(thing)Source of$(): Silicon, Oxygen"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Опал",
+      "info": "$(thing)Хромит$(): Кремний, Кислород"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Опал",
+      "info": "$(thing)Джерело$(): Кремній, Кисню"
+    }
+  ]
+}

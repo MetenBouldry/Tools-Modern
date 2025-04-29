@@ -1,0 +1,12 @@
+﻿{
+	"id": "shale",
+	"pattern": "gtceu:shale_{0}_ore",
+	"translations": {
+		"en_us": "Shale",
+		"ru_ru": "Сланец",
+		"uk_ua": "Глинистий сланець"
+	},
+	"replaceable_blocks": [
+		"tfc:rock/raw/shale"
+	]
+}

@@ -1,0 +1,23 @@
+{
+    "id": "malachite",
+    "formula": "Cu₂CH₂O₅",
+    "ore_block": "gtceu:raw_malachite_block",
+    "indicator": "tfc:ore/small_malachite",
+    "translations": [
+        {
+            "lang": "en_us",
+            "text": "Malachite",
+            "info": "$(thing)Melts into$(): Copper"
+        },
+        {
+            "lang": "ru_ru",
+            "text": "Малахит",
+            "info": "$(thing)Плавится в$(): Медь"
+        },
+        {
+            "lang": "uk_ua",
+            "text": "Малахіт",
+            "info": "$(thing)Розплавляється в$(): Мідь"
+        }
+    ]
+}

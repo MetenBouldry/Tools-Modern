@@ -1,0 +1,12 @@
+﻿{
+	"id": "gneiss",
+	"pattern": "gtceu:gneiss_{0}_ore",
+	"translations": {
+		"en_us": "Gneiss",
+		"ru_ru": "Гнейс",
+		"uk_ua": "Гнейс"
+	},
+	"replaceable_blocks": [
+		"tfc:rock/raw/gneiss"
+	]
+}

@@ -1,0 +1,51 @@
+{
+	"id": "normal_redstone",
+	"dimension": "earth",
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 160,
+		"density": 0.4,
+		"min_y": -32,
+		"max_y": 100,
+		"size": 40
+	},
+	"ores": [
+		{
+			"ore": "redstone",
+			"weight": 45,
+			"block_weight": 1
+		},
+		{
+			"ore": "ruby",
+			"weight": 35
+		},
+		{
+			"ore": "cinnabar",
+			"weight": 20
+		}
+	],
+	"rocks": [
+		"granite"
+	],
+	"indicator": {
+		"rarity": 12,
+		"depth": 60
+	},
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Redstone, Cinnabar, & Ruby",
+			"info": "Can't find it? Granite always spawns below $(thing)Rhyolite$(), and looking in oceans can be useful too!"
+		},
+		{
+			"lang": "ru_ru",
+			"text": "Редстоун, Киноварь и Рубин",
+			"info": "Не получается найти это? На дне океана легко увидеть красное свечение!"
+		},
+		{
+			"lang": "uk_ua",
+			"text": "Редстоун, Кіновар і Рубін",
+			"info": "Не можете знайти? Спробуйте пошукати в океанах, Червоний камінь світиться!"
+		}
+	]
+}

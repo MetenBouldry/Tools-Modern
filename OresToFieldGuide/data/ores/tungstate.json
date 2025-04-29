@@ -1,0 +1,23 @@
+{
+  "id": "tungstate",
+  "formula": "Li₂(WO₃)O",
+  "ore_block": "gtceu:raw_tungstate_block",
+  "indicator": "gtceu:tungstate_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Tungstate",
+      "info": "$(thing)Source of$(): Tungsten, Lithium"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Вольфрамат",
+      "info": "$(thing)Хромит$(): Вольфрам, Литий"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Вольфрам",
+      "info": "$(thing)Джерело$(): Вольфраму, Літію"
+    }
+  ]
+}

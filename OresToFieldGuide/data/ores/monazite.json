@@ -1,0 +1,23 @@
+{
+  "id": "monazite",
+  "formula": "?(PO₄)",
+  "ore_block": "gtceu:raw_monazite_block",
+  "indicator": "gtceu:monazite_bud_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Monazite",
+      "info": "$(thing)Source of$(): Phosphorous, Rare Earth"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Монацит",
+      "info": "$(thing)Хромит$(): Фосфор, Редкая земля"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Монацит",
+      "info": "$(thing)Джерело$(): Фосфору, Рідкоземельні"
+    }
+  ]
+}

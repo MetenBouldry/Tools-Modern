@@ -1,0 +1,23 @@
+{
+  "id": "redstone",
+  "formula": "Si(FeS₂)₅(CrAl₂O₃)Hg₃",
+  "ore_block": "gtceu:raw_redstone_block",
+  "indicator": "gtceu:redstone_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Redstone",
+      "info": "$(thing)Melts into$(): Redstone"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Редстоун",
+      "info": "$(thing)Плавится в$(): Редстоун"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Редстоун",
+      "info": "$(thing)Розплавляється в$(): Редстоун"
+    }
+  ]
+}

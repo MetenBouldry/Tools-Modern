@@ -1,0 +1,23 @@
+{
+  "id": "rock_salt",
+  "formula": "KCl",
+  "ore_block": "gtceu:raw_rock_salt_block",
+  "indicator": "gtceu:rock_salt_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Rock Salt",
+      "info": "$(thing)Source of$(): Potassium, Chlorine"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Каменная соль",
+      "info": "$(thing)Хромит$(): Калий, Хлор"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Кам’яна сіль",
+      "info": "$(thing)Джерело$(): Калію, Хлору"
+    }
+  ]
+}
