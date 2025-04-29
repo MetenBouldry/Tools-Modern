@@ -1,0 +1,23 @@
+{
+  "id": "quartzite",
+  "formula": "SiO₂",
+  "ore_block": "gtceu:raw_quartzite_block",
+  "indicator": "gtceu:quartzite_bud_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Quartzite",
+      "info": "$(thing)Used for$(): LV components"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Кварцит",
+      "info": "$(thing)Используется для$(): компоненты уровня LV"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Кварцит",
+      "info": "$(thing)Використовується для$(): LV компонентів"
+    }
+  ]
+}

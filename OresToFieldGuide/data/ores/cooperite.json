@@ -1,0 +1,23 @@
+{
+  "id": "cooperite",
+  "formula": "Pt₃NiSPd",
+  "ore_block": "gtceu:raw_cooperite_block",
+  "indicator": "gtceu:cooperite_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Sheldonite",
+      "info": "$(thing)Source of$(): Platinum, Nickel, Palladium"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Шелдонит",
+      "info": "$(thing)Хромит$(): Платина, Никель, Палладий"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Шелдонітн",
+      "info": "$(thing)Джерело$(): Платини, Нікелю, Паладію"
+    }
+  ]
+}

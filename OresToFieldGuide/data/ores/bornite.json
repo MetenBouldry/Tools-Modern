@@ -1,0 +1,23 @@
+{
+  "id": "bornite",
+  "formula": "Cu₅FeS₄",
+  "ore_block": "gtceu:raw_bornite_block",
+  "indicator": "gtceu:bornite_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Bornite",
+      "info": "$(thing)Source of$(): Copper, Iron"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Борнит",
+      "info": "$(thing)Хромит$(): Медь, Железо"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Борніт",
+      "info": "$(thing)Джерело$(): Мідь, Залізо"
+    }
+  ]
+}

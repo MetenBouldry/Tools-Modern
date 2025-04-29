@@ -1,0 +1,23 @@
+{
+  "id": "lithium",
+  "formula": "Li",
+  "ore_block": "gtceu:raw_lithium_block",
+  "indicator": "gtceu:lithium_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Lithium",
+      "info": "$(thing)Source of$(): Lithium"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Литий",
+      "info": "$(thing)Хромит$(): Литий"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Літій",
+      "info": "$(thing)Джерело$(): Літію"
+    }
+  ]
+}

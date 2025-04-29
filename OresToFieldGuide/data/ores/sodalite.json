@@ -1,0 +1,23 @@
+{
+  "id": "sodalite",
+  "formula": "Al₃Si₃Na₄Cl",
+  "ore_block": "gtceu:raw_sodalite_block",
+  "indicator": "gtceu:sodalite_bud_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Sodalite",
+      "info": "$(thing)Source of$(): Aluminium, Sodium"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Содалит",
+      "info": "$(thing)Хромит$(): Алюминий, Натрий"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Содаліт",
+      "info": "$(thing)Джерело$(): Алюмінію, Натрію"
+    }
+  ]
+}

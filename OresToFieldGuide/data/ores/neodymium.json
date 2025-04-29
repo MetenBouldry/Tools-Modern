@@ -1,0 +1,23 @@
+{
+  "id": "neodymium",
+  "formula": "Nd",
+  "ore_block": "gtceu:raw_neodymium_block",
+  "indicator": "gtceu:neodymium_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Neodymium",
+      "info": "$(thing)Source of$(): Neodymium"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Неодим",
+      "info": "$(thing)Хромит$(): Неодим"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Неодим",
+      "info": "$(thing)Джерело$(): Неодим"
+    }
+  ]
+}

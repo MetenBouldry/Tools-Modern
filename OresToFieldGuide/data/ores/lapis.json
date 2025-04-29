@@ -1,0 +1,22 @@
+{
+  "id": "lapis",
+  "ore_block": "gtceu:raw_lapis_block",
+  "indicator": "gtceu:lapis_bud_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Lapis",
+      "info": "$(thing)Source of$(): Lazurite, Sodalite, Pyrite, Calcite"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Лазурит 2",
+      "info": "$(thing)Хромит$(): Лазурит, Содалит, Пирит, Кальцит"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Смарагд",
+      "info": "$(thing)Джерело$(): Лазуриту, Содаліту, Пириту, Кальциту"
+    }
+  ]
+}

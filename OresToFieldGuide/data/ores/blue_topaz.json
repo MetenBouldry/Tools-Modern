@@ -1,0 +1,23 @@
+{
+  "id": "blue_topaz",
+  "formula": "Al₂SiF₂H₂O₆",
+  "ore_block": "gtceu:raw_blue_topaz_block",
+  "indicator": "gtceu:blue_topaz_bud_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Blue_Topaz",
+      "info": "$(thing)Source of$(): Aluminium, Fluorine"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Синий топаз",
+      "info": "$(thing)Хромит$(): Алюминий, Фтор"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Блакитний топаз",
+      "info": "$(thing)Джерело$(): Алюмінію, Фтору"
+    }
+  ]
+}

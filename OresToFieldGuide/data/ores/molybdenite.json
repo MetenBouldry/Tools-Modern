@@ -1,0 +1,23 @@
+{
+  "id": "molybdenite",
+  "formula": "MoS₂",
+  "ore_block": "gtceu:raw_molybdenite_block",
+  "indicator": "gtceu:molybdenite_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Molybdenite",
+      "info": "$(thing)Source of$(): Molybdenum"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Молибденит",
+      "info": "$(thing)Хромит$(): Молибден"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Молібденіт",
+      "info": "$(thing)Джерело$(): Молібденум"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "garnet_sand",
+  "ore_block": "gtceu:raw_garnet_sand_block",
+  "indicator": "gtceu:garnet_sand_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Garnet_Sand",
+      "info": "$(thing)Source of$(): Almandine, Andradite, Grossular, Pyrope, Spessartine, Uvarovite"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Гранатовый песок",
+      "info": "$(thing)Хромит$(): Альмандин, Андрадит, Гроссуляр, Пироп, Спасерит, Уваровит"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Гранатовий пісок",
+      "info": "$(thing)Джерело$(): Алмадін, Андрадит, Гросулар, Піроп, Спесартін, Уваровіт"
+    }
+  ]
+}

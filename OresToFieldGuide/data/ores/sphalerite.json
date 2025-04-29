@@ -1,0 +1,23 @@
+{
+    "id": "sphalerite",
+    "formula": "ZnS",
+    "ore_block": "gtceu:raw_sphalerite_block",
+    "indicator": "tfc:ore/small_sphalerite",
+    "translations": [
+        {
+            "lang": "en_us",
+            "text": "Sphalerite",
+            "info": "$(thing)Melts into$(): Zinc"
+        },
+        {
+            "lang": "ru_ru",
+            "text": "Сфалерит",
+            "info": "$(thing)Плавится в$(): Цинк"
+        },
+        {
+            "lang": "uk_ua",
+            "text": "Сфалерит",
+            "info": "$(thing)Розплавляється в$(): Цинк"
+        }
+    ]
+}

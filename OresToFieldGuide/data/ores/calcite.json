@@ -1,0 +1,23 @@
+{
+  "id": "calcite",
+  "formula": "CaCO₃",
+  "ore_block": "gtceu:raw_calcite_block",
+  "indicator": "gtceu:calcite_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Calcite",
+      "info": "$(thing)Source of$(): Calcium"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Кальцит",
+      "info": "$(thing)Хромит$(): Кальций"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Кальцит",
+      "info": "$(thing)Джерело$(): Кальцію"
+    }
+  ]
+}

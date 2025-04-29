@@ -89,7 +89,8 @@ namespace OresToFieldGuide
 			return
 			[
 				"hazards",
-				"ore_basics"
+				"ore_basics",
+				"surface_kaolin"
 			];
 		}
 	}

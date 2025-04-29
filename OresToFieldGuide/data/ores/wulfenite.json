@@ -1,0 +1,23 @@
+{
+  "id": "wulfenite",
+  "formula": "PbMoO₄",
+  "ore_block": "gtceu:raw_wulfenite_block",
+  "indicator": "gtceu:wulfenite_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Wulfenite",
+      "info": "$(thing)Source of$(): Lead, Molybdenum"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Вульфенит",
+      "info": "$(thing)Хромит$(): Свинец, Молибден"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Вульфеніт",
+      "info": "$(thing)Джерело$(): Свинець, Молібденум"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "basaltic_mineral_sand",
+  "formula": "(Fe₃O₄)((Mg₂Fe(SiO₂)₂)(CaCo₃)₃(SiO₂)₈C₄)",
+  "ore_block": "gtceu:raw_basaltic_mineral_sand_block",
+  "indicator": "gtceu:basaltic_mineral_sand_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Basaltic_Mineral_Sand",
+      "info": "$(thing)Smelts into$(): Cast Iron"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Базальтовый минеральный песок",
+      "info": "$(thing)Плавится в$(): Железо"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Базальтовий мінеральний пісок",
+      "info": "$(thing)Розплавляється в$(): Залізо"
+    }
+  ]
+}

@@ -1,23 +1,23 @@
-﻿{
-	"id": "cobalt",
-	"formula": "Co",
-	"ore_block": "gtceu:raw_cobalt_block",
-	"indicator": "gtceu:cobalt_indicator",
-	"translations": [
-		{
-			"lang": "en_us",
-			"text": "Cobalt",
-			"info": "$(thing)Smelts into$(): Cobalt"
-		},
-		{
-			"lang": "ru_ru",
-			"text": "Кобальт",
-			"info": "$(thing)Плавится в$(): Кобальт"
-		},
-		{
-			"lang": "uk_ua",
-			"text": "Кобальт",
-			"info": "$(thing)Розплавляється в$(): Кобальт"
-		}
-	]
+{
+  "id": "cobalt",
+  "formula": "Co",
+  "ore_block": "gtceu:raw_cobalt_block",
+  "indicator": "gtceu:cobalt_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Cobalt",
+      "info": "$(thing)Smelts into$(): Cobalt"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Кобальт",
+      "info": "$(thing)Плавится в$(): Кобальт"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Кобальт",
+      "info": "$(thing)Розплавляється в$(): Кобальту"
+    }
+  ]
 }

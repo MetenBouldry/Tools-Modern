@@ -1,0 +1,23 @@
+{
+  "id": "salt",
+  "formula": "NaCl",
+  "ore_block": "gtceu:raw_salt_block",
+  "indicator": "gtceu:salt_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Salt",
+      "info": "$(thing)Source of$(): Sodium, Chlorine"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Соль",
+      "info": "$(thing)Хромит$(): Натрий, Хлор"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Сіль",
+      "info": "$(thing)Джерело$(): Натрію, Хлору"
+    }
+  ]
+}

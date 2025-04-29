@@ -1,0 +1,23 @@
+{
+  "id": "diopside",
+  "formula": "MgCaSi₂O₅",
+  "ore_block": "gtceu:raw_diopside_block",
+  "indicator": "gtceu:diopside_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Diopside",
+      "info": "$(thing)Source of$(): Magnesium, Calcium"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Diopside",
+      "info": "$(thing)Хромит$(): Магний, Кальций"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Diopside",
+      "info": "$(thing)Джерело$(): Магнію, Кальцію"
+    }
+  ]
+}

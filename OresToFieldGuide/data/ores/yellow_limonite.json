@@ -1,0 +1,23 @@
+{
+    "id": "yellow_limonite",
+    "formula": "FeHO₂",
+    "ore_block": "gtceu:raw_yellow_limonite_block",
+    "indicator": "tfc:ore/small_limonite",
+    "translations": [
+        {
+            "lang": "en_us",
+            "text": "Yellow_Limonite",
+            "info": "$(thing)Melts into$(): Cast Iron"
+        },
+        {
+            "lang": "ru_ru",
+            "text": "Жёлтый лимонит",
+            "info": "$(thing)Плавится в$(): Железо"
+        },
+        {
+            "lang": "uk_ua",
+            "text": "Жовтий лимоніт",
+            "info": "$(thing)Розплавляється в$(): Чавун"
+        }
+    ]
+}

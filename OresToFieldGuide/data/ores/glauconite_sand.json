@@ -1,0 +1,23 @@
+{
+  "id": "glauconite_sand",
+  "formula": "KMg₂Al₄H₂O₁₂",
+  "ore_block": "gtceu:raw_glauconite_sand_block",
+  "indicator": "gtceu:glauconite_sand_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Glauconite_Sand",
+      "info": "$(thing)Source of$(): Magnesium, Aluminium"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Глауконитовый песок",
+      "info": "$(thing)Хромит$(): Магний, Алюминий"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Главконітний пісок",
+      "info": "$(thing)Джерело$(): Магнію, Алюмінію"
+    }
+  ]
+}

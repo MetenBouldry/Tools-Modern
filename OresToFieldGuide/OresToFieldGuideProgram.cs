@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Globalization;
+using System.Text;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -38,6 +39,9 @@ namespace OresToFieldGuide
 
 		public void Run()
 		{
+			// 0) Temp stuff
+			//TransformMineralData();
+
 			// 1) Load json
 			DeserializeData("dimensions", m_dimensionDict);
 			DeserializeData("ores", m_oreDict);
@@ -58,6 +62,62 @@ namespace OresToFieldGuide
 			// 4) Write out patchouli
 
 			ExportPatchouliEntries();
+		}
+
+		private void TransformMineralData()
+		{
+			// <mineral ID, <locale, mineral>>
+			var mineralDict = new Dictionary<string, Dictionary<string, Mineral>>();
+
+			var mineralDataPath = Path.Combine(Path.GetDirectoryName(m_arguments.DataFolder)!, "mineral_data");
+
+			foreach (var locale in s_locales)
+			{
+				var data = JsonSerializer.Deserialize<MineralData>(File.ReadAllText(Path.Combine(mineralDataPath, locale + ".json")));
+				
+				foreach (var mineral in data!.Minerals)
+				{
+					if (!mineralDict.TryGetValue(mineral.ID, out var dict))
+					{
+						dict = [];
+						mineralDict.Add(mineral.ID, dict);
+					}
+
+					mineral.Name ??= CultureInfo.CurrentCulture.TextInfo.ToTitleCase(mineral.ID);
+
+					dict[locale] = mineral;
+				}
+			}
+
+			// Then transform it into ores
+
+			var orePath = Path.Combine(m_arguments.DataFolder, "ores");
+
+			foreach ((var mineralID, var dict) in mineralDict)
+			{
+				var translations = new List<Translation>();
+				foreach ((var locale, var mineral) in dict)
+				{
+					translations.Add(new Translation
+					{
+						Language = locale,
+						Text = dict[locale].Name!,
+						Info = $"$(thing){dict[locale].Use}$(): {string.Join(", ", dict[locale].For)}"
+					});
+				}
+
+				var ore = new Ore
+				{
+					ID = mineralID,
+					Formula = dict.First().Value.Formula,
+					FullOreBlock = $"gtceu:raw_{mineralID}_block",
+					DefaultIndicator = $"gtceu:{mineralID}_indicator",
+					RawTranslations = translations.ToArray()
+				};
+
+				var json = JsonSerializer.Serialize(ore, m_jsonOptions);
+				File.WriteAllText(Path.Combine(orePath, mineralID + ".json"), json);
+			}
 		}
 
 		private void DeserializeData<T>(string subDir, Dictionary<string, T> dict) where T : IDataJsonObject
@@ -254,6 +314,7 @@ namespace OresToFieldGuide
 							.Any(wb => wb.OreID == ore.ID))
 							.OrderBy(vein =>
 								vein.Ores.Single(wb => wb.OreID == ore.ID).Weight)))
+				.Where(tuple => tuple.Item2.Any())
 				.OrderBy(tuple => tuple.ore.TranslatedNames[locale]);
 
 			// Build the pages

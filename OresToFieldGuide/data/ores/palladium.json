@@ -1,0 +1,23 @@
+{
+  "id": "palladium",
+  "formula": "Pd",
+  "ore_block": "gtceu:raw_palladium_block",
+  "indicator": "gtceu:palladium_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Palladium",
+      "info": "$(thing)Source of$(): Palladium"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Палладий",
+      "info": "$(thing)Хромит$(): Палладий"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Паладій",
+      "info": "$(thing)Джерело$(): Паладію"
+    }
+  ]
+}

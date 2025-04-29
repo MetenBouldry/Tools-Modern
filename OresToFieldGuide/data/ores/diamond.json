@@ -1,0 +1,23 @@
+{
+  "id": "diamond",
+  "formula": "C",
+  "ore_block": "gtceu:raw_diamond_block",
+  "indicator": "gtceu:diamond_bud_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Diamond",
+      "info": "$(thing)Used for$(): Macerators, AE2"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Алмаз",
+      "info": "$(thing)Используется для$(): Измельчители, предметы из AE2"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Діамант",
+      "info": "$(thing)Використовується для$(): Подрібнювачів, AE2"
+    }
+  ]
+}
