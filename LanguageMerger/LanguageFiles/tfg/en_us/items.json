@@ -46,7 +46,14 @@
     "item.tfg.spade_head_extruder_mold": "Extruder Mold (Spade Head)",
     "item.tfg.unfired_chalk": "Unfired Chalk Stick",
 
+
     "item.tfg.brick.deepslate": "Migmatite Brick",
+    "item.tfg.loose.anorthosite": "Loose Anorthosite",
+    "item.tfg.brick.anorthosite": "Anorthosite Brick",
+    "item.tfg.dust.anorthosite": "Anorthosite Dust",
+    "item.tfg.loose.syenite": "Loose Syenite",
+    "item.tfg.brick.syenite": "Syenite Brick",
+    "item.tfg.dust.syenite": "Syenite Dust",
 
     "item.tfg.terra_firma_greg": "TerraFirmaGreg",
 
