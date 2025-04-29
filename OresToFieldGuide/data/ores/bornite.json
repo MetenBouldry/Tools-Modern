@@ -7,17 +7,17 @@
     {
       "lang": "en_us",
       "text": "Bornite",
-      "info": "$(thing)Source of$(): Copper, Iron"
+      "info": "$(thing)Melts into$(): Copper"
     },
     {
       "lang": "ru_ru",
       "text": "Борнит",
-      "info": "$(thing)Хромит$(): Медь, Железо"
+      "info": "$(thing)Хромит$(): Медь"
     },
     {
       "lang": "uk_ua",
       "text": "Борніт",
-      "info": "$(thing)Джерело$(): Мідь, Залізо"
+      "info": "$(thing)Джерело$(): Мідь"
     }
   ]
 }

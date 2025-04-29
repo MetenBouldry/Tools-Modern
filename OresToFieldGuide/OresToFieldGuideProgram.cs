@@ -1,5 +1,4 @@
-﻿using System.Globalization;
-using System.Text;
+﻿using System.Text;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -39,9 +38,6 @@ namespace OresToFieldGuide
 
 		public void Run()
 		{
-			// 0) Temp stuff
-			//TransformMineralData();
-
 			// 1) Load json
 			DeserializeData("dimensions", m_dimensionDict);
 			DeserializeData("ores", m_oreDict);
@@ -62,62 +58,6 @@ namespace OresToFieldGuide
 			// 4) Write out patchouli
 
 			ExportPatchouliEntries();
-		}
-
-		private void TransformMineralData()
-		{
-			// <mineral ID, <locale, mineral>>
-			var mineralDict = new Dictionary<string, Dictionary<string, Mineral>>();
-
-			var mineralDataPath = Path.Combine(Path.GetDirectoryName(m_arguments.DataFolder)!, "mineral_data");
-
-			foreach (var locale in s_locales)
-			{
-				var data = JsonSerializer.Deserialize<MineralData>(File.ReadAllText(Path.Combine(mineralDataPath, locale + ".json")));
-				
-				foreach (var mineral in data!.Minerals)
-				{
-					if (!mineralDict.TryGetValue(mineral.ID, out var dict))
-					{
-						dict = [];
-						mineralDict.Add(mineral.ID, dict);
-					}
-
-					mineral.Name ??= CultureInfo.CurrentCulture.TextInfo.ToTitleCase(mineral.ID);
-
-					dict[locale] = mineral;
-				}
-			}
-
-			// Then transform it into ores
-
-			var orePath = Path.Combine(m_arguments.DataFolder, "ores");
-
-			foreach ((var mineralID, var dict) in mineralDict)
-			{
-				var translations = new List<Translation>();
-				foreach ((var locale, var mineral) in dict)
-				{
-					translations.Add(new Translation
-					{
-						Language = locale,
-						Text = dict[locale].Name!,
-						Info = $"$(thing){dict[locale].Use}$(): {string.Join(", ", dict[locale].For)}"
-					});
-				}
-
-				var ore = new Ore
-				{
-					ID = mineralID,
-					Formula = dict.First().Value.Formula,
-					FullOreBlock = $"gtceu:raw_{mineralID}_block",
-					DefaultIndicator = $"gtceu:{mineralID}_indicator",
-					RawTranslations = translations.ToArray()
-				};
-
-				var json = JsonSerializer.Serialize(ore, m_jsonOptions);
-				File.WriteAllText(Path.Combine(orePath, mineralID + ".json"), json);
-			}
 		}
 
 		private void DeserializeData<T>(string subDir, Dictionary<string, T> dict) where T : IDataJsonObject
@@ -312,7 +252,7 @@ namespace OresToFieldGuide
 					.Where(vein =>
 						vein.Ores
 							.Any(wb => wb.OreID == ore.ID))
-							.OrderBy(vein =>
+							.OrderByDescending(vein =>
 								vein.Ores.Single(wb => wb.OreID == ore.ID).Weight)))
 				.Where(tuple => tuple.Item2.Any())
 				.OrderBy(tuple => tuple.ore.TranslatedNames[locale]);
@@ -432,13 +372,11 @@ namespace OresToFieldGuide
 
 					pageBuilder.ThingMacro(tokens["height"]);
 					pageBuilder.Append($": {vein.Config.Height}");
-					pageBuilder.LineBreak();
 				}
 				else if (vein.Type == "tfc:cluster_vein")
 				{
 					pageBuilder.ThingMacro(tokens["size"]);
 					pageBuilder.Append($": {vein.Config.Size}");
-					pageBuilder.LineBreak();
 				}
 				else // pipe vein
 				{
@@ -448,15 +386,18 @@ namespace OresToFieldGuide
 
 					pageBuilder.ThingMacro(tokens["radius"]);
 					pageBuilder.Append($": {vein.Config.Radius}");
-					pageBuilder.LineBreak();
 				}
 
-				pageBuilder.ThingMacro(tokens["indicator_depth"]);
-				pageBuilder.Append($": {vein.Indicator!.Depth}");
-				pageBuilder.LineBreak2();
+				if (vein.Indicator!.Depth > 1)
+				{
+					pageBuilder.LineBreak();
+					pageBuilder.ThingMacro(tokens["indicator_depth"]);
+					pageBuilder.Append($": {vein.Indicator!.Depth}");
+				}
 
+				pageBuilder.LineBreak2();
 				pageBuilder.ThingMacro(tokens["stone_types"]);
-				pageBuilder.Append($": {string.Join(", ", vein.Rocks.Select(r => m_rockDict[r].Translations[locale]))}");
+				pageBuilder.Append($": {string.Join(", ", vein.Rocks.Select(r => m_rockDict[r].Translations[locale]).Order())}");
 
 				if (vein.TranslatedInfo[locale] != null)
 				{
@@ -474,7 +415,7 @@ namespace OresToFieldGuide
 
 				// One page per ore in the vein
 
-				foreach (var block in vein.Ores.OrderBy(wb => wb.Weight))
+				foreach (var block in vein.Ores.OrderByDescending(wb => wb.Weight))
 				{
 					var ore = m_oreDict[block.OreID];
 
@@ -529,13 +470,13 @@ namespace OresToFieldGuide
 			{
 				// Clear out existing files
 				var outputDir = GetFieldGuideOutputDirectory(locale);
-				//foreach (var existingPath in Directory.EnumerateFiles(outputDir))
-				//{
-				//	if (!m_arguments.WhitelistedPatchouliEntryFilenames.Contains(Path.GetFileNameWithoutExtension(existingPath)))
-				//	{
-				//		File.Delete(existingPath);
-				//	}
-				//}
+				foreach (var existingPath in Directory.EnumerateFiles(outputDir))
+				{
+					if (!m_arguments.WhitelistedPatchouliEntryFilenames.Contains(Path.GetFileNameWithoutExtension(existingPath)))
+					{
+						File.Delete(existingPath);
+					}
+				}
 
 				// Then write new ones
 				foreach (var dimension in m_dimensionDict.Values)
@@ -563,7 +504,10 @@ namespace OresToFieldGuide
 			{
 				string configuredVeinDir = Path.Combine(configuredFeatureDir, dimension.ID, "vein");
 
-				// TODO: Clear directory
+				foreach (var existingPath in Directory.EnumerateFiles(configuredVeinDir))
+				{
+					File.Delete(existingPath);
+				}
 
 				foreach (var vein in veins)
 				{
@@ -583,7 +527,10 @@ namespace OresToFieldGuide
 			{
 				string placedVeinDir = Path.Combine(placedFeatureDir, dimension.ID, "vein");
 
-				// TODO: Clear directory
+				foreach (var existingPath in Directory.EnumerateFiles(placedVeinDir))
+				{
+					File.Delete(existingPath);
+				}
 
 				foreach (var vein in veins)
 				{

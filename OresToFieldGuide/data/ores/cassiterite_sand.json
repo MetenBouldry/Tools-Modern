@@ -6,7 +6,7 @@
     "translations": [
         {
             "lang": "en_us",
-            "text": "Cassiterite_Sand",
+            "text": "Cassiterite Sand",
             "info": "$(thing)Melts into$(): Tin"
         },
         {

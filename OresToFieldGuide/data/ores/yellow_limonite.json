@@ -6,7 +6,7 @@
     "translations": [
         {
             "lang": "en_us",
-            "text": "Yellow_Limonite",
+            "text": "Yellow Limonite",
             "info": "$(thing)Melts into$(): Cast Iron"
         },
         {

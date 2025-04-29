@@ -11,6 +11,12 @@ namespace OresToFieldGuide
 		public required string ID { get; set; }
 
 		/// <summary>
+		/// The ID of the dimension this vein is in.
+		/// </summary>
+		[JsonPropertyName("dimension")]
+		public required string Dimension { get; set; }
+
+		/// <summary>
 		/// What type of Vein this is, IE: tfc:disc_vein
 		/// </summary>
 		[JsonPropertyName("type")]
@@ -152,26 +158,26 @@ namespace OresToFieldGuide
 		/// The rarity of how often this indicator appears on the surface, as 1 in N blocks
 		/// </summary>
 		[JsonPropertyName("rarity")]
-		public required int Rarity { get; set; }
+		public int Rarity { get; set; } = 15;
 
 		/// <summary>
 		/// How close the vein has to be to the surface for it to get surface indicators
 		/// </summary>
 		[JsonPropertyName("depth")]
-		public required int Depth { get; set; }
+		public int Depth { get; set; } = 20;
 
 		/// <summary>
 		/// The rarity of how often this indicator appears within caves, as 1 in N blocks
 		/// (This includes air blocks! So this number should always be significantly higher than <see cref="Rarity"/>)
 		/// </summary>
 		[JsonPropertyName("underground_rarity")]
-		public required int UndergroundRarity { get; set; }
+		public int UndergroundRarity { get; set; } = 40;
 
 		/// <summary>
 		/// How many times placing an underground indicator should be attempted
 		/// </summary>
 		[JsonPropertyName("underground_count")]
-		public required int UndergroundCount { get; set; }
+		public int UndergroundCount { get; set; } = 200;
 
 		/// <summary>
 		/// The indicator blocks and their weights to use for this vein.

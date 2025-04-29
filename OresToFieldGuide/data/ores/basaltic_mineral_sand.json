@@ -6,8 +6,8 @@
   "translations": [
     {
       "lang": "en_us",
-      "text": "Basaltic_Mineral_Sand",
-      "info": "$(thing)Smelts into$(): Cast Iron"
+      "text": "Basaltic Mineral Sands",
+      "info": "$(thing)Melts into$(): Cast Iron"
     },
     {
       "lang": "ru_ru",

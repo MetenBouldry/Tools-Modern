@@ -1,7 +1,7 @@
 {
   "id": "amethyst",
   "formula": "(SiO₂)₄Fe",
-  "ore_block": "minecraft:amethyst_block",
+  "ore_block": "gtceu:raw_amethyst_block",
   "indicator": "gtceu:amethyst_bud_indicator",
   "translations": [
     {

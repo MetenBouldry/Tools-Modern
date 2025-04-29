@@ -1,0 +1,56 @@
+{
+	"id": "nether_sheldonite",
+	"dimension": "nether",
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 250,
+		"density": 0.4,
+		"max_y": 128,
+		"size": 35
+	},
+	"ores": [
+		{
+			"ore": "bornite",
+			"weight": 35,
+			"block_weight": 1
+		},
+		{
+			"ore": "cooperite",
+			"weight": 25,
+			"block_weight": 1
+		},
+		{
+			"ore": "platinum",
+			"weight": 25,
+			"block_weight": 1
+		},
+		{
+			"ore": "palladium",
+			"weight": 15
+		}
+	],
+	"rocks": [
+		"deepslate",
+		"blackstone",
+		"basalt",
+		"dripstone"
+	],
+	"indicator": {
+		"depth": 1,
+		"underground_count": 150
+	},
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Cooperite & Bornite"
+		},
+		{
+			"lang": "ru_ru",
+			"text": "Шелдонит и Борнит"
+		},
+		{
+			"lang": "uk_ua",
+			"text": "Шелдоніт і Борніт"
+		}
+	]
+}

@@ -1,0 +1,52 @@
+{
+	"id": "nether_silver",
+	"dimension": "nether",
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 160,
+		"density": 0.5,
+		"min_y": 24,
+		"max_y": 128,
+		"size": 45
+	},
+	"ores": [
+		{
+			"ore": "galena",
+			"weight": 30,
+			"block_weight": 1
+		},
+		{
+			"ore": "silver",
+			"weight": 35,
+			"block_weight": 1
+		},
+		{
+			"ore": "lead",
+			"weight": 35,
+			"block_weight": 1
+		}
+	],
+	"rocks": [
+		"granite",
+		"gneiss",
+		"blackstone"
+	],
+	"indicator": {
+		"depth": 1,
+		"underground_count": 150
+	},
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Silver, Galena, & Lead"
+		},
+		{
+			"lang": "ru_ru",
+			"text": "Серебро, Галена и Свинец"
+		},
+		{
+			"lang": "uk_ua",
+			"text": "Срібло, Гален і Свинець"
+		}
+	]
+}
