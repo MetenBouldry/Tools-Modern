@@ -21,11 +21,6 @@
     "material.tfg.gneiss": "Gneiss",
     "material.tfg.chalk": "Chalk",
 
-    "material.tfg.fayalite": "Fayalite",
-    "material.tfg.diopside": "Diopside",
-    "material.tfg.enstatite": "Enstatite",
-    "material.tfg.armalcolite": "Armalcolite",
-
     "material.gtceu.thermochemically_treated_hardwood": "Thermochemically Treated Hardwood",
     "material.gtceu.hardwood": "Hardwood"
 }
