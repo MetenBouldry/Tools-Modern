@@ -1,0 +1,23 @@
+{
+  "id": "ilmenite",
+  "formula": "FeTiO₃",
+  "ore_block": "gtceu:raw_ilmenite_block",
+  "indicator": "gtceu:ilmenite_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Ilmenite",
+      "info": "$(thing)Source of$(): Iron, Titanium"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Ильменит",
+      "info": "$(thing)Хромит$(): Железо, Титан"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Ільменіт",
+      "info": "$(thing)Джерело$(): Залізо, Титану"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+	"id": "blackstone",
+	"pattern": "gtceu:pyroxenite_{0}_ore",
+	"translations":
+	{
+		"en_us": "Pyroxenite",
+		"ru_ru": "Пироксенит",
+		"uk_ua": "Піроксеніти"
+	},
+	"replaceable_blocks": [
+		"minecraft:blackstone",
+		"minecraft:magma_block"
+	]
+}

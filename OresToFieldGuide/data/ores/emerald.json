@@ -1,0 +1,23 @@
+{
+  "id": "emerald",
+  "formula": "Be₃Al₂Si₆O₁₈",
+  "ore_block": "gtceu:raw_emerald_block",
+  "indicator": "gtceu:emerald_bud_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Emerald",
+      "info": "$(thing)Used for$(): MV components, Item tag filters"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Изумруд",
+      "info": "$(thing)Используется для$(): компоненты уровня MV, Предметные фильтры (Тэг)"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Смарагд",
+      "info": "$(thing)Використовується для$(): MV компонентів, Фільтр тегів предметів"
+    }
+  ]
+}

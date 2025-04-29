@@ -1,0 +1,22 @@
+{
+  "id": "yellow_garnet",
+  "ore_block": "gtceu:raw_yellow_garnet_block",
+  "indicator": "gtceu:yellow_garnet_bud_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Yellow Garnet",
+      "info": "$(thing)Source of$(): Andradite, Grossular, Uvarovite"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Жёлтый гранат",
+      "info": "$(thing)Хромит$(): Андрадит, Гроссуляр, Уваровит"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Жовтий гранат",
+      "info": "$(thing)Джерело$(): Андрадит, Гросулар, Уваровіт"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "chalcopyrite",
+  "formula": "CuFeS₂",
+  "ore_block": "gtceu:raw_chalcopyrite_block",
+  "indicator": "gtceu:chalcopyrite_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Chalcopyrite",
+      "info": "$(thing)Melts into$(): Copper"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Халькопирит",
+      "info": "$(thing)Плавится в$(): Медь"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Халькопирит",
+      "info": "$(thing)Розплавляється в$(): Мідь"
+    }
+  ]
+}

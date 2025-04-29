@@ -1,0 +1,23 @@
+{
+  "id": "zeolite",
+  "formula": "NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂",
+  "ore_block": "gtceu:raw_zeolite_block",
+  "indicator": "gtceu:zeolite_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Zeolite",
+      "info": "$(thing)Source of$(): Aluminium, Oxygen"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Цеолит",
+      "info": "$(thing)Хромит$(): Алюминий, Кислород"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Цеоліт",
+      "info": "$(thing)Джерело$(): Алюмінію, Кисню"
+    }
+  ]
+}

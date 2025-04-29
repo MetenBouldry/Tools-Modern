@@ -1,0 +1,23 @@
+{
+  "id": "scheelite",
+  "formula": "Ca(WO₃)O",
+  "ore_block": "gtceu:raw_scheelite_block",
+  "indicator": "gtceu:scheelite_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Scheelite",
+      "info": "$(thing)Source of$(): Tungsten"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Шеелит",
+      "info": "$(thing)Хромит$(): Вольфрам"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Шеєліт",
+      "info": "$(thing)Джерело$(): Вольфраму"
+    }
+  ]
+}

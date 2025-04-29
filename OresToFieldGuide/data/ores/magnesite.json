@@ -1,0 +1,23 @@
+{
+  "id": "magnesite",
+  "formula": "MgCO₃",
+  "ore_block": "gtceu:raw_magnesite_block",
+  "indicator": "gtceu:magnesite_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Magnesite",
+      "info": "$(thing)Source of$(): Magnesium"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Магнезит",
+      "info": "$(thing)Хромит$(): Магний"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Магнезит",
+      "info": "$(thing)Джерело$(): Магнію"
+    }
+  ]
+}

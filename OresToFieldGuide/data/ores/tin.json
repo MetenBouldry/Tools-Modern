@@ -1,0 +1,23 @@
+{
+    "id": "tin",
+    "formula": "Sn",
+    "ore_block": "gtceu:raw_tin_block",
+    "indicator": "tfc:ore/small_cassiterite",
+    "translations": [
+        {
+            "lang": "en_us",
+            "text": "Tin",
+            "info": "$(thing)Melts into$(): Tin"
+        },
+        {
+            "lang": "ru_ru",
+            "text": "Олово",
+            "info": "$(thing)Плавится в$(): Олово"
+        },
+        {
+            "lang": "uk_ua",
+            "text": "Олово",
+            "info": "$(thing)Розплавляється в$(): Олово"
+        }
+    ]
+}

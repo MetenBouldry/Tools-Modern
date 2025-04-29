@@ -1,0 +1,12 @@
+﻿{
+	"id": "dacite",
+	"pattern": "gtceu:dacite_{0}_ore",
+	"translations": {
+		"en_us": "Dacite",
+		"ru_ru": "Дацит",
+		"uk_ua": "Дацит"
+	},
+	"replaceable_blocks": [
+		"tfc:rock/raw/dacite"
+	]
+}

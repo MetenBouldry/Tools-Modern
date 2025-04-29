@@ -1,0 +1,23 @@
+{
+  "id": "platinum",
+  "formula": "Pt",
+  "ore_block": "gtceu:raw_platinum_block",
+  "indicator": "gtceu:platinum_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Platinum",
+      "info": "$(thing)Smelts into$(): Platinum"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Платина",
+      "info": "$(thing)Плавится в$(): Платина"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Платина",
+      "info": "$(thing)Розплавляється в$(): Платини"
+    }
+  ]
+}

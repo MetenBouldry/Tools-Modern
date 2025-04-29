@@ -1,0 +1,23 @@
+{
+  "id": "green_sapphire",
+  "formula": "Al₂O₃",
+  "ore_block": "gtceu:raw_green_sapphire_block",
+  "indicator": "gtceu:green_sapphire_bud_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Green Sapphire",
+      "info": "$(thing)Source of$(): Aluminium"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Зелёный сапфир",
+      "info": "$(thing)Хромит$(): Алюминий"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Зелений сапфір",
+      "info": "$(thing)Джерело$(): Алюмінію"
+    }
+  ]
+}
