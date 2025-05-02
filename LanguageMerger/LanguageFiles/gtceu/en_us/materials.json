@@ -1,3 +1,15 @@
 {
-	"material.gtceu.ice": "Ice Water"
+	"material.gtceu.ice": "Ice Water",
+	// Sorry GT, big bang theory doesn't count as a scifi reference
+	"material.gtceu.cooperite": "Cooperite",
+
+	"material.gtceu.fayalite": "Fayalite",
+	"material.gtceu.diopside": "Diopside",
+	"material.gtceu.enstatite": "Enstatite",
+	"material.gtceu.armalcolite": "Armalcolite",
+
+	"material.gtceu.desh": "Desh",
+	"material.gtceu.ostrum": "Ostrum",
+	"material.gtceu.calorite": "Calorite",
+	"material.gtceu.etrium": "Etrium"
 }

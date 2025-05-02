@@ -1,0 +1,23 @@
+{
+  "id": "borax",
+  "formula": "Na₂B₄(H₂O)₁₀O₇",
+  "ore_block": "gtceu:raw_borax_block",
+  "indicator": "gtceu:borax_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Borax",
+      "info": "$(thing)Source of$(): Sodium, Boron"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Бура",
+      "info": "$(thing)Хромит$(): Натрий, Бор"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Бура",
+      "info": "$(thing)Джерело$(): Натрію, Бору"
+    }
+  ]
+}

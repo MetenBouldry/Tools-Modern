@@ -1,0 +1,9 @@
+{
+	"id": "moon",
+	"dimension_id": "ad_astra:moon",
+	"ore_index_icon": "ae2:quartz",
+	"vein_index_icon": "gtceu:anorthosite_certus_quartz_ore",
+	"translations": {
+		"en_us": "The Moon"
+	}
+}

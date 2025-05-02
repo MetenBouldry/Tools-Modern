@@ -1,0 +1,12 @@
+﻿{
+	"id": "marble",
+	"pattern": "gtceu:marble_{0}_ore",
+	"translations": {
+		"en_us": "Marble",
+		"ru_ru": "Мрамор",
+		"uk_ua": "Мармур"
+	},
+	"replaceable_blocks": [
+		"tfc:rock/raw/marble"
+	]
+}

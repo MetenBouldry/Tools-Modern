@@ -1,41 +1,35 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text.Json.Serialization;
 
-namespace OresToFieldGuide.JSONObjects.Patchouli.PageTypes
+namespace OresToFieldGuide
 {
     /// <summary>
     /// A .NET Representation of a Patchouli Page for displaying Entities
     /// <para></para>
     /// <a href="https://vazkiimods.github.io/Patchouli/docs/patchouli-basics/page-types/#entity-pages-patchoulientity">Patchouli Docs</a>
     /// </summary>
-    [Serializable, JsonObject]
     public class EntityPage : PatchouliPage
     {
         public override string Type => "patchouli:entity";
 
-        [JsonProperty("entity")]
+        [JsonPropertyName("entity")]
         public required string Entity { get; set; }
 
-        [JsonProperty("scale")]
+        [JsonPropertyName("scale")]
         public float Scale { get; set; } = 1.0f;
 
-        [JsonProperty("offset")]
+        [JsonPropertyName("offset")]
         public float Offset { get; set; } = 0;
 
-        [JsonProperty("rotate")]
+        [JsonPropertyName("rotate")]
         public bool Rotate { get; set; } = true;
 
-        [JsonProperty("default_rotation")]
+        [JsonPropertyName("default_rotation")]
         public float DefaultRotation { get; set; }
 
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string? Name { get; set; }
 
-        [JsonProperty("text")]
+        [JsonPropertyName("text")]
         public string? Text { get; set; }
     }
 }

@@ -1,0 +1,23 @@
+{
+  "id": "iron",
+  "formula": "Fe",
+  "ore_block": "minecraft:raw_iron_block",
+  "indicator": "gtceu:iron_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Iron",
+      "info": "$(thing)Melts into$(): Cast Iron"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Железо",
+      "info": "$(thing)Плавится в$(): Железо"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Залізо",
+      "info": "$(thing)Розплавляється в$(): Чавун"
+    }
+  ]
+}

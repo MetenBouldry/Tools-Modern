@@ -1,0 +1,23 @@
+{
+  "id": "trona",
+  "formula": "Na₃C₂H(H₂O)₂O₆",
+  "ore_block": "gtceu:raw_trona_block",
+  "indicator": "gtceu:trona_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Trona",
+      "info": "$(thing)Source of$(): Sodium"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Трона",
+      "info": "$(thing)Хромит$(): Натрий"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Трона",
+      "info": "$(thing)Джерело$(): Натрію"
+    }
+  ]
+}

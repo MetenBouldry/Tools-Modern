@@ -1,0 +1,52 @@
+{
+	"id": "normal_salt",
+	"dimension": "earth",
+	"type": "tfc:disc_vein",
+	"config": {
+		"rarity": 175,
+		"density": 0.4,
+		"min_y": 30,
+		"max_y": 70,
+		"size": 40,
+		"height": 4
+	},
+	"ores": [
+		{
+			"ore": "rock_salt",
+			"weight": 40,
+			"block_weight": 1
+		},
+		{
+			"ore": "salt",
+			"weight": 30,
+			"block_weight": 1
+		},
+		{
+			"ore": "lepidolite",
+			"weight": 15
+		},
+		{
+			"ore": "borax",
+			"weight": 15
+		}
+	],
+	"rocks": [
+		"shale",
+		"claystone",
+		"limestone"
+	],
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Salts & Borax"
+		},
+		{
+			"lang": "ru_ru",
+			"text": "Соли и Бура"
+		},
+		{
+			"lang": "uk_ua",
+			"text": "Солі та Бура"
+		}
+	]
+}

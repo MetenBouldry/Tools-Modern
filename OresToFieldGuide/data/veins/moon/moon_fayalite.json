@@ -1,0 +1,47 @@
+{
+	"id": "moon_fayalite",
+	"dimension": "moon",
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 250,
+		"density": 0.3,
+		"min_y": -40,
+		"max_y": 90,
+		"size": 40
+	},
+	"ores": [
+		{
+			"ore": "enstatite",
+			"weight": 10
+		},
+		{
+			"ore": "pyrite",
+			"weight": 30,
+			"block_weight": 1
+		},
+		{
+			"ore": "pentlandite",
+			"weight": 15
+		},
+		{
+			"ore": "fayalite",
+			"weight": 45
+		}
+	],
+	"rocks": [
+		"diorite",
+		"basalt",
+		"gabbro",
+		"anorthosite",
+		"basanite"
+	],
+	"indicator": {
+		"depth": 50
+	},
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Fayalite & Pyrite"
+		}
+	]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "topaz",
+  "formula": "Al₂SiFH₂",
+  "ore_block": "gtceu:raw_topaz_block",
+  "indicator": "gtceu:topaz_bud_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Topaz",
+      "info": "$(thing)Source of$(): Aluminium, Fluorine"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Топаз",
+      "info": "$(thing)Хромит$(): Алюминий, Фтор"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Топаз",
+      "info": "$(thing)Джерело$(): Алюмінію, Фтору"
+    }
+  ]
+}

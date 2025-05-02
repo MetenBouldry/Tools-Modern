@@ -1,0 +1,30 @@
+{
+	"rarity": "Rarity",
+	"density": "Density",
+	"type": "Type",
+	"y": "Y",
+	"size": "Size",
+	"height": "Height",
+	"radius": "Radius",
+	"stone_types": "Stone Types",
+	"indicator_depth": "Indicator Max Depth",
+	"percentage": "Percentage",
+	"formula": "Formula",
+
+	"hazard": "Hazard",
+	"arsenicosis": "$(t:Requires Face Mask)Arsenicosis (Inhalation)$(/t)",
+	"asbestosis": "$(t:Requires Face Mask)Asbestosis (Inhalation)$(/t)",
+	"berylliosis": "$(t:Requires Rubber Gloves)Berylliosis (Skin Contact)$(/t)",
+	"carcinogenic": "$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)",
+	"weak_poison": "$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)",
+	"irritant": "$(t:Requires Rubber Gloves)Irritant (Skin Contact)$(/t)",
+
+	"tfc:cluster_vein": "Cluster Vein",
+	"tfc:pipe_vein": "Pipe Vein",
+	"tfc:disc_vein": "Disc Vein",
+
+	"vein_index": "Vein Index",
+	"ore_index": "Ore Index",
+	"ore_index_format": "This is the $(thing)Ore Index$() for $(thing){0}$(). All ores are sorted alphabetically and then by richest to poorest vein type. You can click on them to learn more information about each vein.",
+	"vein_index_format": "This is the $(thing)Vein Index$() for $(item){0}$(). Each Vein has details regarding its rarity, density, vein type, height found, sizes, what stones it spawns in, and more."
+}
