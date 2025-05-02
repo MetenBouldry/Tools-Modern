@@ -54,12 +54,12 @@ namespace OresToFieldGuide
 
 			// 3) Write out veins
 
-			//ExportConfiguredVeins();
-			//ExportPlacedVeins();
+			ExportConfiguredVeins();
+			ExportPlacedVeins();
 
 			// 4) Write out patchouli
 
-			//ExportPatchouliEntries();
+			ExportPatchouliEntries();
 
 			// 5) Generate spreadsheet
 
