@@ -29,8 +29,8 @@
 	],
 	"rocks": [
 		"basalt",
-		"basanite",
-		"anorthosite"
+		"moon_stone",
+		"moon_deepslate"
 	],
 	"indicator": {
 		"depth": 50

@@ -1,12 +1,12 @@
 ﻿{
-	"id": "anorthosite",
-	"pattern": "gtceu:anorthosite_{0}_ore",
+	"id": "moon_stone",
+	"pattern": "gtceu:moon_stone_{0}_ore",
 	"translations": {
 		"en_us": "Anorthosite",
 		"ru_ru": "Анортозит",
 		"uk_ua": "Анортозит"
 	},
 	"replaceable_blocks": [
-		"tfg:rock/raw_anorthosite"
+		"ad_astra:moon_stone"
 	]
 }

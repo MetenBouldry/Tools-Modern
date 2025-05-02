@@ -3,6 +3,8 @@ using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Common;
+using OfficeOpenXml;
+using OfficeOpenXml.Style;
 
 namespace OresToFieldGuide
 {
@@ -12,10 +14,10 @@ namespace OresToFieldGuide
 		public static readonly string[] s_locales =
 		[
 			"en_us", // US English
-            "ru_ru", // Russian
-            "uk_ua", // Ukranian
-            //"it_it", // Italian
-        ];
+			"ru_ru", // Russian
+			"uk_ua", // Ukranian
+			//"it_it", // Italian
+		];
 
 		private readonly JsonSerializerOptions m_jsonOptions = new()
 		{
@@ -52,12 +54,16 @@ namespace OresToFieldGuide
 
 			// 3) Write out veins
 
-			ExportConfiguredVeins();
-			ExportPlacedVeins();
+			//ExportConfiguredVeins();
+			//ExportPlacedVeins();
 
 			// 4) Write out patchouli
 
-			ExportPatchouliEntries();
+			//ExportPatchouliEntries();
+
+			// 5) Generate spreadsheet
+
+			ExportSpreadsheet();
 		}
 
 		private void DeserializeData<T>(string subDir, Dictionary<string, T> dict) where T : IDataJsonObject
@@ -545,6 +551,115 @@ namespace OresToFieldGuide
 					ConsoleLogHelper.WriteLine($"Wrote out placed feature {vein.ID}", LogLevel.Info);
 				}
 			}
+		}
+
+		private void ExportSpreadsheet()
+		{
+			var doc = new ExcelPackage();
+
+			foreach ((var dimension, var veins) in m_veinDict)
+			{
+				var rocks = veins.SelectMany(v => v.Rocks).Distinct().Order().ToList();
+
+				var sheet = doc.Workbook.Worksheets.Add(dimension.ID);
+				(int oreColumnIndex, int rockColumnIndex) = SetUpSheet(sheet, rocks);
+
+				int row = 2;
+				foreach (var vein in veins)
+				{
+					sheet.Cells[row, 1].Value = vein.ID;
+					sheet.Cells[row, 2].Value = vein.Type;
+					sheet.Cells[row, 3].Value = vein.Config.Rarity;
+					sheet.Cells[row, 4].Value = vein.Config.Density;
+					sheet.Cells[row, 5].Value = vein.Config.MinY;
+					sheet.Cells[row, 6].Value = vein.Config.MaxY;
+
+					if (vein.Type is "tfc:cluster_vein" or "tfc:disc_vein")
+					{
+						sheet.Cells[row, 7].Value = vein.Config.Size;
+					}
+					if (vein.Type is "tfc:disc_vein" or "tfc:pipe_vein")
+					{
+						sheet.Cells[row, 8].Value = vein.Config.Height;
+					}
+					if (vein.Type is "tfc:pipe_vein")
+					{
+						sheet.Cells[row, 9].Value = vein.Config.Radius;
+					}
+
+					int column = oreColumnIndex;
+					foreach (var ore in vein.Ores)
+					{
+						string oreStr = $"{ore.OreID}: {ore.Weight}";
+						if (ore.FullBlockWeight != null)
+						{
+							oreStr += $" [{ore.FullBlockWeight}]";
+						}
+
+						sheet.Cells[row, column++].Value = oreStr;
+					}
+
+					column = rockColumnIndex;
+					foreach (var rock in rocks)
+					{
+						sheet.Cells[row, column++].Value = vein.Rocks.Contains(rock) ? "✔️" : "";
+					}
+
+					row++;
+				}
+
+				for (int i = 1; i < rockColumnIndex + m_rockDict.Count; i++)
+				{
+					sheet.Column(i).AutoFit();
+				}
+			}
+
+			using var outStream = new FileStream(Path.Combine(m_arguments.DataFolder, "sheet.xlsx"), FileMode.Create);
+			doc.SaveAs(outStream);
+			doc.Dispose();
+
+			ConsoleLogHelper.WriteLine("Exported spreadsheet!", LogLevel.Info);
+		}
+
+		private (int oreColumnIndex, int rockColumnIndex) SetUpSheet(ExcelWorksheet sheet, IEnumerable<string> rocks)
+		{
+			int oreColumnIndex, rockColumnIndex;
+
+			int column = 1;
+			sheet.Cells[1, column++].Value = "Vein ID";
+			sheet.Cells[1, column++].Value = "Type";
+			sheet.Cells[1, column++].Value = "Rarity";
+			sheet.Cells[1, column++].Value = "Density";
+			sheet.Cells[1, column++].Value = "Min Y";
+			sheet.Cells[1, column++].Value = "Max Y";
+			sheet.Cells[1, column++].Value = "Size";
+			sheet.Cells[1, column++].Value = "Height";
+			sheet.Cells[1, column++].Value = "Radius";
+
+			oreColumnIndex = column;
+			sheet.Cells[1, column].Value = "Ores";
+			column += m_veinDict.Values.SelectMany(x => x).Select(vein => vein.Ores.Length).Max();
+
+			rockColumnIndex = column;
+			foreach (var rock in rocks)
+			{
+				sheet.Cells[1, column++].Value = rock;
+			}
+
+			// Format as text
+			sheet.Cells.Style.Numberformat.Format = "@";
+
+			// Set alignment
+			sheet.Cells.Style.HorizontalAlignment = ExcelHorizontalAlignment.Left;
+			sheet.Cells.Style.VerticalAlignment = ExcelVerticalAlignment.Top;
+
+			// Make the first row bold
+			sheet.Row(1).Style.Font.Bold = true;
+
+			// And freeze it
+			sheet.View.FreezePanes(2, 1);
+
+			return (oreColumnIndex, rockColumnIndex);
 		}
 	}
 }

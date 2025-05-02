@@ -31,9 +31,9 @@
 	],
 	"rocks": [
 		"basalt",
-		"basanite",
+		"moon_deepslate",
 		"gabbro",
-		"anorthosite",
+		"moon_stone",
 		"diorite"
 	],
 	"indicator": {
