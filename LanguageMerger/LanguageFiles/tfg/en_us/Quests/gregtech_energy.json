@@ -1,8 +1,8 @@
 {
     // Welcome to MV
 
-    "quests.gregtech_energy": "&bMV&r - Medium Voltage",
-    "quests.gregtech_energy.subtitle": "Venture into petrochemistry and refine electronics",
+    "quests.gregtech_energy": "Gregtech Energy",
+    "quests.gregtech_energy.subtitle": "So how does all of that work?",
 
     "quests.gregtech_energy.TEST.title": "",
     "quests.gregtech_energy.TEST.subtitle": "",
