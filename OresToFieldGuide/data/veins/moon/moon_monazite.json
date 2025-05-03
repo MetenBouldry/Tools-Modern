@@ -1,0 +1,48 @@
+{
+	"id": "moon_monazite",
+	"dimension": "moon",
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 250,
+		"density": 0.25,
+		"min_y": -32,
+		"max_y": 50,
+		"size": 40
+	},
+	"ores": [
+		{
+			"ore": "bastnasite",
+			"weight": 50,
+			"block_weight": 1
+		},
+		{
+			"ore": "monazite",
+			"weight": 25
+		},
+		{
+			"ore": "neodymium",
+			"weight": 25
+		}
+	],
+	"rocks": [
+		"diorite",
+		"gabbro"
+	],
+	"indicator": {
+		"depth": 50
+	},
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Bastnasite & Monazite"
+		},
+		{
+			"lang": "ru_ru",
+			"text": "Бастнезит и Монацит"
+		},
+		{
+			"lang": "uk_ua",
+			"text": "Бастнезит і Монацит"
+		}
+	]
+}

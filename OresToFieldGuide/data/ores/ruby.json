@@ -1,0 +1,23 @@
+{
+  "id": "ruby",
+  "formula": "CrAl₂O₃",
+  "ore_block": "gtceu:raw_ruby_block",
+  "indicator": "gtceu:ruby_bud_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Ruby",
+      "info": "$(thing)Source of$(): Chromium, Aluminium"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Рубин",
+      "info": "$(thing)Хромит$(): Хром, Алюминий"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Рубін",
+      "info": "$(thing)Джерело$(): Хрому, Алюмінію"
+    }
+  ]
+}

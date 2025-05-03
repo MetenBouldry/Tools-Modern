@@ -1,0 +1,22 @@
+{
+  "id": "oilsands",
+  "ore_block": "gtceu:raw_oilsands_block",
+  "indicator": "gtceu:oilsands_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Oilsands",
+      "info": "$(thing)Source of$(): Freedom \uD83D\uDEE2\uD83E\uDD85\uD83D\uDDFD"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Нефтеносный песок",
+      "info": "$(thing)Хромит$(): топливо"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Нафтові піски",
+      "info": "$(thing)Джерело$(): Свободи\uD83D\uDEE2\uD83E\uDD85\uD83D\uDDFD"
+    }
+  ]
+}

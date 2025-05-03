@@ -1,0 +1,23 @@
+{
+  "id": "sapphire",
+  "formula": "Al₂O₃",
+  "ore_block": "gtceu:raw_sapphire_block",
+  "indicator": "gtceu:sapphire_bud_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Sapphire",
+      "info": "$(thing)Source of$(): Aluminium"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Сапфир",
+      "info": "$(thing)Хромит$(): Алюминий"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Сапфір",
+      "info": "$(thing)Джерело$(): Алюмінію"
+    }
+  ]
+}

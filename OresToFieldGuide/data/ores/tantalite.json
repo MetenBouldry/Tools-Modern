@@ -1,0 +1,23 @@
+{
+  "id": "tantalite",
+  "formula": "MnTa₂O₆",
+  "ore_block": "gtceu:raw_tantalite_block",
+  "indicator": "gtceu:tantalite_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Tantalite",
+      "info": "$(thing)Source of$(): Manganese, Tantalum"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Танталит",
+      "info": "$(thing)Хромит$(): Марганец, Тантал"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Танталіт",
+      "info": "$(thing)Джерело$(): Магнезії, Танталу"
+    }
+  ]
+}

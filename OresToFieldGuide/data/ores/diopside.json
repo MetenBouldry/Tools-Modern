@@ -1,0 +1,13 @@
+{
+	"id": "diopside",
+	"formula": "MgCaSi₂O₅",
+	"ore_block": "gtceu:raw_diopside_block",
+	"indicator": "gtceu:diopside_bud_indicator",
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Diopside",
+			"info": "$(thing)Source of$(): Magnesium, Calcium"
+		}
+	]
+}

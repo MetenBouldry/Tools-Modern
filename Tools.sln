@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelToVeinJson", "ExcelToVeinJson\ExcelToVeinJson.csproj", "{BDB79879-914B-4BAD-88B2-BFAE0F578E48}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelToVeinJson", "_old\ExcelToVeinJson\ExcelToVeinJson.csproj", "{BDB79879-914B-4BAD-88B2-BFAE0F578E48}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsBiomes", "MarsBiomes\MarsBiomes.csproj", "{FCB5F1D5-F2A7-ABF4-1C18-A7C6CFCEFC80}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMICategories", "EMICategories\EMICategories.csproj", "{85F46E1F-B3CC-4C58-8D57-84B9E0CD9A64}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PakkuLockChecker", "PakkuLockChecker\PakkuLockChecker.csproj", "{6CA31042-41E5-40BE-AA2D-AF25441EB763}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Old", "Old", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +60,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BDB79879-914B-4BAD-88B2-BFAE0F578E48} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E01895A2-9890-4E36-94A6-6FF3708A1BCC}

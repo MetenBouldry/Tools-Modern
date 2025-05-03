@@ -1,0 +1,13 @@
+{
+	"id": "armalcolite",
+	"formula": "TODO",
+	"ore_block": "gtceu:raw_armalcolite_block",
+	"indicator": "gtceu:armalcolite_bud_indicator",
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Armalcolite",
+			"info": "$(thing)Source of$(): Magnesium, Rutile, Titanium"
+		}
+	]
+}

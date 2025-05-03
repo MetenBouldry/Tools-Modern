@@ -1,0 +1,23 @@
+{
+  "id": "mica",
+  "formula": "KAl₃Si₃F₂O₁₀",
+  "ore_block": "gtceu:raw_mica_block",
+  "indicator": "gtceu:mica_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Mica",
+      "info": "$(thing)Source of$(): Potassium, Aluminium, Fluorine"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Слюда",
+      "info": "$(thing)Хромит$(): Калий, Алюминий, Фтор"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Слюда",
+      "info": "$(thing)Джерело$(): Калію, Алюмінію, Фтору"
+    }
+  ]
+}

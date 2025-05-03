@@ -1,0 +1,58 @@
+{
+	"id": "moon_magnetite",
+	"dimension": "moon",
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 180,
+		"density": 0.3,
+		"min_y": -64,
+		"max_y": 30,
+		"size": 30
+	},
+	"ores": [
+		{
+			"ore": "magnetite",
+			"weight": 25
+		},
+		{
+			"ore": "vanadium_magnetite",
+			"weight": 15
+		},
+		{
+			"ore": "chromite",
+			"weight": 40,
+			"block_weight": 1
+		},
+		{
+			"ore": "gold",
+			"weight": 15
+		},
+		{
+			"ore": "sapphire",
+			"weight": 5
+		}
+	],
+	"rocks": [
+		"diorite",
+		"gabbro",
+		"moon_stone",
+		"moon_deepslate"
+	],
+	"indicator": {
+		"depth": 50
+	},
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Chromite & Magnetite"
+		},
+		{
+			"lang": "ru_ru",
+			"text": "Хромит и Магнетит"
+		},
+		{
+			"lang": "uk_ua",
+			"text": "Хроміт і Магнетит"
+		}
+	]
+}

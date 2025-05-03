@@ -1,0 +1,23 @@
+{
+  "id": "sulfur",
+  "formula": "S",
+  "ore_block": "gtceu:raw_sulfur_block",
+  "indicator": "gtceu:sulfur_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Sulfur",
+      "info": "$(thing)Source of$(): Sulfur"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Сера",
+      "info": "$(thing)Хромит$(): Сера"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Сірка",
+      "info": "$(thing)Джерело$(): Сірка"
+    }
+  ]
+}

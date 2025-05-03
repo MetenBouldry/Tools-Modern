@@ -1,0 +1,13 @@
+{
+	"id": "etrium",
+	"formula": "TODO",
+	"ore_block": "gtceu:raw_etrium_block",
+	"indicator": "gtceu:etrium_indicator",
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Etrium",
+			"info": "$(thing)Source of$(): "
+		}
+	]
+}

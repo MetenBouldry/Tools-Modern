@@ -1,0 +1,23 @@
+{
+    "id": "bismuth",
+    "formula": "Bi",
+    "ore_block": "gtceu:raw_bismuth_block",
+    "indicator": "tfc:ore/small_bismuthinite",
+    "translations": [
+        {
+            "lang": "en_us",
+            "text": "Bismuth",
+            "info": "$(thing)Melts into$(): Bismuth"
+        },
+        {
+            "lang": "ru_ru",
+            "text": "Висмут",
+            "info": "$(thing)Плавится в$(): Висмут"
+        },
+        {
+            "lang": "uk_ua",
+            "text": "Бісмут",
+            "info": "$(thing)Розплавляється в$(): Бісмут"
+        }
+    ]
+}

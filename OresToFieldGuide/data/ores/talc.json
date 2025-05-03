@@ -1,0 +1,23 @@
+{
+  "id": "talc",
+  "formula": "Mg₃Si₄H₂O₁₂",
+  "ore_block": "gtceu:raw_talc_block",
+  "indicator": "gtceu:talc_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Talc",
+      "info": "$(thing)Source of$(): Magnesium"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Тальк",
+      "info": "$(thing)Хромит$(): Магний"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Тальк",
+      "info": "$(thing)Джерело$(): Магнію"
+    }
+  ]
+}

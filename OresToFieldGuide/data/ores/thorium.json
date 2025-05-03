@@ -1,0 +1,23 @@
+{
+  "id": "thorium",
+  "formula": "Th",
+  "ore_block": "gtceu:raw_thorium_block",
+  "indicator": "gtceu:thorium_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Thorium",
+      "info": "$(thing)Source of$(): Thorium"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Торий",
+      "info": "$(thing)Хромит$(): Торий"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Торій",
+      "info": "$(thing)Джерело$(): Торій"
+    }
+  ]
+}

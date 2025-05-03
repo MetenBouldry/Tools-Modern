@@ -1,26 +1,20 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text.Json.Serialization;
 
-namespace OresToFieldGuide.JSONObjects.Patchouli.PageTypes
+namespace OresToFieldGuide
 {
     /// <summary>
     /// A .NET Representation of a Patchouli Page for displaying Links
     /// <para></para>
     /// <a href="https://vazkiimods.github.io/Patchouli/docs/patchouli-basics/page-types/#link-pages-patchoulilink">Patchouli Docs</a>
     /// </summary>
-    [Serializable, JsonObject]
     public class LinkPage : TextPage
     {
         public override string Type => "patchouli:link";
 
-        [JsonProperty("url")]
+        [JsonPropertyName("url")]
         public required string URL { get; set; }
 
-        [JsonProperty("link_text")]
+        [JsonPropertyName("link_text")]
         public required string LinkText { get; set; }
     }
 }

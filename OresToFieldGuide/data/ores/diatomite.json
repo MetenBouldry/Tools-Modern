@@ -1,0 +1,23 @@
+{
+  "id": "diatomite",
+  "formula": "(SiO₂)₈(Fe₂O₃)(Al₂O₃)",
+  "ore_block": "gtceu:raw_diatomite_block",
+  "indicator": "gtceu:diatomite_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Diatomite",
+      "info": "$(thing)Source of$(): Iron, Aluminium"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Диатомовый пелит",
+      "info": "$(thing)Хромит$(): Железо, Алюминий"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Діатомітн",
+      "info": "$(thing)Джерело$(): Залізо, Алюмінію"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "saltpeter",
+  "formula": "KNO₃",
+  "ore_block": "gtceu:raw_saltpeter_block",
+  "indicator": "gtceu:saltpeter_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Saltpeter",
+      "info": "$(thing)Source of$(): Potassium, Nitrogen"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Селитра",
+      "info": "$(thing)Хромит$(): Калий, Азот"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Нітрат калію",
+      "info": "$(thing)Джерело$(): Калію, Азот"
+    }
+  ]
+}
