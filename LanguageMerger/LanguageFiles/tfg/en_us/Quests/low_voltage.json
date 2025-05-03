@@ -219,6 +219,12 @@
     "quests.low_voltage.lv_circuit_assembler.subtitle": "Hopefully, your first MV Circuit expense",
     "quests.low_voltage.lv_circuit_assembler.desc.1": "From now on, all Circuits should be made in a &3Circuit Assembler&r. Use it now to enjoy &6far cheaper LV and MV circuits&r.\n\nEach time you upgrade to a new tier of &3Circuit Assembler&r, you will be able to craft more &dadvanced themes&r of circuit. These will use &ccomplex&r and &msometimes&r unfamiliar ingredients, but will be more efficient to craft overall.",
     "quests.low_voltage.lv_circuit_assembler.desc.2": "&l&3Lore:&r&o The Circuit Assembler has made appearances in and out of GregTech versions. GT5 did not have it, and it was reimplemented in GT5 Unofficial. GTCE decided not to port it, and the tug-of-war continues with its inclusion in GTCEu.",
+
+    "quests.low_voltage.lv_greenhouse.title": "Greenhouse",
+    "quests.low_voltage.lv_greenhouse.subtitle": "The power of KubeJS",
+    "quests.low_voltage.lv_greenhouse.desc.1": "GregTech doesn't provide ways to farm plants or trees, so we made a custom multiblock for the modpack!\n\nThe multiblock &3Greenhouse&r will be your source of &aWood&r and other plants if you wish.\n\nIts &aWood&r production should be enough to run &32 Pyrolyse Ovens&r at their lowest Power.\n\nYou can also use this for automated &aResin&r. The yields are kept low to incentivize other rubber sources later in the game.",
+    "quests.low_voltage.lv_greenhouse.desc.2": "&9Note: &rWith &d72 EU/t&r recipes, it needs either 1 &bMV&r energy hatch or 2 &7LV&r energy hatches. Multiblocks will &cnot&r use 2A of one tier to reach the next one for recipe voltage minimums.\n\nIn other words, the controller needs to say at least &bMV&r in the GUI to run recipes which say &bMV&r in EMI, even if they can draw enough EU/t with a lower tier hatch configuration.\n\n&9Note:&r The structure requires a lot of &7Steel&r. Make sure you have an &3EBF&r for that.",
+    "quests.low_voltage.lv_greenhouse.desc.3": "&l&3Lore from Community Pack:&r&o We originally implemented a Chemical Reactor recipe for wood in the modpack to solve the tree problem. Our implementation turned out to be completely busted, so we decided that a rebalance was due. Hopefully, the Greenhouse is a happy middle ground.",
    
     //#endregion
 
