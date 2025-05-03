@@ -1,0 +1,13 @@
+{
+	"id": "enstatite",
+	"formula": "MgSiO₃",
+	"ore_block": "gtceu:raw_enstatite_block",
+	"indicator": "gtceu:enstatite_bud_indicator",
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Enstatite",
+			"info": "$(thing)Source of$(): Magnesium"
+		}
+	]
+}

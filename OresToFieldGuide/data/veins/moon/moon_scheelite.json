@@ -1,0 +1,51 @@
+{
+	"id": "moon_scheelite",
+	"dimension": "moon",
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 250,
+		"density": 0.35,
+		"min_y": -64,
+		"max_y": 0,
+		"size": 20
+	},
+	"ores": [
+		{
+			"ore": "scheelite",
+			"weight": 40,
+			"block_weight": 1
+		},
+		{
+			"ore": "tungstate",
+			"weight": 50,
+			"block_weight": 2
+		},
+		{
+			"ore": "lithium",
+			"weight": 10
+		}
+	],
+	"rocks": [
+		"diorite",
+		"gabbro",
+		"moon_stone",
+		"moon_deepslate"
+	],
+	"indicator": {
+		"depth": 50
+	},
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Scheelite & Tungstate"
+		},
+		{
+			"lang": "ru_ru",
+			"text": "Шеелит и Вольфрамат"
+		},
+		{
+			"lang": "uk_ua",
+			"text": "Шеєліт та Вольфрам"
+		}
+	]
+}

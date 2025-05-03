@@ -10,4 +10,9 @@
     "biome.tfg.nether/gneiss_caves": "Deep Caves",
     "biome.tfg.nether/granite_caves": "Deep Caves",
     "biome.tfg.nether/schist_caves": "Deep Caves",
+
+    "biome.tfg.moon/lunar_basalt_maria": "Lunar Maria",
+    "biome.tfg.moon/lunar_diorite_delta": "Lunar Delta",
+    "biome.tfg.moon/lunar_gabbro_uplift": "Lunar Uplift",
+    "biome.tfg.moon/lunar_plains": "Lunar Plains"
 }

@@ -15,8 +15,4 @@
     <ProjectReference Include="..\Common\Common.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="LanguageFiles\createconnected\en_us\" />
-  </ItemGroup>
-
 </Project>

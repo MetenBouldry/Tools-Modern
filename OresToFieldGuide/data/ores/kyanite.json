@@ -1,0 +1,23 @@
+{
+  "id": "kyanite",
+  "formula": "Al₂SiO₅",
+  "ore_block": "gtceu:raw_kyanite_block",
+  "indicator": "gtceu:kyanite_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Kyanite",
+      "info": "$(thing)Source of$(): Aluminium"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Ционит",
+      "info": "$(thing)Хромит$(): Алюминий"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Кіаніт",
+      "info": "$(thing)Джерело$(): Алюмінію"
+    }
+  ]
+}

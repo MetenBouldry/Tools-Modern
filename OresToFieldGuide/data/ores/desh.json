@@ -1,0 +1,13 @@
+{
+	"id": "desh",
+	"formula": "(Mg₂Fe(SiO₂)₂)₂(TiO₂)N₄",
+	"ore_block": "gtceu:raw_desh_block",
+	"indicator": "gtceu:desh_indicator",
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Desh",
+			"info": "$(thing)Source of$(): Iron, Titanium, Nitrogen"
+		}
+	]
+}

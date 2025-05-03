@@ -1,0 +1,23 @@
+{
+  "id": "lepidolite",
+  "formula": "KLi₃Al₄F₂O₁₀",
+  "ore_block": "gtceu:raw_lepidolite_block",
+  "indicator": "gtceu:lepidolite_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Lepidolite",
+      "info": "$(thing)Source of$(): Potassium, Lithium, Aluminium, Fluorine"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Лепидолит",
+      "info": "$(thing)Хромит$(): Калий, Литий, Алюминий, Фтор"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Лепідоліт",
+      "info": "$(thing)Джерело$(): Калію, Літію, Алюмінію, Фтору"
+    }
+  ]
+}

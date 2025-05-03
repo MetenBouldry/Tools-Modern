@@ -1,0 +1,48 @@
+{
+	"id": "moon_silver",
+	"dimension": "moon",
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 210,
+		"density": 0.4,
+		"min_y": -32,
+		"max_y": 75,
+		"size": 30
+	},
+	"ores": [
+		{
+			"ore": "galena",
+			"weight": 30
+		},
+		{
+			"ore": "silver",
+			"weight": 45,
+			"block_weight": 1
+		},
+		{
+			"ore": "lead",
+			"weight": 25
+		}
+	],
+	"rocks": [
+		"moon_stone",
+		"moon_deepslate"
+	],
+	"indicator": {
+		"depth": 50
+	},
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Silver, Galena, & Lead"
+		},
+		{
+			"lang": "ru_ru",
+			"text": "Серебро, Галена и Свинец"
+		},
+		{
+			"lang": "uk_ua",
+			"text": "Срібло, Гален і Свинець"
+		}
+	]
+}

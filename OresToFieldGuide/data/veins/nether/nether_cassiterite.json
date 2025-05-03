@@ -1,0 +1,56 @@
+{
+	"id": "nether_cassiterite",
+	"dimension": "nether",
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 170,
+		"density": 0.5,
+		"min_y": 32,
+		"max_y": 128,
+		"size": 45
+	},
+	"ores": [
+		{
+			"ore": "cassiterite",
+			"weight": 40,
+			"block_weight": 2
+		},
+		{
+			"ore": "tin",
+			"weight": 60,
+			"block_weight": 2
+		}
+	],
+	"rocks": [
+		"granite",
+		"diorite",
+		"gabbro",
+		"gneiss",
+		"schist",
+		"blackstone"
+	],
+	"indicator": {
+		"depth": 1,
+		"underground_count": 150,
+		"blocks": [
+			{
+				"block": "tfc:ore/small_cassiterite",
+				"weight": 100
+			}
+		]
+	},
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Cassiterite"
+		},
+		{
+			"lang": "ru_ru",
+			"text": "Касситерит"
+		},
+		{
+			"lang": "uk_ua",
+			"text": "Каситерит"
+		}
+	]
+}

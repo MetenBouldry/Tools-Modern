@@ -1,0 +1,12 @@
+﻿{
+	"id": "dripstone",
+	"pattern": "gtceu:dripstone_{0}_ore",
+	"translations": {
+		"en_us": "Travertine",
+		"ru_ru": "Травертин",
+		"uk_ua": "Травертин"
+	},
+	"replaceable_blocks": [
+		"minecraft:dripstone_block"
+	]
+}

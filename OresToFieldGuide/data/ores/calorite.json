@@ -1,0 +1,13 @@
+{
+  "id": "calorite",
+  "formula": "TODO",
+  "ore_block": "gtceu:raw_calorite_block",
+  "indicator": "gtceu:calorite_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Calorite",
+      "info": "$(thing)Source of$(): "
+    }
+  ]
+}

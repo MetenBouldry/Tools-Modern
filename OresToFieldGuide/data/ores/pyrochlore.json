@@ -1,0 +1,23 @@
+{
+  "id": "pyrochlore",
+  "formula": "Ca₂Nb₂O₇",
+  "ore_block": "gtceu:raw_pyrochlore_block",
+  "indicator": "gtceu:pyrochlore_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Pyrochlore",
+      "info": "$(thing)Source of$(): Niobium"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Пирохлор",
+      "info": "$(thing)Хромит$(): Ниобий"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Пірохлор",
+      "info": "$(thing)Джерело$(): Ніобій"
+    }
+  ]
+}

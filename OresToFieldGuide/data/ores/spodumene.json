@@ -1,0 +1,23 @@
+{
+  "id": "spodumene",
+  "formula": "LiAlSi₂O₆",
+  "ore_block": "gtceu:raw_spodumene_block",
+  "indicator": "gtceu:spodumene_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Spodumene",
+      "info": "$(thing)Source of$(): Lithium, Aluminium"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Сподумен",
+      "info": "$(thing)Хромит$(): Литий, Алюминий"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Сподумен",
+      "info": "$(thing)Джерело$(): Літію, Алюмінію"
+    }
+  ]
+}

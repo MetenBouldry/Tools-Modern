@@ -1,0 +1,23 @@
+{
+  "id": "chalcocite",
+  "formula": "Cu₂S",
+  "ore_block": "gtceu:raw_chalcocite_block",
+  "indicator": "gtceu:chalcocite_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Chalcocite",
+      "info": "$(thing)Source of$(): Copper"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Халькозин",
+      "info": "$(thing)Хромит$(): Медь"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Халькоцит",
+      "info": "$(thing)Джерело$(): Мідь"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+﻿{
+	"id": "moon_deepslate",
+	"pattern": "gtceu:moon_deepslate_{0}_ore",
+	"translations": {
+		"en_us": "Norite",
+		"ru_ru": "Норит",
+		"uk_ua": "Норит"
+	},
+	"replaceable_blocks": [
+		"ad_astra:moon_deepslate"
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"rarity": "Редкость",
+	"density": "Плотность",
+	"type": "Вид",
+	"y": "Y-уровень",
+	"size": "Размер",
+	"height": "Высота",
+	"radius": "Радиус",
+	"stone_types": "Виды камней",
+	"indicator_depth": "Индикатор Max Depth",
+	"percentage": "Процент руды",
+	"formula": "Формула",
+
+	"hazard": "Ядовит",
+	"arsenicosis": "$(t:Requires Face Mask)Arsenicosis (Inhalation)$(/t)",
+	"asbestosis": "$(t:Requires Face Mask)Asbestosis (Inhalation)$(/t)",
+	"berylliosis": "$(t:Requires Rubber Gloves)Berylliosis (Skin Contact)$(/t)",
+	"carcinogenic": "$(t:Requires Full Protection)Carcinogenic (Any Contact)$(/t)",
+	"weak_poison": "$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)",
+	"irritant": "$(t:Requires Rubber Gloves)Irritant (Skin Contact)$(/t)",
+
+	"tfc:cluster_vein": "кластерная жила",
+	"tfc:pipe_vein": "трубчатая жила",
+	"tfc:disc_vein": "дискообразная жила",
+
+	"vein_index": "Vein Index",
+	"ore_index": "Ore Index",
+	"ore_index_format": "This is the $(thing)Ore Index$() for $(thing){0}$(). All ores are sorted alphabetically and then by richest to poorest vein type. You can click on them to learn more information about each vein.",
+	"vein_index_format": "This is the $(thing)Vein Index$() for $(thing){0}$(). Each Vein has details regarding its rarity, density, vein type, height found, sizes, what stones it spawns on, and more."
+}

@@ -1,0 +1,12 @@
+﻿{
+	"id": "venus_stone",
+	"pattern": "gtceu:venus_stone_{0}_ore",
+	"translations": {
+		"en_us": "Trachyte",
+		"ru_ru": "Трахит",
+		"uk_ua": "Трахіт"
+	},
+	"replaceable_blocks": [
+		"ad_astra:venus_stone"
+	]
+}

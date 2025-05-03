@@ -1,0 +1,23 @@
+{
+  "id": "cinnabar",
+  "formula": "HgS",
+  "ore_block": "gtceu:raw_cinnabar_block",
+  "indicator": "gtceu:cinnabar_bud_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Cinnabar",
+      "info": "$(thing)Source of$(): Mercury"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Киноварь",
+      "info": "$(thing)Хромит$(): Ртуть"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Кіновар",
+      "info": "$(thing)Джерело$(): Ртуті"
+    }
+  ]
+}

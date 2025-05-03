@@ -1,0 +1,23 @@
+{
+  "id": "vanadium_magnetite",
+  "formula": "(Fe₃O₄)V",
+  "ore_block": "gtceu:raw_vanadium_magnetite_block",
+  "indicator": "gtceu:vanadium_magnetite_indicator",
+  "translations": [
+    {
+      "lang": "en_us",
+      "text": "Vanadium Magnetite",
+      "info": "$(thing)Source of$(): Iron, Vanadium"
+    },
+    {
+      "lang": "ru_ru",
+      "text": "Ванадий магнетит",
+      "info": "$(thing)Хромит$(): Железо, Ванадий"
+    },
+    {
+      "lang": "uk_ua",
+      "text": "Ванадієвий магнетит",
+      "info": "$(thing)Джерело$(): Залізо, Ванадію"
+    }
+  ]
+}
