@@ -202,7 +202,7 @@ namespace OresToFieldGuide
 		{
 			return ores.Select(wb => new WeightedIndicator
 			{
-				Block = oreDict[wb.OreID].DefaultIndicator,
+				Block = oreDict[wb.OreID].DefaultIndicator ?? "minecraft:air",
 				Weight = wb.Weight
 			}).ToArray();
 		}

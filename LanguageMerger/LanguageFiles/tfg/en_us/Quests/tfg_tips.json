@@ -391,7 +391,7 @@
 
     "quests.tfg_tips.find_latex_tree.title": "Latex Trees",
     "quests.tfg_tips.find_latex_tree.subtitle": "Seek for the Tropics",
-    "quests.tfg_tips.find_latex_tree.desc": "&aLatex Trees&r can be found in &2temperate&r areas of the world that receive large amounts of rainfall. It can be tapped to obtain &bLatex&r, used to create both &dSticky Resin&r, and &dVulcanized Latex.&r The latter is used in the creation of &aRubber Gloves&r, which protect you from &4poisonous materials&r on contact.\n\nTo complete this quest, you need to &clook&r at a block that has the tag &o#tfg:latex_logs&r. You can use EMI to learn which blocks have this tag by searching with that hashtag.",
+    "quests.tfg_tips.find_latex_tree.desc": "&aLatex Trees&r can be found in &2temperate&r areas of the world that receive large amounts of rainfall. It can be tapped to obtain &bLatex&r, used to create both &dSticky Resin&r, and &dVulcanized Latex.&r The latter is used to produce &3Rubber&r and &aRubber Gloves&r, which protect you from &4poisonous materials&r on contact.\n\nTo complete this quest, you need to &clook&r at a block that has the tag &o#tfg:latex_logs&r. You can use EMI to learn which blocks have this tag by searching with that hashtag.",
 
     "quests.tfg_tips.find_syrup_tree.title": "Syrup Trees",
     "quests.tfg_tips.find_syrup_tree.subtitle": "Diabetes is Skyrocketing",
@@ -403,7 +403,7 @@
 
     "quests.tfg_tips.create_sticky_resin.title": "Sticky Resin",
     "quests.tfg_tips.create_sticky_resin.subtitle": "No, it's not Rosin",
-    "quests.tfg_tips.create_sticky_resin.desc": "&dSticky Resin&r can be utilized as slime balls in some recipes. It is also key in the production of &dRaw Rubber Pulp and Rubber Ingots&r, which you'll need a fair bit of to advance into the &7Low Voltage&r age.\n\nTo make sticky resin, you need to boil either &aLatex&r or &aConifer Pitch&r in a &3Vat&r mixed with &aSulfur Powder.&r",
+    "quests.tfg_tips.create_sticky_resin.desc": "&dSticky Resin&r can be utilized as slime balls in some recipes. It is also key in the production of &&aResin Circuits&r and &aResistors&r, which you'll need a fair bit of to advance into the &7Low Voltage&r age.\n\nTo make sticky resin, you need to boil either &aLatex&r or &aConifer Pitch&r in a &3Vat&r mixed with &aWood Ash.&r",
 
     "quests.tfg_tips.create_tree_sugar.title": "Tree Sugar",
     "quests.tfg_tips.create_tree_sugar.subtitle": "Sweet!",
@@ -412,8 +412,8 @@
 
     "quests.tfg_tips.create_rubber_ingot.title": "Rubber Ingot",
     "quests.tfg_tips.create_rubber_ingot.subtitle": "Insulate them cables",
-    "quests.tfg_tips.create_rubber_ingot.desc": "Using the &3Extractor&r, you can obtain &dRaw Rubber Pulp&r from any part of latex producing trees, including &aLeaves&r and &aSaplings&r in addition to &aLogs.&r You can then process the pulp in an &3Alloy Smelter&r with &bSulfur Dust&r to create &dRubber Ingots.&r\nWith a &cMold&r, you can now insulate cables, a necessary step to advance in &2Gregtech.&r",
 
+    "quests.tfg_tips.create_rubber_ingot.desc": "Utilizing the &bVacuum Chamber&r and some additional heating, you can process &aLatex&r from various trees into &dRaw Rubber Pulp&r through a specific process. You can then smelt together 3 &dRaw Rubber Pulp&r with a bit of &eSulfur Dust&r in an &bAlloy Smelter&r to create &dRubber Ingots&r, perfect for insulating cables and very much necesary to advance in the &2Voltaic Age&r and beyond...",
     //#endregion
 
     //#region Transportation

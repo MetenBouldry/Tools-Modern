@@ -20,16 +20,22 @@ namespace OresToFieldGuide
 		public string? Hazard { get; set; }
 
 		/// <summary>
+		/// If this is set, only use this block in veins instead of the gregtech generated one.
+		/// </summary>
+		[JsonPropertyName("ore_override")]
+		public string? OreOverride { get; set; }
+
+		/// <summary>
 		/// Optional full block of ore to use in rich veins.
 		/// </summary>
 		[JsonPropertyName("ore_block")]
-		public required string FullOreBlock { get; set; }
+		public string? FullOreBlock { get; set; }
 
 		/// <summary>
 		/// The default indicator to use for this ore.
 		/// </summary>
 		[JsonPropertyName("indicator")]
-		public required string DefaultIndicator { get; set; }
+		public string? DefaultIndicator { get; set; }
 
 		/// <summary>
 		/// Localized names and information for the ore.
@@ -49,7 +55,7 @@ namespace OresToFieldGuide
 			{
 				Mapping = new Dictionary<string, string>
 				{
-					["0"] = $"#forge:ores/{ID}"
+					["0"] = OreOverride ?? $"#forge:ores/{ID}"
 				},
 				Pattern = [
 					["0"],
