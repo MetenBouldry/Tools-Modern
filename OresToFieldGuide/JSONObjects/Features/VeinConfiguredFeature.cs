@@ -103,9 +103,9 @@ namespace OresToFieldGuide
 			{
 				var ore = oreDict[wb.OreID];
 
-				list.Add(new VeinBlockReplaceWith(string.Format(rock.Pattern, wb.OreID), wb.Weight));
+				list.Add(new VeinBlockReplaceWith(ore.OreOverride ?? string.Format(rock.Pattern, wb.OreID), wb.Weight));
 
-				if (wb.FullBlockWeight.HasValue)
+				if (wb.FullBlockWeight.HasValue && ore.FullOreBlock != null)
 				{
 					list.Add(new VeinBlockReplaceWith(ore.FullOreBlock, wb.FullBlockWeight.Value));
 				}

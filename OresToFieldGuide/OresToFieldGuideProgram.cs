@@ -510,9 +510,16 @@ namespace OresToFieldGuide
 			{
 				string configuredVeinDir = Path.Combine(configuredFeatureDir, dimension.ID, "vein");
 
-				foreach (var existingPath in Directory.EnumerateFiles(configuredVeinDir))
+				if (Directory.Exists(configuredVeinDir))
 				{
-					File.Delete(existingPath);
+					foreach (var existingPath in Directory.EnumerateFiles(configuredVeinDir))
+					{
+						File.Delete(existingPath);
+					}
+				}
+				else
+				{
+					Directory.CreateDirectory(configuredVeinDir);
 				}
 
 				foreach (var vein in veins)
@@ -533,9 +540,16 @@ namespace OresToFieldGuide
 			{
 				string placedVeinDir = Path.Combine(placedFeatureDir, dimension.ID, "vein");
 
-				foreach (var existingPath in Directory.EnumerateFiles(placedVeinDir))
+				if (Directory.Exists(placedVeinDir))
 				{
-					File.Delete(existingPath);
+					foreach (var existingPath in Directory.EnumerateFiles(placedVeinDir))
+					{
+						File.Delete(existingPath);
+					}
+				}
+				else
+				{
+					Directory.CreateDirectory(placedVeinDir);
 				}
 
 				foreach (var vein in veins)

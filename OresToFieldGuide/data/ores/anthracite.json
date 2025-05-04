@@ -1,0 +1,23 @@
+{
+    "id": "anthracite",
+    "formula": "C",
+    "ore_override": "beneath:ore/nether_cursecoal",
+    "indicator": "gtceu:coal_bud_indicator",
+    "translations": [
+        {
+            "lang": "en_us",
+            "text": "Anthracite",
+            "info": "$(thing)Used for$(): Fuel"
+        },
+        {
+            "lang": "ru_ru",
+            "text": "Антрацит",
+            "info": "$(thing)Используется для$(): топливо"
+        },
+        {
+            "lang": "uk_ua",
+            "text": "Антрацит",
+            "info": "$(thing)Використовується для$(): Ковальське паливо"
+        }
+    ]
+}
