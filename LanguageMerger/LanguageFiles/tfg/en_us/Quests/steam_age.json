@@ -153,7 +153,7 @@
 
 	"quests.steam_age.extractor.title": "Steam Extractor",
 	"quests.steam_age.extractor.subtitle": "The Steam Extractor extracts...",
-	"quests.steam_age.extractor.desc": "Not many items are made in the &3Extractor&r during the &6Steam Age&r, but it's used to make &9Rubber&r, which you'll need for your first electronics.",
+	"quests.steam_age.extractor.desc": "Not many items are made in the &3Extractor&r during the &6Steam Age&r, as it lacks the capability to extract fluids.",
 
 	"quests.steam_age.glass_tube.title": "Glass Tubes",
 	"quests.steam_age.glass_tube.subtitle": "You'll want a lot of these",
