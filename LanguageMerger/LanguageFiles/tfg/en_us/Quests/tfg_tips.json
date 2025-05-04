@@ -380,11 +380,11 @@
 
     "quests.tfg_tips.find_rosin_tree.title": "Rosin Trees",
     "quests.tfg_tips.find_rosin_tree.subtitle": "It's going to be chilly...",
-    "quests.tfg_tips.find_rosin_tree.desc": "Rosin Trees can be found in cold areas of the world that receive moderate to large amounts of rainfall. It can be tapped to obtain Pitch. Pitch can be used to create both Sticky Resin and Conifer Rosin\n\nTo complete this quest, you need to look at a block that has the tag \"#tfg:rosin_logs\", you can use JEI to learn which blocks have this tag.",
+    "quests.tfg_tips.find_rosin_tree.desc": "Rosin Trees can be found in cold areas of the world that receive moderate to large amounts of rainfall. It can be tapped to obtain Pitch. Pitch can be used to create both Sticky Resin and Conifer Rosin.\n\nTo complete this quest, you need to look at a block that has the tag \"#tfg:rosin_logs\". You can use JEI to learn which blocks have this tag.",
 
     "quests.tfg_tips.find_latex_tree.title": "Latex Trees",
     "quests.tfg_tips.find_latex_tree.subtitle": "Seek for the Tropics",
-    "quests.tfg_tips.find_latex_tree.desc": "Latex Trees can be found in temperate areas of the world that receive large amounts of rainfall. It can be tapped to obtain Latex. Latex can be used to create both Sticky Resin, and Vulcanized Latex. Vulcanized Latex is used in the creation of Rubber Gloves, which protect you from poisonous materials on contact.\n\nTo complete this quest, you need to look at a block that has the tag \"#tfg:latex_logs\", you can use JEI to learn which blocks have this tag.",
+    "quests.tfg_tips.find_latex_tree.desc": "Latex Trees can be found in temperate areas of the world that receive large amounts of rainfall. It can be tapped to obtain Latex. Latex can be used to create both Sticky Resin, and Vulcanized Latex. Vulcanized Latex is used to produce Rubber as well as craft Rubber Gloves, which protect you from poisonous materials on contact.\n\nTo complete this quest, you need to look at a block that has the tag \"#tfg:latex_logs\". You can use JEI to learn which blocks have this tag.",
 
     "quests.tfg_tips.find_syrup_tree.title": "Syrup Trees",
     "quests.tfg_tips.find_syrup_tree.subtitle": "Diabetes is Skyrocketing",
@@ -396,7 +396,7 @@
 
     "quests.tfg_tips.create_sticky_resin.title": "Sticky Resin",
     "quests.tfg_tips.create_sticky_resin.subtitle": "No, it's not Rosin",
-    "quests.tfg_tips.create_sticky_resin.desc": "Sticky Resin can be utilized to make things sticky, not only that, its key in the production of Raw Rubber Pulp and Rubber Ingots, which you'll need if you want to advance to the Low Voltage Age.\n\nTo create the Sticky Resin you need to boil either Latex or Conifer Pitch in a vat mixed with Sulfur Powder",
+    "quests.tfg_tips.create_sticky_resin.desc": "Sticky Resin is used to make things sticky, if you couldn't tell. Other than that, it's key in the production of Resin Circuit boards and Resistors, which will be vital to advance to the Low Voltage Age.\n\nTo create Sticky Resin you need to boil either Latex or Conifer Pitch in a vat mixed with Wood Ash.",
 
     "quests.tfg_tips.create_tree_sugar.title": "Tree Sugar",
     "quests.tfg_tips.create_tree_sugar.subtitle": "Sweet!",
@@ -405,7 +405,7 @@
 
     "quests.tfg_tips.create_rubber_ingot.title": "Rubber Ingot",
     "quests.tfg_tips.create_rubber_ingot.subtitle": "Insulate them cables",
-    "quests.tfg_tips.create_rubber_ingot.desc": "Utilizing some machinery from GregTech, you can extract Raw Rubber Pulp from both Latex Producing Trees and Sticky Resin. You can then place 3 raw rubber pulp with a bit of Sulfur Dust to create Rubber Ingots. Rubber Ingots are perfect for insulating cables and are very much necesary to advance in the tech tree.",
+    "quests.tfg_tips.create_rubber_ingot.desc": "Utilizing the Vacuum Chamber and some additional heating, you can process latex from various trees into Raw Rubber Pulp through a specific process. You can then smelt together 3 raw rubber pulp with a bit of Sulfur Dust in an Alloy Smelter to create Rubber Ingots. Rubber Ingots are perfect for insulating cables and are very much necesary to advance in the tech tree.",
     //#endregion
 
     //#region Transportation

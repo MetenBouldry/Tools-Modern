@@ -239,7 +239,7 @@
 
     "quests.low_voltage.lv_glue.title": "Glued",
     "quests.low_voltage.lv_glue.subtitle": "Oh so I can use my sticky resin better",
-    "quests.low_voltage.lv_glue.desc": "You can now &3centrifuge&r &aSticky Resin&r, which will still give Raw Rubber - but this time alongside &aGlue&r (and the less useful Plantball, &6for now&r).\n\nGive yourself a headstart and get on producing Glue. You can use it to make &6cheaper Resistors&r, as well as &6cheaper Circuit Boards&r in the &3Assembling Machine&r (and it is especially useful &oin the near future&r).\n\n&eNote:&r You could also use &aGlue&r from TFC if you feel it would be easier for you",
+    "quests.low_voltage.lv_glue.desc": "You can now &3centrifuge&r &aSticky Resin&r, which will give you &aGlue&r in fluid form (and the less useful Plantball, &6for now&r).\n\nGive yourself a headstart and get on producing Glue. You can use it to make &6cheaper Resistors&r, as well as &6cheaper Circuit Boards&r in the &3Assembling Machine&r (and it is especially useful &oin the near future&r).\n\n&eNote:&r You could also use &aGlue&r from TFC or &aConifer Rosin&r if you feel it would be easier for you",
 
     "quests.low_voltage.lv_cutter.title": "Basic Cutter",
     "quests.low_voltage.lv_cutter.subtitle": "The Cutter... cuts...",
