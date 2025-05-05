@@ -3,9 +3,9 @@
     "quests.tfg_tips": "TerraFirmaGreg Tips",
     "quests.tfg_tips.subtitle": "Tips and Tricks to make your life slightly easier.",
 
-    "quests.tfg_tips.begining.title": "Tips and Tricks be here!",
-    "quests.tfg_tips.begining.subtitle": "Dear God that's a lot of branches...",
-    "quests.tfg_tips.begining.desc": "This quest chapter gives you a lot, &o(and we do mean a lot)&r of tips on how to survive and thrive.\n\nEach quest branch representing major mods in &2TerraFirmaGreg&r, with tips to make the most out of them. None of these quests are necesary for progression, although some &omay&r be locked behind main questline tasks.",
+    "quests.tfg_tips.beginning.title": "Tips and Tricks be here!",
+    "quests.tfg_tips.beginning.subtitle": "Dear God that's a lot of branches...",
+    "quests.tfg_tips.beginning.desc": "This quest chapter gives you a lot, &o(and we do mean a lot)&r of tips on how to survive and thrive.\n\nEach quest branch representing major mods in &2TerraFirmaGreg&r, with tips to make the most out of them. None of these quests are necessary for progression, although some &omay&r be locked behind main questline tasks.",
     //#endregion
 
     //#region Portable Storage
@@ -239,7 +239,7 @@
 
     "quests.tfg_tips.grapple_length.title": "Grappling Hook Upgrade: Length",
     "quests.tfg_tips.grapple_length.subtitle": "Long Boy",
-    "quests.tfg_tips.grapple_length.desc": "By default, your &dGrappling Hook&r has &b80 blocks in length&r, you can add &c20 more&r by adding more &aRope Coils.&r 200 blocks is the maximum.\n\nLength can be &3decreased&r by crafting with a &aKnife&r , &2reducing the length by 20&r, down to a minimum of 20.",
+    "quests.tfg_tips.grapple_length.desc": "By default, your &dGrappling Hook&r has &b80 blocks in length&r, you can add &c20 more&r by adding more &aRope Coils.&r 200 blocks is the maximum.\n\nLength can be &3decreased&r by crafting with a &aKnife&r, &2reducing it by 20&r, down to a minimum of 20.",
 
     "quests.tfg_tips.grapple_motor.title": "Grappling Hook Upgrade: Motor",
     "quests.tfg_tips.grapple_motor.subtitle": "That lazy, huh?",
@@ -272,7 +272,7 @@
 
     "quests.tfg_tips.grapple_gravity_50.title": "Grappling Hook Upgrade: 0.5 Gravity",
     "quests.tfg_tips.grapple_gravity_50.subtitle": "Does this even make sense?",
-    "quests.tfg_tips.grapple_gravity_50.desc": "The &a0.5 Gravity Upgrade&r causes your hook to have a &bGravity Coefficient of 0.5.&r. This means that it will be affected by gravity by a factor of a half!\n\nInstead of using another &dHelium Bucket&r to remove the upgrade, use an &cEmpty Bucket instead.&r It will fill with the &eHelium&r you initially used.",
+    "quests.tfg_tips.grapple_gravity_50.desc": "The &a0.5 Gravity Upgrade&r causes your hook to have a &bGravity Coefficient of 0.5.&. This means that it will be affected by gravity by a factor of a half!\n\nInstead of using another &dHelium Bucket&r to remove the upgrade, use an &cEmpty Bucket instead.&r It will fill with the &eHelium&r you initially used.",
 
     "quests.tfg_tips.grapple_gravity_0.title": "Grappling Hook Upgrade: ZERO gravity",
     "quests.tfg_tips.grapple_gravity_0.subtitle": "Kinda Expensive",
@@ -301,7 +301,7 @@
     "quests.tfg_tips.dye_discs.title": "The Classics",
     "quests.tfg_tips.dye_discs.subtitle": "These will never go old...",
     "quests.tfg_tips.dye_discs.desc": "By dipping a &bBlank Disc&r in a &aBarrel&r filled with dye, you can create the vanilla in-game discs. Enjoy classics such as &dWait, 13&r and &dBlocks!&r",
-    "quests.tfg_tips.dye_disks.task": "Any Classic Disc",
+    "quests.tfg_tips.dye_discs.task": "Any Classic Disc",
 
     "quests.tfg_tips.special_discs.title": "The Uniques",
     "quests.tfg_tips.special_discs.subtitle": "These are unique... Or they where, at least",
@@ -321,7 +321,7 @@
 
     "quests.tfg_tips.etching_disc.title": "Etching your first disc",
     "quests.tfg_tips.etching_disc.subtitle": "Time for your first tunes",
-    "quests.tfg_tips.etching_disc.desc": "You're going to need the &3Etching Table&r to start &betching.&r Right-clicking the table will open the etching interface and by providing a &aBlank Disc&r with a &aMusic Label&r, and a valid sound source on the top bar, your disc will be ready.\n\nSound sources include things like &bBandcamp/Soundcloud URLs&r (which can point to a single or an album), &din-game sound events&r, and file paths to &c.ogg/.wav/.mp3 files&r on your hard disk.\n\nTo complete this quest, etch any disc.",
+    "quests.tfg_tips.etching_disc.desc": "You're going to need the &3Etching Table&r to start &betching.&r Right-clicking the table will open the etching interface and by providing a &aBlank Disc&r with a &aMusic Label&r, and a valid sound source on the top bar, your disc will be ready.\n\nSound sources include things like &bBandcamp/Soundcloud URLs&r (which can point to a single or an album), &din-game sound events&r, and file paths to &c.ogg/.wav/.mp3 files&r on your drive.\n\nTo complete this quest, etch any disc.",
 
     "quests.tfg_tips.disc_players.title": "Disc Players",
     "quests.tfg_tips.disc_players.subtitle": "To play your discs of course!",
@@ -365,7 +365,7 @@
 
     "quests.tfg_tips.photo.title": "Your first Photo",
     "quests.tfg_tips.photo.subtitle": "Congratulations!",
-    "quests.tfg_tips.photo.desc": "You can do multiple things with it with your &dPhotograph.&r\n\nYou can &bCopy&r it by utilizing a blank sheet of &aPaper&r and the required &aDyes&r used to develop the original.\n\nYou can also &bStack&r pictures to keep them neatly organized in your inventory, check EMI to know how to.\n\nYou can also artifically &cAge&r a picture by applying &6Brown Dye&r to it, making it look like it has gone through the years.",
+    "quests.tfg_tips.photo.desc": "You can do multiple things with it with your &dPhotograph.&r\n\nYou can &bCopy&r it by utilizing a blank sheet of &aPaper&r and the required &aDyes&r used to develop the original.\n\nYou can also &bStack&r pictures to keep them neatly organized in your inventory, check EMI to know how to.\n\nYou can also artificially &cage&r a picture by applying &6Brown Dye&r to it, making it look like it has gone through the years.",
 
     "quests.tfg_tips.photo_album.title": "Photo Album",
     "quests.tfg_tips.photo_album.subtitle": "Turns out memories are forever...",
@@ -612,7 +612,7 @@
 
     "quests.tfg_tips.oven_appliances.title": "Oven Appliances",
     "quests.tfg_tips.oven_appliances.subtitle": "Get more out of your Ovens",
-    "quests.tfg_tips.oven_appliances.desc": "&dOven Appliances&r are optional components that must be placed on top of &aBottom Ovens&r to receive heat. Remember you can have multiple &aBottom Ovens&r in a single multiblock.\n\n&dWrought Iron Grill&r: Allows you to cook food at a much faster rate and provides a bonus to shelf life.\n&dVat&r: can process pot recipes in bulk! Extremely useful for making &eLatex&r and &aJam.&r\n&dJarring Station&r: must be place next to a &bVat&r, fills up jars with &aJam.&r\n&dPot&r: if you need to cook soups.",
+    "quests.tfg_tips.oven_appliances.desc": "&3Oven Appliances&r are optional components that must be placed on top of &aBottom Ovens&r to receive heat. Remember you can have &cmultiple&r &aBottom Ovens&r in a single multiblock.\n\n&dWrought Iron Grill&r: Allows you to cook food at a much faster rate and provides a &cbonus&r to shelf life.\n&dVat&r: can process pot recipes in bulk! Extremely useful for making &eLatex&r and &aJam.&r\n&dJarring Station&r: must be place next to a &bVat&r, fills up jars with &aJam.&r\n&dPot&r: if you need to cook soups.",
 
     "quests.tfg_tips.oven_finish.title": "Oven Finishes",
     "quests.tfg_tips.oven_finish.subtitle": "Fancy",
@@ -625,7 +625,7 @@
 
     "quests.tfg_tips.jam.title": "Jam",
     "quests.tfg_tips.jam.subtitle": "Not Jelly",
-    "quests.tfg_tips.jam.desc": "&dJam&r is an excellent way to preserve fruit: a &bSealed Jar of Jam&r can last up to &ctwo years&r without being opened.\n\nTo properly bottle the jam you will need a &aJar with Lid&r, requiring &bGlassblowing&r for the jar itself and &bSmithing&r for the lids.\n\n&3&lTip:&r&l &aGT machines&f will provide easier recipes for both components the line.",
+    "quests.tfg_tips.jam.desc": "&dJam&r is an excellent way to preserve fruit: a &bSealed Jar of Jam&r can last up to &ctwo years&r without being opened.\n\nTo properly bottle the jam you will need a &aJar with Lid&r, requiring &bGlassblowing&r for the jar itself and &bSmithing&r for the lids.\n\n&3&lTip:&r&l &aGT machines&f will provide easier recipes for both components down the line.",
 
     "quests.tfg_tips.preservation.title": "The Preservation Tree",
     "quests.tfg_tips.preservation.subtitle": "Making food last longer",
@@ -634,14 +634,14 @@
     "quests.tfg_tips.brine_something.title": "Brining",
     "quests.tfg_tips.brine_something.subtitle": "A preliminary step for other preservation methods",
     "quests.tfg_tips.brine_something.desc": "Brining &araw meat, vegetables&r or &afruit&r, requiring &dBrine&r made from &bSea Water&r and &bVinegar.&r This is a precursor step for &3pickling&r and &3smoking.&r",
-    "quests.tfg_tips.brine_something.tasks.1": "Meat, vegetable or fruit that has been brined.",
-    "quests.tfg_tips.brine_something.tasks.2": "A Bucket of Brine",
+    "quests.tfg_tips.brine_something.task.1": "Meat, vegetable or fruit that has been brined.",
+    "quests.tfg_tips.brine_something.task.2": "A Bucket of Brine",
 
     "quests.tfg_tips.pickle_something.title": "General Preservation: Pickling",
     "quests.tfg_tips.pickle_something.subtitle": "General Preservation N°3",
     "quests.tfg_tips.pickle_something.desc": "Pickling &araw meat, vegetables&r or &afruit&r. After &3brining&r, the food item is pickled in a barrel full of &aVinegar.&r It can be left there, giving it the &dPickled&r preservation trait for as long as the barrel is sealed, significantly increasing shelf life.",
-    "quests.tfg_tips.pickle_something.tasks.1": "A Bucket of Vinegar",
-    "quests.tfg_tips.pickle_something.tasks.2": "Meat, vegetable or fruit that has been pickled.",
+    "quests.tfg_tips.pickle_something.task.1": "A Bucket of Vinegar",
+    "quests.tfg_tips.pickle_something.task.2": "Meat, vegetable or fruit that has been pickled.",
 
     "quests.tfg_tips.get_milk.title": "Milk Preservation",
     "quests.tfg_tips.get_milk.subtitle": "Got milk?",
@@ -678,8 +678,8 @@
     "quests.tfg_tips.cook_meat.title": "Meat Preservation: Cooking",
     "quests.tfg_tips.cook_meat.subtitle": "Pretty obvious in hindsight.",
     "quests.tfg_tips.cook_meat.desc": "Cooking can potentially provide its own preservation traits. You should cook &aMeat&r either in a &bWrought Iron Grill&r or a &bTop Oven!&r\nOther cooking methods may not provide any trait at all or may even give negative traits that lower shelf life.\n\n&3&lTip:&r&o &bWrought Iron Grills&r can be part of the &dOven&f structure.",
-    "quests.tfg_tips.cook_meat.tasks.1": "A hunk of either Grilled or Oven Baked Cooked Meat.",
-    "quests.tfg_tips.cook_meat.tasks.2": "A Wrought Iron Grill or a Top Oven",
+    "quests.tfg_tips.cook_meat.task.1": "A hunk of either Grilled or Oven Baked Cooked Meat.",
+    "quests.tfg_tips.cook_meat.task.2": "A Wrought Iron Grill or a Top Oven",
 
     "quests.tfg_tips.get_veggie.title": "Vegetable Preservation",
     "quests.tfg_tips.get_veggie.subtitle": "They're good for you",
@@ -692,8 +692,8 @@
     "quests.tfg_tips.dry_fruit.title": "Fruit Preservation: Drying",
     "quests.tfg_tips.dry_fruit.subtitle": "Water content basically zero",
     "quests.tfg_tips.dry_fruit.desc": "Using a &3Drying Mat&r, you can dry fuits, increasing their shelf life. The &3Solar Drier&r is the more advanced option.",
-    "quests.tfg_tips.dry_fruit.tasks.1": "A piece of Fruit that has been Dried",
-    "quests.tfg_tips.dry_fruit.tasks.2": "A Drying Mat or a Solar Drier",
+    "quests.tfg_tips.dry_fruit.task.1": "A piece of Fruit that has been Dried",
+    "quests.tfg_tips.dry_fruit.task.2": "A Drying Mat or a Solar Drier",
 
     "quests.tfg_tips.get_grain.title": "Grain Preservation",
     "quests.tfg_tips.get_grain.subtitle": "Carbohydrates",
