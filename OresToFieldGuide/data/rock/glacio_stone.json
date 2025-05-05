@@ -1,0 +1,12 @@
+﻿{
+	"id": "glacio_stone",
+	"pattern": "gtceu:glacio_stone_{0}_ore",
+	"translations": {
+		"en_us": "Phonolite",
+		"ru_ru": "Фонолит",
+		"uk_ua": "Фоноліт"
+	},
+	"replaceable_blocks": [
+		"ad_astra:glacio_stone"
+	]
+}

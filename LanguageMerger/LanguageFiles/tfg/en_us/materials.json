@@ -21,6 +21,13 @@
     "material.tfg.gneiss": "Gneiss",
     "material.tfg.chalk": "Chalk",
 
+    "material.tfg.moon_stone": "Anorthosite",
+    "material.tfg.moon_deepslate": "Norite",
+    "material.tfg.mars_stone": "Argillite",
+    "material.tfg.venus_stone": "Trachyte",
+    "material.tfg.mercury_stone": "Komatiite",
+    "material.tfg.glacio_stone": "Phonolite",
+
     "material.gtceu.thermochemically_treated_hardwood": "Thermochemically Treated Hardwood",
     "material.gtceu.hardwood": "Hardwood"
 }

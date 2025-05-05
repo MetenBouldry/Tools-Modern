@@ -117,12 +117,17 @@
 	"block.tfg.loose.deepslate": "Loose Migmatite Rock",
 	"block.tfg.loose.dripstone": "Loose Travertine Rock",
 
-	"block.tfg.rock.hardened_anorthosite": "Hardened Anorthosite",
-	"block.tfg.rock.raw_anorthosite": "Raw Anorthosite",
-	"block.tfg.loose.anorthosite": "Loose Anorthosite Rock",
-	"block.tfg.rock.raw_basanite": "Raw Basanite",
-
-	"block.tfg.rock.raw_syenite": "Raw Syenite",
-	"block.tfg.rock.hardened_syenite": "Hardened Syenite",
-	"block.tfg.loose.syenite": "Loose Syenite Rock"
+	"block.tfg.rock.hardened_moon_stone": "Hardened Anorthosite",
+	"block.tfg.loose.moon_stone": "Loose Anorthosite Rock",
+	"block.tfg.rock.hardened_moon_deepslate": "Hardened Norite",
+	"block.tfg.loose.moon_deepslate": "Loose Norite Rock",
+	"block.tfg.rock.hardened_mars_stone": "Hardened Argillite",
+	"block.tfg.loose.mars_stone": "Loose Argillite Rock",
+	"block.tfg.rock.hardened_venus_stone": "Hardened Trachyte",
+	"block.tfg.loose.venus_stone": "Loose Trachyte Rock",
+	"block.tfg.rock.hardened_mercury_stone": "Hardened Komatiite",
+	"block.tfg.loose.mercury_stone": "Loose Komatiite Rock",
+	"block.tfg.rock.hardened_glacio_stone": "Hardened Phonolite",
+	"block.tfg.loose.glacio_stone": "Loose Phonolite Rock",
+	"block.tfg.loose.permafrost": "Permafrost Chunk"
 }
