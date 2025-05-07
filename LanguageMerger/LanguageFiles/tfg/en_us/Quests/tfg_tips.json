@@ -570,6 +570,11 @@
     "quests.tfg_tips.create_sloop.title": "Create the Sloop",
     "quests.tfg_tips.create_sloop.subtitle": "Where's the wind waker when you need it?",
     "quests.tfg_tips.create_sloop.desc": "With the Sloop, traversing large sized bodies of water should be relatively easy. To make sure you dont end up at the mercy of the wind you can lower your Anchor to stop in place.\nYou can also dye your rowboat's color with a dye of your choice!\n\nTo complete the task of this quest, you need to look at any finished Sloop.",
+
+    "quests.tfg_tips.fishing_net.title": "Fishing Nets",
+    "quests.tfg_tips.fishing_net.subtitle": "Not the socks, sorry.",
+    "quests.tfg_tips.fishing_net.desc": "Fish have never been so easy to catch. A right-click away from a hearty meal.",
+    "quests.tfg_tips.fishing_net.task": "Any #forge:tools/fishing_nets",
     //#endregion
 
     //#region Firmalife
