@@ -1,4 +1,7 @@
 {
+
+    "block.create.netherite_backtank": "Blue Steel Backtank",
+
     // Dark Oak
     "block.create.dark_oak_window": "Hickory Window",
     "block.create.dark_oak_window_pane": "Hickory Window Pane",
